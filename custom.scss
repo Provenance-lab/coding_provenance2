@@ -10,7 +10,7 @@ $celeste-pale: #eef8fd;   // light fills
 // ---------- Typography ----------
 $font-family-sans-serif: "Inter", "Helvetica Neue", Arial, sans-serif;
 $font-weight-base: 500;                     // Inter Medium for body text
-$headings-font-family: "Fraunces", Georgia, serif;
+$headings-font-family: "Hanken Grotesk", "Helvetica Neue", Arial, sans-serif;
 $headings-font-weight: 700;
 $headings-color: $getty-blue;
 
@@ -30,7 +30,7 @@ $code-color: $getty-blue;
 
 /*-- scss:rules --*/
 
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
 
 // No motion anywhere
 *, *::before, *::after { animation: none !important; transition: none !important; }
@@ -67,7 +67,7 @@ h3, h4 { color: $blue-mid; }
 #quarto-header .navbar { background: transparent !important; }
 
 .navbar-title {
-  font-family: "Fraunces", Georgia, serif;
+  font-family: "Hanken Grotesk", "Helvetica Neue", Arial, sans-serif;
   font-weight: 700;
   letter-spacing: 0.04em;
 }
@@ -305,7 +305,7 @@ body.landing {
 }
 
 .hero-title {
-  font-family: "Fraunces", Georgia, serif;
+  font-family: "Hanken Grotesk", "Helvetica Neue", Arial, sans-serif;
   font-weight: 700;
   font-size: clamp(2.6rem, 7.5vw, 7.5rem);
   line-height: 1.02;
