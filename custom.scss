@@ -3,7 +3,7 @@
 // ---------- Palette: Getty blue + shades of blue and celeste ----------
 $getty-blue:   #003a70;   // deep blue — main accent
 $blue-mid:     #1d5fa8;   // links, secondary accents
-$celeste:      #4fb3e8;   // bright highlight
+$celeste:      #4fb3e8;   // highlight
 $celeste-soft: #a9dcf5;   // borders, rules
 $celeste-pale: #eef8fd;   // light fills
 
@@ -32,6 +32,10 @@ $code-color: $getty-blue;
 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Roboto:wght@400;500;700&display=swap");
 
+// No motion anywhere
+*, *::before, *::after { animation: none !important; transition: none !important; }
+html { scroll-behavior: auto !important; }
+
 // ---------- Text accents ----------
 strong, b { color: $getty-blue; font-weight: 700; }
 em { color: $blue-mid; }
@@ -52,42 +56,29 @@ h3, h4 { color: $blue-mid; }
 
 .quarto-title-block .description { color: $blue-mid; }
 
-// ---------- Navbar ----------
-#quarto-header {
-  border-bottom: 3px solid $getty-blue;
-}
+// ---------- Top bar (content pages) ----------
+#quarto-header { border-bottom: 3px solid $getty-blue; }
 
 .navbar-title {
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 900;
+  letter-spacing: 0.04em;
 }
 
 .navbar-nav .nav-item {
-  padding-left: 4px;
-  padding-right: 4px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
 
-.navbar .dropdown-menu {
-  border: 1px solid $celeste-soft;
-  box-shadow: 0 8px 24px rgba(0, 58, 112, 0.08);
-}
-
-.navbar .dropdown-item:hover { background: $celeste-pale; color: $getty-blue; }
-
-// ---------- Sidebar + table of contents ----------
-.sidebar nav[role="doc-toc"] ul > li > a.active,
-.sidebar-item .active { color: $getty-blue !important; font-weight: 700; }
-.sidebar nav[role="doc-toc"] ul > li > a.active { border-left-color: $celeste !important; }
-
 // ---------- Footer ----------
 .nav-footer { border-top: 1px solid $celeste-soft; }
 
-// ---------- Content elements ----------
+// ---------- Tables, code, quotes ----------
 main table thead { background: $getty-blue; color: #fff; }
 main table thead th { border-color: $getty-blue; }
 main table tbody tr:nth-child(even) { background: $celeste-pale; }
+main table tbody td { height: 2.6rem; }
+main table caption { caption-side: bottom; color: $blue-mid; font-style: italic; }
 
 div.sourceCode {
   background: $celeste-pale;
@@ -100,88 +91,191 @@ blockquote {
   color: $getty-blue;
 }
 
-// ---------- Landing hero ----------
-.hero {
-  min-height: calc(100vh - 160px);
+// ---------- Under construction placeholder ----------
+.under-construction {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 220px;
+  margin: 1.5rem 0 2.5rem;
+  padding: 2rem;
+  border: 2px dashed $celeste-soft;
+  border-radius: 0.6rem;
+  background: $celeste-pale;
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  color: $getty-blue;
   text-align: center;
+
+  p { margin: 0; }
+}
+
+.under-construction.with-image {
+  min-height: 460px;
+  border: none;
+  background-size: cover;
+  background-position: center;
   overflow: hidden;
-  padding: 2rem 1rem;
+
+  // white veil so the label stays readable over the painting
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.55);
+  }
+
+  > * { position: relative; }
+
+  .uc-label {
+    display: inline-block;
+    padding: 0.6rem 1.6rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-left: 5px solid $getty-blue;
+    color: $getty-blue;
+  }
+
+  .uc-credit {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 0.75rem;
+    color: $getty-blue;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 0.15rem 0.5rem;
+  }
+
+  p:last-child { position: absolute; right: 0.75rem; bottom: 0.75rem; }
+}
+
+// ---------- Landing page ----------
+body.landing {
+  padding-top: 0 !important;
+
+  #quarto-header { display: none; }
+  #title-block-header { display: none; }
+}
+
+.landing-menu {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.5rem;
+  z-index: 1050;
+}
+
+.landing-menu-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  background: #fff;
+  border: none;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+  color: $getty-blue;
+}
+
+.landing-logo {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 900;
+  font-size: 1.35rem;
+  letter-spacing: 0.04em;
+}
+
+.burger {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 5px;
+
+  span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    background: $getty-blue;
+  }
+}
+
+.landing-menu-toggle:hover .burger span,
+.landing-menu-toggle[aria-expanded="true"] .burger span { background: $celeste; }
+
+.landing-menu-panel {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.5rem);
+  min-width: 260px;
+  background: #fff;
+  border: 1px solid $celeste-soft;
+  border-top: 4px solid $getty-blue;
+  box-shadow: 0 10px 30px rgba(0, 58, 112, 0.1);
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+
+  a {
+    padding: 0.55rem 1.25rem;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 1.1rem;
+    color: $getty-blue;
+    text-decoration: none;
+  }
+
+  a:hover { background: $celeste-pale; color: $blue-mid; }
+}
+
+.landing-menu-panel[hidden] { display: none; }
+
+.hero {
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 6rem 1rem 4rem;
 }
 
 .hero-title {
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 900;
-  font-size: clamp(2.6rem, 8vw, 7rem);
+  font-size: clamp(2.6rem, 7.5vw, 7.5rem);
   line-height: 1.02;
   color: $getty-blue;
-  margin: 0;
-  border: none;
+
+  .line { white-space: nowrap; }
 }
 
-.hero-title span { display: inline-block; }
-
-.hero-title .slide-left  { animation: slideLeft 1.6s ease-out both; }
-.hero-title .slide-right { animation: slideRight 1.6s ease-out both; }
-.hero-title .rise        { color: $blue-mid; animation: fadeUp 1s ease-out 1.4s both; }
+@media (max-width: 700px) {
+  .hero-title .line { white-space: normal; }
+}
 
 .hero-edition {
   font-family: "Playfair Display", Georgia, serif;
   font-style: italic;
   font-size: clamp(1.4rem, 3vw, 2.2rem);
   color: $celeste;
-  margin: 1.5rem 0 0.5rem;
-  animation: fadeUp 1s ease-out 2s both;
+  margin: 2rem 0 0.75rem;
 }
 
 .hero-details {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: clamp(1rem, 1.8vw, 1.3rem);
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  line-height: 1.6;
   color: $getty-blue;
-  animation: fadeUp 1s ease-out 2.4s both;
 }
 
-.hero-details .sep { color: $celeste; margin: 0 0.5rem; }
-.hero-details .nowrap { white-space: nowrap; }
-
-@media (max-width: 700px) {
-  .hero-details .sep { display: none; }
-  .hero-details .nowrap { display: block; white-space: normal; }
-}
-
-.hero-rule {
-  width: 90px;
-  height: 4px;
-  border-radius: 2px;
-  background: linear-gradient(90deg, $getty-blue, $celeste);
-  margin: 1.5rem auto 0;
-  animation: fadeUp 1s ease-out 2.6s both;
-}
-
-@keyframes slideLeft  { from { transform: translateX(-60vw); opacity: 0; } to { transform: none; opacity: 1; } }
-@keyframes slideRight { from { transform: translateX(60vw);  opacity: 0; } to { transform: none; opacity: 1; } }
-@keyframes fadeUp     { from { transform: translateY(16px);  opacity: 0; } to { transform: none; opacity: 1; } }
-
-.scroll-hint {
-  margin-top: 3rem;
-  font-size: 0.9rem;
-  color: $blue-mid;
-  opacity: 0.7;
-}
-
-// ---------- Landing cards ----------
 .landing-section {
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 0 auto 4rem;
 }
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
   margin: 1.5rem 0 3rem;
 }
@@ -190,18 +284,15 @@ blockquote {
   padding: 1.4rem;
   border: 1px solid $celeste-soft;
   border-top: 5px solid $getty-blue;
-  border-radius: 0.6rem;
+  border-radius: 0.4rem;
   background: #fff;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-.card-grid .card:hover {
-  transform: translateY(-4px);
-  border-top-color: $celeste;
-  box-shadow: 0 10px 28px rgba(0, 58, 112, 0.12);
-}
+.card-grid .card:hover { border-top-color: $celeste; background: $celeste-pale; }
+.card-grid .card h3 { margin-top: 0; font-size: 1.25rem; font-weight: 700; }
 
-.card-grid .card h3 { margin-top: 0; font-size: 1.25rem; }
+@media (max-width: 900px) { .card-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .card-grid { grid-template-columns: 1fr; } }
 .card-grid .card h3 a { color: $getty-blue; text-decoration: none; }
 
 // ---------- Team ----------
@@ -218,9 +309,4 @@ blockquote {
   height: 140px;
   object-fit: cover;
   border: 3px solid $celeste;
-}
-
-// ---------- Respect reduced-motion preferences ----------
-@media (prefers-reduced-motion: reduce) {
-  .hero * { animation: none !important; }
 }

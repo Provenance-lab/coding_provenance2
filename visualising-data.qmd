@@ -3,6 +3,12 @@ title: "Visualising Data"
 description: "Communicating findings through charts, maps and networks."
 ---
 
+::: {.under-construction}
+Under construction
+:::
+
+<!-- Page template: delete the comment markers when you are ready to add content
+
 ## Introduction
 
 *Explain the purpose of this step in the workflow.*
@@ -25,3 +31,5 @@ description: "Communicating findings through charts, maps and networks."
 ## Further reading
 
 *See also [Bibliography & Resources](resources.qmd).*
+
+-->

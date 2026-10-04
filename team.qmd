@@ -2,6 +2,12 @@
 title: "Team"
 ---
 
+::: {.under-construction}
+Under construction
+:::
+
+<!-- Page template: delete the comment markers when you are ready to add content
+
 *Add photos to the `images/` folder and replace the placeholders below.*
 
 ## Organisers
@@ -9,7 +15,7 @@ title: "Team"
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-6 .team-member}
-<!-- ![](images/person1.jpg) -->
+![](images/person1.jpg)
 ### Name Surname
 *Role, Institution*
 
@@ -17,7 +23,7 @@ Short biography.
 :::
 
 ::: {.g-col-12 .g-col-md-6 .team-member}
-<!-- ![](images/person2.jpg) -->
+![](images/person2.jpg)
 ### Name Surname
 *Role, Institution*
 
@@ -29,3 +35,5 @@ Short biography.
 ## Contributors
 
 - Name Surname — Institution
+
+-->

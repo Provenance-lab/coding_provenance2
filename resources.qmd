@@ -5,6 +5,10 @@ nocite: |
   @*
 ---
 
+::: {.under-construction}
+Under construction
+:::
+
 ## Tools
 
 - [Quarto](https://quarto.org/): publishing system used for this site

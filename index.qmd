@@ -2,38 +2,63 @@
 pagetitle: "Coding Provenance Workshop"
 page-layout: full
 toc: false
+body-classes: landing
 ---
 
 ```{=html}
-<div class="hero">
-  <div class="hero-title" role="heading" aria-level="1">
-    <span class="slide-left">Coding</span>
-    <span class="slide-right">Provenance</span><br>
-    <span class="rise">Workshop</span>
-  </div>
-  <div class="hero-edition">— Second Edition —</div>
-  <div class="hero-details">
-    <span class="nowrap">December 1 to 4, 2026</span><span class="sep">·</span><span class="nowrap">Getty Research Institute, Los Angeles, USA</span>
-  </div>
-  <div class="hero-rule"></div>
-  <div class="scroll-hint">↓ explore the materials</div>
+<!-- Landing-page menu: logo + three-line button in the top-right corner -->
+<div class="landing-menu">
+  <button class="landing-menu-toggle" aria-expanded="false" aria-controls="landing-menu-panel" aria-label="Open menu">
+    <span class="landing-logo">CPW2</span>
+    <span class="burger" aria-hidden="true"><span></span><span></span><span></span></span>
+  </button>
+  <nav id="landing-menu-panel" class="landing-menu-panel" hidden>
+    <a href="team.html">Team</a>
+    <a href="second-session.html">Second Online Session</a>
+    <a href="structuring-data.html">Structuring Data</a>
+    <a href="preprocessing-data.html">Preprocessing Data</a>
+    <a href="analysing-data.html">Analysing Data</a>
+    <a href="visualising-data.html">Visualising Data</a>
+    <a href="resources.html">Bibliography &amp; Resources</a>
+  </nav>
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const btn = document.querySelector(".landing-menu-toggle");
+  const panel = document.getElementById("landing-menu-panel");
+  btn.addEventListener("click", function () {
+    const open = btn.getAttribute("aria-expanded") === "true";
+    btn.setAttribute("aria-expanded", String(!open));
+    panel.hidden = open;
+  });
+  document.addEventListener("click", function (e) {
+    if (!e.target.closest(".landing-menu")) {
+      btn.setAttribute("aria-expanded", "false");
+      panel.hidden = true;
+    }
+  });
+});
+</script>
+
+<header class="hero">
+  <div class="hero-title" role="heading" aria-level="1"><span class="line">Coding Provenance</span><br><span class="line">Workshop</span></div>
+  <div class="hero-edition">– Second Edition –</div>
+  <div class="hero-details">December 1 to 4, 2026<br>Getty Research Institute, Los Angeles, USA</div>
+</header>
 ```
 
 ::: {.landing-section}
 
-## About the workshop
+## About
 
-*Add a short description of the workshop here: its aims, who it is for, and what participants will learn.*
+::: {.under-construction}
+Under construction
+:::
 
-## Explore the materials
+## Materials
 
 ::: {.card-grid}
-
-::: {.card}
-### [Team](team.qmd)
-Meet the people behind the workshop.
-:::
 
 ::: {.card}
 ### [Second Online Session](second-session.qmd)
@@ -67,12 +92,14 @@ Readings, tools and datasets.
 
 :::
 
-## Key dates
+## Schedule
 
-| Date | Session |
-|------|---------|
-| *TBC* | First online session |
-| *TBC* | Second online session |
-| December 1–4, 2026 | In-person workshop, Getty Research Institute, Los Angeles |
+| Date | Time | Session |
+|------|------|---------|
+| | | |
+| | | |
+| | | |
+
+: Schedule to be announced. {.schedule}
 
 :::

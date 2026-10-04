@@ -1,16 +1,18 @@
 project:
   type: website
   output-dir: _site
+  resources:
+    - images/
 
 website:
-  title: "Coding Provenance Workshop"
-  description: "Materials and resources for the Coding Provenance Workshop"
+  title: "CPW2"
+  description: "Coding Provenance Workshop — Second Edition. December 1 to 4, 2026, Getty Research Institute, Los Angeles, USA"
   site-url: "https://barbararomero.github.io/codingprovenance2/"
   repo-url: "https://github.com/BarbaraRomero/codingprovenance2"
   repo-actions: [edit, issue]
   page-navigation: true
   back-to-top-navigation: true
-  search: true
+  search: false
   navbar:
     left:
       - href: index.qmd
@@ -18,26 +20,17 @@ website:
       - href: team.qmd
         text: Team
       - href: second-session.qmd
-        text: Second Online Session
-      - text: Data Workflow
-        menu:
-          - href: structuring-data.qmd
-            text: "1. Structuring Data"
-          - href: preprocessing-data.qmd
-            text: "2. Preprocessing Data"
-          - href: analysing-data.qmd
-            text: "3. Analysing Data"
-          - href: visualising-data.qmd
-            text: "4. Visualising Data"
+        text: Session 2
+      - href: structuring-data.qmd
+        text: Structuring
+      - href: preprocessing-data.qmd
+        text: Preprocessing
+      - href: analysing-data.qmd
+        text: Analysing
+      - href: visualising-data.qmd
+        text: Visualising
       - href: resources.qmd
-        text: Bibliography & Resources
-  sidebar:
-    - title: "Data Workflow"
-      contents:
-        - structuring-data.qmd
-        - preprocessing-data.qmd
-        - analysing-data.qmd
-        - visualising-data.qmd
+        text: Resources
   page-footer:
     left: "Coding Provenance Workshop · Second Edition · Getty Research Institute, 2026"
     right: "Built with [Quarto](https://quarto.org/)"

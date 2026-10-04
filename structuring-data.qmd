@@ -3,6 +3,14 @@ title: "Structuring Data"
 description: "How to organise provenance data into consistent, reusable structures."
 ---
 
+::: {.under-construction .with-image style="background-image: url('images/structuring-bg.jpg');"}
+[Under construction]{.uc-label}
+
+[Eduardo Chicharro (signed "E. Chicharro, Almería")]{.uc-credit}
+:::
+
+<!-- Page template: delete the comment markers when you are ready to add content
+
 ## Introduction
 
 *Explain the purpose of this step in the workflow.*
@@ -25,3 +33,5 @@ description: "How to organise provenance data into consistent, reusable structur
 ## Further reading
 
 *See also [Bibliography & Resources](resources.qmd).*
+
+-->

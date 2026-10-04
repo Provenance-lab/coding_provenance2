@@ -2,6 +2,12 @@
 title: "Second Online Session"
 ---
 
+::: {.under-construction}
+Under construction
+:::
+
+<!-- Page template: delete the comment markers when you are ready to add content
+
 ## Overview
 
 - **Date:** *TBC*
@@ -26,3 +32,5 @@ title: "Second Online Session"
 ## Notes and outcomes
 
 *Summary of the discussion.*
+
+-->
