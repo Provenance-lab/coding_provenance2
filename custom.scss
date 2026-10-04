@@ -20,7 +20,7 @@ $body-color: #1f2933;
 $primary: $getty-blue;
 $link-color: $blue-mid;
 
-$navbar-bg: #ffffff;
+$navbar-bg: rgba(255, 255, 255, 0.72);
 $navbar-fg: $getty-blue;
 $navbar-hl: $celeste;
 $footer-bg: #ffffff;
@@ -57,7 +57,14 @@ h3, h4 { color: $blue-mid; }
 .quarto-title-block .description { color: $blue-mid; }
 
 // ---------- Top bar (content pages) ----------
-#quarto-header { border-bottom: 3px solid $getty-blue; }
+#quarto-header {
+  border-bottom: 3px solid $getty-blue;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+#quarto-header .navbar { background: transparent !important; }
 
 .navbar-title {
   font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
@@ -376,7 +383,22 @@ body.landing {
   .hero-title { color: #000 !important; }
   .hero-details { color: $slate-dark; }
 
-  .landing-section h2 { color: $getty-blue; border-bottom-color: $celeste-soft; margin-top: 3rem; }
+  .landing-section h2 {
+    color: $getty-blue;
+    border-bottom-color: $celeste-soft;
+    font-size: 1.35rem;
+    margin-top: 2rem;
+    margin-bottom: 0.9rem;
+  }
+  .landing-section { font-size: 0.9rem; max-width: 960px; }
+  .card-grid { gap: 0.9rem; margin: 0.9rem 0 1.5rem; }
+  .card-grid .card { padding: 0.9rem 1rem; }
+  .card-grid .card h3 { font-size: 1rem; margin-bottom: 0.3rem; }
+  .card-grid .card p { font-size: 0.85rem; margin: 0; }
+  .under-construction { min-height: 110px; font-size: 1.15rem; margin: 0.9rem 0 1.5rem; padding: 1rem; }
+  main table { font-size: 0.85rem; }
+  main table tbody td { height: 2rem; }
+  .nav-footer-center { font-size: 0.75rem; }
   .card-grid .card { border-color: $slate-line; border-top-color: $slate-light; background: #fff; }
   .card-grid .card:hover { border-top-color: $getty-blue; background: $slate-fill; }
   .card-grid .card h3 a { color: $slate-dark; }

@@ -5,7 +5,7 @@ project:
     - images/
 
 website:
-  title: "CPW2"
+  title: "Coding Provenance"
   description: "Coding Provenance Workshop — Second Edition. December 1 to 4, 2026, Getty Research Institute, Los Angeles, USA"
   site-url: "https://barbararomero.github.io/codingprovenance2/"
   page-navigation: true
