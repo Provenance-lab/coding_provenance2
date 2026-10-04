@@ -1,39 +1,53 @@
 ---
-title: "Team"
+title: "Our Mission and Vision & Organizers"
+page-layout: full
+toc: false
+body-classes: team-body
 ---
 
-::: {.under-construction}
-Under construction
+::: {.team-page}
+
+### The workshop
+
+**This workshop is a collaboration between the [Provenance Lab](https://www.leuphana.de/en/institutes/ipk/provenance-lab.html) and the [Getty Provenance Index](https://www.getty.edu/research/tools/provenance/).**
+
+After decades working as provenance and art history researchers, we have witnessed the field changing and evolving in many different ways. We believe that the intersection between computational techniques and a more data-driven approach can not only reveal patterns, structures, and dynamics that were hard to uncover through close reading, but also lead us to new research questions that were previously impossible to answer or to know. We call it computational provenance, which is provenance research using statistics, network analysis, optical character recognition, large language models, and natural language processing for research purposes.
+
+Our goal with this workshop is to provide tools to researchers and practitioners and to introduce them to methodologies that can inspire them to create new policies and to use different methods or techniques within their institutions or in their personal research. We believe that to continue working toward computational provenance we all need to understand all the possibilities and how the field can change. We believe that interdisciplinary work with computer scientists or digital humanities specialists is extremely valuable, but for fair and equal collaboration we need a good understanding of what can be done and how. That is why our workshop aims to give participants a first encounter with theories, methods, and tools, to empower them.
+
+---
+
+### Organizers and Instructors
+
+<!-- To add a photo: save it in images/ with the file name used below (e.g. images/Lynn.jpeg).
+     Until a photo exists, the person's initials are shown instead. -->
+
+<div class="profile-grid">
+
+<div class="profile-card">
+  <div class="profile-photo" data-initials="BR"><img src="images/Barbara.jpeg" alt="Bárbara Romero Ferrón" onerror="this.remove()"></div>
+  <h2>Bárbara Romero Ferrón</h2>
+  <p class="affiliation">Provenance Lab, Leuphana University of Lüneburg</p>
+</div>
+
+<div class="profile-card">
+  <div class="profile-photo" data-initials="LR"><img src="images/Lynn.jpeg" alt="Lynn Rother" onerror="this.remove()"></div>
+  <h2>Lynn Rother</h2>
+  <p class="affiliation">Provenance Lab, Leuphana University of Lüneburg</p>
+</div>
+
+<div class="profile-card">
+  <div class="profile-photo" data-initials="GT"><img src="images/Giulia.jpeg" alt="Giulia Taurino" onerror="this.remove()"></div>
+  <h2>Giulia Taurino</h2>
+  <p class="affiliation">Getty Provenance Index, Getty Research Institute</p>
+</div>
+
+<div class="profile-card">
+  <div class="profile-photo" data-initials="SG"><img src="images/Sandra.jpeg" alt="Sandra van Ginhoven" onerror="this.remove()"></div>
+  <h2>Sandra van Ginhoven</h2>
+  <p class="affiliation">Getty Provenance Index, Getty Research Institute</p>
+</div>
+
+</div>
+
 :::
-
-<!-- Page template: delete the comment markers when you are ready to add content
-
-*Add photos to the `images/` folder and replace the placeholders below.*
-
-## Organisers
-
-::: {.grid}
-
-::: {.g-col-12 .g-col-md-6 .team-member}
-![](images/person1.jpg)
-### Name Surname
-*Role, Institution*
-
-Short biography.
-:::
-
-::: {.g-col-12 .g-col-md-6 .team-member}
-![](images/person2.jpg)
-### Name Surname
-*Role, Institution*
-
-Short biography.
-:::
-
-:::
-
-## Contributors
-
-- Name Surname — Institution
-
--->
