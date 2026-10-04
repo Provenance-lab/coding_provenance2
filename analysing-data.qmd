@@ -1,10 +1,13 @@
 ---
 title: "Analysing Data"
 description: "Methods and approaches for analysing provenance data."
+body-classes: full-bg
 ---
 
-::: {.under-construction}
-Under construction
+::: {.under-construction .with-image style="background-image: url('images/analysing-bg.jpg');"}
+[Under construction]{.uc-label}
+
+[Painting signed "L. Barrau"]{.uc-credit}
 :::
 
 <!-- Page template: delete the comment markers when you are ready to add content
