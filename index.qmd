@@ -1,13 +1,35 @@
 ---
-title: "Coding Provenance Workshop"
+pagetitle: "Coding Provenance Workshop"
+page-layout: full
 toc: false
 ---
 
-::: {.hero}
-::: {.lead}
-Welcome to the materials hub for the Coding Provenance Workshop.
-:::
-:::
+```{=html}
+<div class="hero">
+  <div id="text-left" class="text text-left">Coding</div>
+  <div id="text-right" class="text text-right">Provenance</div>
+  <div id="combined" class="text">Coding Provenance</div>
+  <div id="after" class="mini">Workshop · Structuring, preprocessing, analysing and visualising provenance data</div>
+  <div class="scroll-hint">↓ explore the materials</div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const left = document.getElementById("text-left");
+  const right = document.getElementById("text-right");
+  const combined = document.getElementById("combined");
+  const after = document.getElementById("after");
+  right.addEventListener("animationend", function () {
+    left.style.display = "none";
+    right.style.display = "none";
+    combined.classList.add("show");
+    after.classList.add("show");
+  });
+});
+</script>
+```
+
+::: {.landing-section}
 
 ## About the workshop
 
@@ -60,3 +82,5 @@ Readings, tools and datasets.
 |------|---------|
 | *TBC* | First online session |
 | *TBC* | Second online session |
+
+:::
