@@ -5,6 +5,9 @@ project:
 website:
   title: "Coding Provenance Workshop"
   description: "Materials and resources for the Coding Provenance Workshop"
+  site-url: "https://barbararomero.github.io/codingprovenance2/"
+  repo-url: "https://github.com/BarbaraRomero/codingprovenance2"
+  repo-actions: [edit, issue]
   page-navigation: true
   back-to-top-navigation: true
   search: true
