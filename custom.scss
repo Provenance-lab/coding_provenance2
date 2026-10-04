@@ -8,9 +8,9 @@ $celeste-soft: #a9dcf5;   // borders, rules
 $celeste-pale: #eef8fd;   // light fills
 
 // ---------- Typography ----------
-$font-family-sans-serif: "Roboto", "Helvetica Neue", Arial, sans-serif;
-$font-weight-base: 500;                     // Roboto Medium for body text
-$headings-font-family: "Old Standard TT", Georgia, serif;
+$font-family-sans-serif: "Inter", "Helvetica Neue", Arial, sans-serif;
+$font-weight-base: 500;                     // Inter Medium for body text
+$headings-font-family: "Fraunces", Georgia, serif;
 $headings-font-weight: 700;
 $headings-color: $getty-blue;
 
@@ -30,7 +30,7 @@ $code-color: $getty-blue;
 
 /*-- scss:rules --*/
 
-@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
 
 // No motion anywhere
 *, *::before, *::after { animation: none !important; transition: none !important; }
@@ -67,13 +67,13 @@ h3, h4 { color: $blue-mid; }
 #quarto-header .navbar { background: transparent !important; }
 
 .navbar-title {
-  font-family: "Old Standard TT", Georgia, serif;
+  font-family: "Fraunces", Georgia, serif;
   font-weight: 700;
   letter-spacing: 0.04em;
 }
 
 .navbar-nav .nav-item {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
 }
 
@@ -117,7 +117,7 @@ blockquote {
   border: 2px dashed $celeste-soft;
   border-radius: 0.6rem;
   background: $celeste-pale;
-  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   font-style: italic;
   font-size: clamp(1.4rem, 3vw, 2rem);
   color: $getty-blue;
@@ -151,7 +151,7 @@ blockquote {
   }
 
   .uc-credit {
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
     font-style: normal;
     font-size: 0.75rem;
     color: $getty-blue;
@@ -231,7 +231,7 @@ body.landing {
 }
 
 .landing-logo {
-  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   font-weight: 900;
   font-size: 1.35rem;
   letter-spacing: 0.04em;
@@ -269,7 +269,7 @@ body.landing {
 
   a {
     padding: 0.55rem 1.25rem;
-    font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
     font-size: 1.1rem;
     color: $getty-blue;
     text-decoration: none;
@@ -305,7 +305,7 @@ body.landing {
 }
 
 .hero-title {
-  font-family: "Old Standard TT", Georgia, serif;
+  font-family: "Fraunces", Georgia, serif;
   font-weight: 700;
   font-size: clamp(2.6rem, 7.5vw, 7.5rem);
   line-height: 1.02;
@@ -319,7 +319,7 @@ body.landing {
 }
 
 .hero-edition {
-  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   font-style: italic;
   font-size: clamp(1.4rem, 3vw, 2.2rem);
@@ -328,7 +328,7 @@ body.landing {
 }
 
 .hero-details {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
   font-size: clamp(1rem, 1.6vw, 1.25rem);
   line-height: 1.6;
