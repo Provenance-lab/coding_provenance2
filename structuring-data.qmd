@@ -1,6 +1,7 @@
 ---
 title: "Structuring Data"
 description: "How to organise provenance data into consistent, reusable structures."
+body-classes: full-bg
 ---
 
 ::: {.under-construction .with-image style="background-image: url('images/structuring-bg.jpg');"}

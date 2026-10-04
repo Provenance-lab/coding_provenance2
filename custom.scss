@@ -150,6 +150,38 @@ blockquote {
   p:last-child { position: absolute; right: 0.75rem; bottom: 0.75rem; }
 }
 
+// Full-page variant: the painting fills the whole window behind the page
+body.full-bg {
+  .under-construction.with-image {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    margin: 0;
+    min-height: 0;
+    border-radius: 0;
+    padding-top: 64px;           // keep the label clear of the top bar
+  }
+
+  .under-construction.with-image::before { background: rgba(255, 255, 255, 0.45); }
+
+  .under-construction.with-image .uc-label {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    padding: 0.8rem 2.2rem;
+  }
+
+  .under-construction.with-image p:last-child { right: 1rem; bottom: 1rem; }
+
+  .quarto-title-block .title,
+  .quarto-title-block .description {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 0 0.5rem;
+  }
+
+  #quarto-document-content { min-height: calc(100vh - 64px); }
+  .nav-footer { display: none; }
+}
+
 // ---------- Landing page ----------
 body.landing {
   padding-top: 0 !important;
