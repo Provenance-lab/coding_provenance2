@@ -452,6 +452,56 @@ body.team-body {
   .team-page hr { border-color: #ddd; }
 }
 
+// ---------- Bibliography & Resources page ----------
+body.resources-body .quarto-title-block {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+body.resources-body .quarto-title-block .title { color: #000; }
+
+.resources-page {
+  max-width: 1100px;
+  margin: 0 auto 3rem;
+  color: #000;
+
+  h3 { color: #000; font-size: 1.6rem; margin-top: 1.5rem; margin-bottom: 1.25rem; }
+  strong { color: #000; }
+  em { color: inherit; }
+  hr { border-color: #ddd; opacity: 1; margin: 2.5rem 0; }
+
+  p { margin-bottom: 1.1rem; }
+  a { color: $getty-blue; overflow-wrap: anywhere; }
+}
+
+.readings-box {
+  background: $celeste-pale;
+  border-top: 3px solid $getty-blue;
+  padding: 0.5rem 1.5rem 0.75rem;
+  margin: 1.5rem 0;
+
+  h3 { margin-top: 1rem; }
+}
+
+.link-list ul {
+  list-style: none;
+  padding: 0;
+  columns: 2;
+  column-gap: 2.5rem;
+
+  li {
+    break-inside: avoid;
+    padding: 0.55rem 0;
+    border-bottom: 1px solid #e6e6e6;
+    font-weight: 700;
+  }
+
+  a { text-decoration: none; }
+  a:hover { text-decoration: underline; }
+}
+
+@media (max-width: 700px) { .link-list ul { columns: 1; } }
+
 // ---------- Team ----------
 .team-member {
   background: $celeste-pale;
