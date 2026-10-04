@@ -1,173 +1,184 @@
 /*-- scss:defaults --*/
 
-// Typography
-$font-family-sans-serif: Georgia, "Times New Roman", serif;
-$headings-font-family: "Fraunces", Georgia, serif;
+// ---------- Palette: Getty blue + shades of blue and celeste ----------
+$getty-blue:   #003a70;   // deep blue — main accent
+$blue-mid:     #1d5fa8;   // links, secondary accents
+$celeste:      #4fb3e8;   // bright highlight
+$celeste-soft: #a9dcf5;   // borders, rules
+$celeste-pale: #eef8fd;   // light fills
+
+// ---------- Typography ----------
+$font-family-sans-serif: "Roboto", "Helvetica Neue", Arial, sans-serif;
+$font-weight-base: 500;                     // Roboto Medium for body text
+$headings-font-family: "Playfair Display", Georgia, serif;
 $headings-font-weight: 700;
-$body-color: #1a1a1a;
+$headings-color: $getty-blue;
 
-// Accent colour (as in the reference design)
-$primary: #4e95fe;
-$link-color: #2f6fd6;
+// ---------- Colours ----------
+$body-bg: #ffffff;
+$body-color: #1f2933;
+$primary: $getty-blue;
+$link-color: $blue-mid;
 
-// Transparent navbar + footer with black text
-$navbar-bg: transparent;
-$navbar-fg: #000000;
-$navbar-hl: #4e95fe;
-$footer-bg: transparent;
-$footer-fg: #000000;
+$navbar-bg: #ffffff;
+$navbar-fg: $getty-blue;
+$navbar-hl: $celeste;
+$footer-bg: #ffffff;
+$footer-fg: $getty-blue;
 
-$body-bg: #fdf3f5;
+$code-color: $getty-blue;
 
 /*-- scss:rules --*/
 
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Roboto:wght@400;500;700&display=swap");
 
-// ---------- Animated pastel gradient (all pages) ----------
-body {
-  min-height: 100vh;
-  background: linear-gradient(125deg, #F9CEDC, #fad0c4, #E4E4F5, #fbc2eb, #CEE9F9, #E8EEC5, #F9CEDC);
-  background-size: 400% 400%;
-  background-attachment: fixed;
-  animation: gradientBackground 30s ease infinite;
-}
-
-@keyframes gradientBackground {
-  0%   { background-position: 0% 50%; }
-  50%  { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-// ---------- Navbar ----------
-#quarto-header {
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-}
-
-.navbar-title {
-  font-family: "Fraunces", Georgia, serif;
-  font-weight: 700;
-}
-
-.navbar-nav .nav-item {
-  padding-left: 6px;
-  padding-right: 6px;
-  font-family: Georgia, serif;
-  font-size: 1.1rem;
-}
-
-.navbar .dropdown-menu {
-  background: rgba(255, 255, 255, 0.9);
-  border: none;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  font-family: Georgia, serif;
-}
-
-// ---------- Footer ----------
-.nav-footer {
-  font-family: Georgia, serif;
-}
-
-// ---------- Content pages ----------
-.sidebar nav[role="doc-toc"], #quarto-sidebar {
-  font-family: Georgia, serif;
-}
+// ---------- Text accents ----------
+strong, b { color: $getty-blue; font-weight: 700; }
+em { color: $blue-mid; }
+a { text-decoration-color: $celeste-soft; text-underline-offset: 3px; }
+a:hover { color: $celeste; }
 
 h1.title {
   font-weight: 900;
   font-size: clamp(2.2rem, 5vw, 3.5rem);
 }
 
-main table {
-  background: rgba(255, 255, 255, 0.55);
+h2 {
+  border-bottom: 2px solid $celeste-soft;
+  padding-bottom: 0.3rem;
 }
 
+h3, h4 { color: $blue-mid; }
+
+.quarto-title-block .description { color: $blue-mid; }
+
+// ---------- Navbar ----------
+#quarto-header {
+  border-bottom: 3px solid $getty-blue;
+}
+
+.navbar-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 900;
+}
+
+.navbar-nav .nav-item {
+  padding-left: 4px;
+  padding-right: 4px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.navbar .dropdown-menu {
+  border: 1px solid $celeste-soft;
+  box-shadow: 0 8px 24px rgba(0, 58, 112, 0.08);
+}
+
+.navbar .dropdown-item:hover { background: $celeste-pale; color: $getty-blue; }
+
+// ---------- Sidebar + table of contents ----------
+.sidebar nav[role="doc-toc"] ul > li > a.active,
+.sidebar-item .active { color: $getty-blue !important; font-weight: 700; }
+.sidebar nav[role="doc-toc"] ul > li > a.active { border-left-color: $celeste !important; }
+
+// ---------- Footer ----------
+.nav-footer { border-top: 1px solid $celeste-soft; }
+
+// ---------- Content elements ----------
+main table thead { background: $getty-blue; color: #fff; }
+main table thead th { border-color: $getty-blue; }
+main table tbody tr:nth-child(even) { background: $celeste-pale; }
+
 div.sourceCode {
-  background: rgba(255, 255, 255, 0.6);
+  background: $celeste-pale;
   border: none;
+  border-left: 4px solid $celeste;
+}
+
+blockquote {
+  border-left: 4px solid $celeste;
+  color: $getty-blue;
 }
 
 // ---------- Landing hero ----------
 .hero {
-  position: relative;
-  height: calc(100vh - 140px);
-  min-height: 380px;
+  min-height: calc(100vh - 160px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   text-align: center;
+  overflow: hidden;
+  padding: 2rem 1rem;
 }
 
-.hero .text {
-  font-family: "Fraunces", Georgia, serif;
-  font-size: clamp(2.6rem, 10vw, 9rem);
+.hero-title {
+  font-family: "Playfair Display", Georgia, serif;
   font-weight: 900;
-  line-height: 1;
-  color: #000;
-  position: absolute;
-  top: 38%;
-  transform: translateY(-50%);
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  white-space: nowrap;
+  font-size: clamp(2.6rem, 8vw, 7rem);
+  line-height: 1.02;
+  color: $getty-blue;
+  margin: 0;
+  border: none;
 }
 
-.hero .text-left  { animation-name: textLeft; }
-.hero .text-right { animation-name: textRight; }
+.hero-title span { display: inline-block; }
 
-@keyframes textLeft {
-  0%   { left: -60%; }
-  100% { left: 50%; transform: translate(-100%, -50%); }
+.hero-title .slide-left  { animation: slideLeft 1.6s ease-out both; }
+.hero-title .slide-right { animation: slideRight 1.6s ease-out both; }
+.hero-title .rise        { color: $blue-mid; animation: fadeUp 1s ease-out 1.4s both; }
+
+.hero-edition {
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  color: $celeste;
+  margin: 1.5rem 0 0.5rem;
+  animation: fadeUp 1s ease-out 2s both;
 }
 
-@keyframes textRight {
-  0%   { right: -60%; }
-  100% { right: 50%; transform: translate(100%, -50%); }
+.hero-details {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: clamp(1rem, 1.8vw, 1.3rem);
+  color: $getty-blue;
+  animation: fadeUp 1s ease-out 2.4s both;
 }
 
-.hero #combined,
-.hero #after { display: none; }
+.hero-details .sep { color: $celeste; margin: 0 0.5rem; }
+.hero-details .nowrap { white-space: nowrap; }
 
-.hero #combined.show {
-  display: block;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: fadeIn 1s forwards;
+@media (max-width: 700px) {
+  .hero-details .sep { display: none; }
+  .hero-details .nowrap { display: block; white-space: normal; }
 }
 
-.hero .mini {
-  font-family: Georgia, serif;
-  font-size: clamp(1.1rem, 2vw, 1.7rem);
-  color: #000;
-  position: absolute;
-  top: 62%;
-  padding: 0 1rem;
+.hero-rule {
+  width: 90px;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, $getty-blue, $celeste);
+  margin: 1.5rem auto 0;
+  animation: fadeUp 1s ease-out 2.6s both;
 }
 
-.hero #after.show {
-  display: block;
-  animation: fadeIn 3s forwards;
-}
-
-@keyframes fadeIn {
-  0%   { opacity: 0; }
-  40%  { opacity: 0; }
-  100% { opacity: 1; }
-}
+@keyframes slideLeft  { from { transform: translateX(-60vw); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes slideRight { from { transform: translateX(60vw);  opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes fadeUp     { from { transform: translateY(16px);  opacity: 0; } to { transform: none; opacity: 1; } }
 
 .scroll-hint {
-  position: absolute;
-  bottom: 1rem;
-  font-family: Georgia, serif;
-  font-size: 0.95rem;
-  opacity: 0.6;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: $blue-mid;
+  opacity: 0.7;
 }
 
 // ---------- Landing cards ----------
+.landing-section {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -177,72 +188,39 @@ div.sourceCode {
 
 .card-grid .card {
   padding: 1.4rem;
-  border: none;
-  border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.55);
-  backdrop-filter: blur(6px);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid $celeste-soft;
+  border-top: 5px solid $getty-blue;
+  border-radius: 0.6rem;
+  background: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .card-grid .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-top-color: $celeste;
+  box-shadow: 0 10px 28px rgba(0, 58, 112, 0.12);
 }
 
-.card-grid .card h3 {
-  margin-top: 0;
-  font-size: 1.25rem;
-}
-
-.card-grid .card h3 a {
-  color: #000;
-  text-decoration: none;
-}
-
-.landing-section {
-  max-width: 1100px;
-  margin: 0 auto;
-}
+.card-grid .card h3 { margin-top: 0; font-size: 1.25rem; }
+.card-grid .card h3 a { color: $getty-blue; text-decoration: none; }
 
 // ---------- Team ----------
+.team-member {
+  background: $celeste-pale;
+  border-left: 5px solid $getty-blue;
+  border-radius: 0.6rem;
+  padding: 1.25rem;
+}
+
 .team-member img {
   border-radius: 50%;
   width: 140px;
   height: 140px;
   object-fit: cover;
-}
-
-.team-member {
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 1rem;
-  padding: 1.25rem;
-}
-
-// Transparent sidebar on content pages
-#quarto-sidebar, .sidebar.sidebar-navigation, #quarto-sidebar-glass {
-  background: transparent !important;
-}
-
-// ---------- Phones: stack the title on two lines ----------
-@media (max-width: 700px) {
-  .hero .text { font-size: 15vw; }
-  .hero #combined.show {
-    white-space: normal;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
-    line-height: 1.05;
-  }
-  .hero .text-left  { top: 30%; }
-  .hero .text-right { top: 46%; }
-  .hero .mini { top: 66%; left: 0; right: 0; }
-  .hero .scroll-hint { left: 0; right: 0; }
+  border: 3px solid $celeste;
 }
 
 // ---------- Respect reduced-motion preferences ----------
 @media (prefers-reduced-motion: reduce) {
-  body { animation: none; }
-  .hero .text-left, .hero .text-right { display: none; }
-  .hero #combined, .hero #after { display: block; animation: none; }
-  .hero #combined { left: 50%; transform: translate(-50%, -50%); }
+  .hero * { animation: none !important; }
 }

@@ -6,27 +6,18 @@ toc: false
 
 ```{=html}
 <div class="hero">
-  <div id="text-left" class="text text-left">Coding</div>
-  <div id="text-right" class="text text-right">Provenance</div>
-  <div id="combined" class="text">Coding Provenance</div>
-  <div id="after" class="mini">Workshop · Structuring, preprocessing, analysing and visualising provenance data</div>
+  <div class="hero-title" role="heading" aria-level="1">
+    <span class="slide-left">Coding</span>
+    <span class="slide-right">Provenance</span><br>
+    <span class="rise">Workshop</span>
+  </div>
+  <div class="hero-edition">— Second Edition —</div>
+  <div class="hero-details">
+    <span class="nowrap">December 1 to 4, 2026</span><span class="sep">·</span><span class="nowrap">Getty Research Institute, Los Angeles, USA</span>
+  </div>
+  <div class="hero-rule"></div>
   <div class="scroll-hint">↓ explore the materials</div>
 </div>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const left = document.getElementById("text-left");
-  const right = document.getElementById("text-right");
-  const combined = document.getElementById("combined");
-  const after = document.getElementById("after");
-  right.addEventListener("animationend", function () {
-    left.style.display = "none";
-    right.style.display = "none";
-    combined.classList.add("show");
-    after.classList.add("show");
-  });
-});
-</script>
 ```
 
 ::: {.landing-section}
@@ -82,5 +73,6 @@ Readings, tools and datasets.
 |------|---------|
 | *TBC* | First online session |
 | *TBC* | Second online session |
+| December 1–4, 2026 | In-person workshop, Getty Research Institute, Los Angeles |
 
 :::
