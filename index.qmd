@@ -9,7 +9,6 @@ body-classes: landing
 <!-- Landing-page menu: logo + three-line button in the top-right corner -->
 <div class="landing-menu">
   <button class="landing-menu-toggle" aria-expanded="false" aria-controls="landing-menu-panel" aria-label="Open menu">
-    <span class="landing-logo">CPW2</span>
     <span class="burger" aria-hidden="true"><span></span><span></span><span></span></span>
   </button>
   <nav id="landing-menu-panel" class="landing-menu-panel" hidden>

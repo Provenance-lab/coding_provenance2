@@ -8,8 +8,6 @@ website:
   title: "CPW2"
   description: "Coding Provenance Workshop — Second Edition. December 1 to 4, 2026, Getty Research Institute, Los Angeles, USA"
   site-url: "https://barbararomero.github.io/codingprovenance2/"
-  repo-url: "https://github.com/BarbaraRomero/codingprovenance2"
-  repo-actions: [edit, issue]
   page-navigation: true
   back-to-top-navigation: true
   search: false
