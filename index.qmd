@@ -41,10 +41,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
-<header class="hero">
-  <div class="hero-title" role="heading" aria-level="1"><span class="line">Coding Provenance</span><br><span class="line">Workshop</span></div>
-  <div class="hero-edition">– Second Edition –</div>
-  <div class="hero-details">December 1 to 4, 2026<br>Getty Research Institute, Los Angeles, USA</div>
+<header class="hero-bg" style="background-image: url('images/landing-bg.jpg');">
+  <div class="hero">
+    <div class="hero-title" role="heading" aria-level="1"><span class="line">Coding Provenance</span><br><span class="line">Workshop</span></div>
+    <div class="hero-edition">– Second Edition –</div>
+    <div class="hero-details">December 1 to 4, 2026<br>Getty Research Institute, Los Angeles, USA</div>
+  </div>
 </header>
 ```
 
