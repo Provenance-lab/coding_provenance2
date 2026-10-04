@@ -32,8 +32,9 @@ website:
       - href: resources.qmd
         text: Resources
   page-footer:
-    left: "Coding Provenance Workshop · Second Edition · Getty Research Institute, 2026"
-    right: "Built with [Quarto](https://quarto.org/)"
+    center: |
+      © 2026 Coding Provenance Workshop — Licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).<br>
+      Reuse is encouraged — we happily promote changes of custody. Just be sure to write a good provenance record and cite this workshop.
 
 format:
   html:
