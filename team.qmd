@@ -19,31 +19,19 @@ Our goal with this workshop is to provide tools to researchers and practitioners
 
 ### Organizers and Instructors
 
-<!-- To add a photo: save it in images/ with the file name used below (e.g. images/Lynn.jpeg).
-     Until a photo exists, the person's initials are shown instead. -->
-
 <div class="profile-grid">
 
 <div class="profile-card">
-  <div class="profile-photo" data-initials="BR"><img src="images/Barbara.jpeg" alt="Bárbara Romero Ferrón" onerror="this.remove()"></div>
   <h2>Bárbara Romero Ferrón</h2>
   <p class="affiliation">Provenance Lab, Leuphana University of Lüneburg</p>
 </div>
 
 <div class="profile-card">
-  <div class="profile-photo" data-initials="LR"><img src="images/Lynn.jpeg" alt="Lynn Rother" onerror="this.remove()"></div>
   <h2>Lynn Rother</h2>
   <p class="affiliation">Provenance Lab, Leuphana University of Lüneburg</p>
 </div>
 
 <div class="profile-card">
-  <div class="profile-photo" data-initials="GT"><img src="images/Giulia.jpeg" alt="Giulia Taurino" onerror="this.remove()"></div>
-  <h2>Giulia Taurino</h2>
-  <p class="affiliation">Getty Provenance Index, Getty Research Institute</p>
-</div>
-
-<div class="profile-card">
-  <div class="profile-photo" data-initials="SG"><img src="images/Sandra.jpeg" alt="Sandra van Ginhoven" onerror="this.remove()"></div>
   <h2>Sandra van Ginhoven</h2>
   <p class="affiliation">Getty Provenance Index, Getty Research Institute</p>
 </div>
