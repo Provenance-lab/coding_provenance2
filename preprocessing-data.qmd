@@ -1,0 +1,27 @@
+---
+title: "Preprocessing Data"
+description: "Cleaning, standardising and preparing data for analysis."
+---
+
+## Introduction
+
+*Explain the purpose of this step in the workflow.*
+
+## Key concepts
+
+- Concept 1
+- Concept 2
+
+## Example
+
+```r
+# Add example code here
+```
+
+## Exercises
+
+1. *Exercise description*
+
+## Further reading
+
+*See also [Bibliography & Resources](resources.qmd).*

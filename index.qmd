@@ -1,0 +1,62 @@
+---
+title: "Coding Provenance Workshop"
+toc: false
+---
+
+::: {.hero}
+::: {.lead}
+Welcome to the materials hub for the Coding Provenance Workshop.
+:::
+:::
+
+## About the workshop
+
+*Add a short description of the workshop here: its aims, who it is for, and what participants will learn.*
+
+## Explore the materials
+
+::: {.card-grid}
+
+::: {.card}
+### [Team](team.qmd)
+Meet the people behind the workshop.
+:::
+
+::: {.card}
+### [Second Online Session](second-session.qmd)
+Agenda, recordings and slides.
+:::
+
+::: {.card}
+### [Structuring Data](structuring-data.qmd)
+Organising provenance data into consistent structures.
+:::
+
+::: {.card}
+### [Preprocessing Data](preprocessing-data.qmd)
+Cleaning, standardising and preparing data.
+:::
+
+::: {.card}
+### [Analysing Data](analysing-data.qmd)
+Methods and approaches for analysis.
+:::
+
+::: {.card}
+### [Visualising Data](visualising-data.qmd)
+Charts, maps and networks.
+:::
+
+::: {.card}
+### [Bibliography & Resources](resources.qmd)
+Readings, tools and datasets.
+:::
+
+:::
+
+## Key dates
+
+| Date | Session |
+|------|---------|
+| *TBC* | First online session |
+| *TBC* | Second online session |

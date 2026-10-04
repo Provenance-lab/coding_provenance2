@@ -1,0 +1,27 @@
+---
+title: "Bibliography & Resources"
+bibliography: references.bib
+nocite: |
+  @*
+---
+
+## Tools
+
+- [Quarto](https://quarto.org/): publishing system used for this site
+- [OpenRefine](https://openrefine.org/): cleaning messy data
+- [R](https://www.r-project.org/) / [Python](https://www.python.org/)
+
+## Datasets
+
+- *Add datasets here*
+
+## Tutorials
+
+- [The Programming Historian](https://programminghistorian.org/)
+
+## Bibliography
+
+*Add entries to `references.bib` (e.g. export from Zotero). All entries are listed below automatically.*
+
+::: {#refs}
+:::

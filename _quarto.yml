@@ -1,0 +1,53 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Coding Provenance Workshop"
+  description: "Materials and resources for the Coding Provenance Workshop"
+  page-navigation: true
+  back-to-top-navigation: true
+  search: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: team.qmd
+        text: Team
+      - href: second-session.qmd
+        text: Second Online Session
+      - text: Data Workflow
+        menu:
+          - href: structuring-data.qmd
+            text: "1. Structuring Data"
+          - href: preprocessing-data.qmd
+            text: "2. Preprocessing Data"
+          - href: analysing-data.qmd
+            text: "3. Analysing Data"
+          - href: visualising-data.qmd
+            text: "4. Visualising Data"
+      - href: resources.qmd
+        text: Bibliography & Resources
+  sidebar:
+    - title: "Data Workflow"
+      contents:
+        - structuring-data.qmd
+        - preprocessing-data.qmd
+        - analysing-data.qmd
+        - visualising-data.qmd
+  page-footer:
+    left: "Coding Provenance Workshop"
+    right: "Built with [Quarto](https://quarto.org/)"
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+
+execute:
+  freeze: auto
