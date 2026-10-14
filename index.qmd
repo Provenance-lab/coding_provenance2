@@ -12,7 +12,6 @@ body-classes: landing
     <span class="burger" aria-hidden="true"><span></span><span></span><span></span></span>
   </button>
   <nav id="landing-menu-panel" class="landing-menu-panel" hidden>
-    <a href="team.html">Team</a>
     <a href="second-session.html">Second Online Session</a>
     <a href="structuring-data.html">Structuring Data</a>
     <a href="preprocessing-data.html">Preprocessing Data</a>

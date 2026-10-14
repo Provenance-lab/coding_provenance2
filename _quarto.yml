@@ -15,8 +15,6 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: team.qmd
-        text: Team
       - href: second-session.qmd
         text: Session 2
       - href: structuring-data.qmd
