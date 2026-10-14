@@ -6,46 +6,21 @@ body-classes: landing
 ---
 
 ```{=html}
-<!-- Landing-page menu: logo + three-line button in the top-right corner -->
-<div class="landing-menu">
-  <button class="landing-menu-toggle" aria-expanded="false" aria-controls="landing-menu-panel" aria-label="Open menu">
-    <span class="burger" aria-hidden="true"><span></span><span></span><span></span></span>
-  </button>
-  <nav id="landing-menu-panel" class="landing-menu-panel" hidden>
-    <a href="second-session.html">Second Online Session</a>
-    <a href="structuring-data.html">Structuring Data</a>
-    <a href="preprocessing-data.html">Preprocessing Data</a>
-    <a href="analysing-data.html">Analysing Data</a>
-    <a href="visualising-data.html">Visualising Data</a>
-    <a href="resources.html">Bibliography &amp; Resources</a>
-  </nav>
-</div>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const btn = document.querySelector(".landing-menu-toggle");
-  const panel = document.getElementById("landing-menu-panel");
-  btn.addEventListener("click", function () {
-    const open = btn.getAttribute("aria-expanded") === "true";
-    btn.setAttribute("aria-expanded", String(!open));
-    panel.hidden = open;
-  });
-  document.addEventListener("click", function (e) {
-    if (!e.target.closest(".landing-menu")) {
-      btn.setAttribute("aria-expanded", "false");
-      panel.hidden = true;
-    }
-  });
-});
-</script>
-
-<header class="hero-bg edition-hero">
-  <div class="hero">
-    <a class="hero-eyebrow" href="https://barbararomero.github.io/codingprovenanceworkshop/">Part of the Coding Provenance Workshop ↗</a>
-    <div class="hero-title" role="heading" aria-level="1"><span class="line">Coding Provenance</span><br><span class="line">Workshop</span></div>
-    <div class="hero-edition">– Second Edition –</div>
-    <div class="hero-details">December 1 to 4, 2026<br>Getty Research Institute, Los Angeles, USA</div>
+<header class="edition-header">
+  <div class="edition-id" role="heading" aria-level="1">
+    <span class="edition-name">Coding Provenance Workshop</span>
+    <span class="edition-number">Second Edition</span>
+    <span class="edition-place">Getty Provenance Index, Los Angeles</span>
   </div>
+  <nav class="edition-nav" aria-label="Pages">
+    <a href="second-session.html">Session 2</a>
+    <a href="structuring-data.html">Structuring</a>
+    <a href="preprocessing-data.html">Preprocessing</a>
+    <a href="analysing-data.html">Analysing</a>
+    <a href="visualising-data.html">Visualising</a>
+    <a href="resources.html">Resources</a>
+    <a class="ext" href="https://barbararomero.github.io/codingprovenanceworkshop/">Workshop home ↗</a>
+  </nav>
 </header>
 ```
 

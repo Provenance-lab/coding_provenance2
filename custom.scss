@@ -7,6 +7,13 @@ $celeste:      #4fb3e8;   // highlight
 $celeste-soft: #a9dcf5;   // borders, rules
 $celeste-pale: #eef8fd;   // light fills
 
+// blue-tinted greys (landing page)
+$slate-dark:  #3d4f63;
+$slate:       #64788f;
+$slate-light: #93a4b8;
+$slate-line:  #d6e0ea;
+$slate-fill:  #f3f7fb;
+
 // ---------- Typography ----------
 $font-family-sans-serif: "Inter", "Helvetica Neue", Arial, sans-serif;
 $font-weight-base: 500;                     // Inter Medium for body text
@@ -362,13 +369,7 @@ body.landing {
 @media (max-width: 560px) { .card-grid { grid-template-columns: 1fr; } }
 .card-grid .card h3 a { color: $getty-blue; text-decoration: none; font-weight: 700; }
 
-// Landing page: light blue-greys; only the main title is black,
-// "Second Edition" stays celeste and section headings stay Getty blue
-$slate-dark:  #3d4f63;
-$slate:       #64788f;
-$slate-light: #93a4b8;
-$slate-line:  #d6e0ea;
-$slate-fill:  #f3f7fb;
+// Landing page: light blue-greys; section headings stay Getty blue
 
 body.landing {
   color: $slate-dark;
@@ -383,7 +384,7 @@ body.landing {
     margin-top: 2rem;
     margin-bottom: 0.9rem;
   }
-  .landing-section { font-size: 0.9rem; max-width: 960px; }
+  .landing-section { font-size: 0.9rem; max-width: 1100px; }
   .card-grid { gap: 0.9rem; margin: 0.9rem 0 1.5rem; }
   .card-grid .card { padding: 0.9rem 1rem; }
   .card-grid .card h3 { font-size: 1rem; margin-bottom: 0.3rem; }
@@ -468,25 +469,43 @@ body.team-body {
   .team-page hr { border-color: #ddd; }
 }
 
-// ---------- Second Edition hero: small heading on white ----------
-// (keeps this site visually distinct from the main workshop site)
-body.landing .edition-hero {
-  .hero { min-height: 82vh; }
+// ---------- Second Edition header: brief title + page links on one line ----------
+.edition-header {
+  max-width: 1100px;
+  margin: 2.5rem auto 1rem;
+  padding: 0 0 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.25rem 2.5rem;
+  border-bottom: 1px solid $slate-line;
+}
 
-  .hero-eyebrow {
-    font-size: 0.95rem;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    color: $blue-mid;
-    text-decoration: none;
-    border-bottom: 1px solid $celeste-soft;
-    padding-bottom: 0.15rem;
-    margin-bottom: 1.5rem;
+.edition-id {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.35;
+
+  .edition-name {
+    font-family: $headings-font-family;
+    font-weight: 700;
+    font-size: 1.35rem;
+    color: #000;
   }
-  .hero-eyebrow:hover { color: $getty-blue; border-bottom-color: $getty-blue; }
+  .edition-number { font-style: italic; color: $celeste; font-size: 1rem; }
+  .edition-place  { color: $slate; font-size: 0.9rem; }
+}
 
-  .hero-title { font-size: clamp(1.9rem, 3.6vw, 3.2rem); }
-  .hero-edition { margin-top: 1.25rem; }
+.edition-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.1rem;
+  font-size: 0.9rem;
+
+  a { color: $slate-dark; text-decoration: none; }
+  a:hover { color: $getty-blue; text-decoration: underline; text-decoration-color: $celeste; }
+  a.ext { color: $blue-mid; }
 }
 
 // ---------- Bibliography & Resources page ----------
