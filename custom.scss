@@ -468,36 +468,26 @@ body.team-body {
   .team-page hr { border-color: #ddd; }
 }
 
-// ---------- Second Edition hero: Getty-blue band, white title ----------
+// ---------- Second Edition hero: small heading on white ----------
 // (keeps this site visually distinct from the main workshop site)
 body.landing .edition-hero {
-  background: $getty-blue;
-  color: #fff;
-
   .hero { min-height: 82vh; }
 
   .hero-eyebrow {
     font-size: 0.95rem;
     font-weight: 500;
     letter-spacing: 0.04em;
-    color: $celeste-soft;
+    color: $blue-mid;
     text-decoration: none;
-    border-bottom: 1px solid rgba(169, 220, 245, 0.5);
+    border-bottom: 1px solid $celeste-soft;
     padding-bottom: 0.15rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
-  .hero-eyebrow:hover { color: #fff; border-bottom-color: #fff; }
+  .hero-eyebrow:hover { color: $getty-blue; border-bottom-color: $getty-blue; }
 
-  .hero-title { color: #fff !important; }
-  .hero-edition { color: $celeste; }
-  .hero-details { color: rgba(255, 255, 255, 0.85); }
+  .hero-title { font-size: clamp(1.9rem, 3.6vw, 3.2rem); }
+  .hero-edition { margin-top: 1.25rem; }
 }
-
-// burger turns white while it sits over the blue band
-body.landing .landing-menu-toggle { background: $getty-blue; padding: 0.55rem 0.6rem; border-radius: 0.3rem; }
-body.landing .burger span { background: #fff; }
-body.landing .landing-menu-toggle:hover .burger span,
-body.landing .landing-menu-toggle[aria-expanded="true"] .burger span { background: $celeste; }
 
 // ---------- Bibliography & Resources page ----------
 body.resources-body .quarto-title-block {
