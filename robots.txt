@@ -1,1 +1,1 @@
-Sitemap: https://provenance-lab.github.io/codingprovenance2/sitemap.xml
+Sitemap: https://provenance-lab.github.io/coding_provenance2/sitemap.xml
