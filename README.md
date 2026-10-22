@@ -1,4 +1,4 @@
-# Coding Provenance Workshop website
+# Coding Provenance Workshop Second Edition Materials Website
 
 Built with [Quarto](https://quarto.org/).
 
