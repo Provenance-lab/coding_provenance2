@@ -1,14 +1,45 @@
 ---
 title: "Visualising Data"
 description: "Communicating findings through charts, maps and networks."
-body-classes: full-bg
+entry: "005"
+part: "Workflow, step 4 of 4"
+status: "To come"
+status-note: "Materials for this step will be entered here as the workshop approaches."
+plate:
+  image: visualising
+  width: 1600
+  height: 1145
+  alt: "Young girls in white dresses sewing on small chairs while a woman by the window sews and watches over them; a brazier stands in the foreground."
+  artist: "Domingo Muñoz y Cuesta"
+  artist-life: "1850–1935"
+  title: "*La amiga (En Córdoba)* (The Friend, in Córdoba)"
+  date: "1901"
+  medium: "Oil on canvas, 146 × 200.5 cm"
+  collection: "Museo Nacional del Prado, Madrid; on deposit at the Universidad de Jaén"
+  number: "P006372"
+  rights: "Public domain."
+  image-source: "Museo Nacional del Prado"
+  source: "https://www.museodelprado.es/coleccion/obra-de-arte/la-amiga-en-cordoba/f23187ce-33aa-4cdb-87b8-9d2f59e3e630"
+  source-name: "Museo del Prado, La amiga (En Córdoba)"
+  provenance-text: "Acquired from the artist for the Museo de Arte Moderno, 1901; Museo de Arte Moderno, 1901–1971; Museo Nacional Centro de Arte Reina Sofía, 2016; Museo del Prado, from 2016, on deposit at the Universidad de Jaén"
+  provenance:
+    - date: "1901"
+      event: "Acquired from the artist"
+      holder: "Museo de Arte Moderno"
+      place: "Madrid"
+    - date: "1901–1971"
+      event: "Held"
+      holder: "Museo de Arte Moderno"
+      place: "Madrid"
+    - date: "2016"
+      event: "Transferred from"
+      holder: "Museo Nacional Centro de Arte Reina Sofía"
+      place: "Madrid"
+    - date: "2016"
+      event: "Entered; on deposit at the Universidad de Jaén"
+      holder: "Museo del Prado"
+      place: "Madrid; Jaén"
 ---
-
-::: {.under-construction .with-image style="background-image: url('images/visualising-bg.jpg');"}
-[Under construction]{.uc-label}
-
-[Credit to be confirmed]{.uc-credit}
-:::
 
 <!-- Page template: delete the comment markers when you are ready to add content
 

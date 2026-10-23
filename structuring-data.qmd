@@ -1,14 +1,41 @@
 ---
 title: "Structuring Data"
 description: "How to organise provenance data into consistent, reusable structures."
-body-classes: full-bg
+entry: "002"
+part: "Workflow, step 1 of 4"
+status: "To come"
+status-note: "Materials for this step will be entered here as the workshop approaches."
+plate:
+  image: structuring
+  width: 1600
+  height: 945
+  alt: "Women in shawls and flowered skirts sorting bunches of grapes on low chairs in a whitewashed room, surrounded by baskets and barrels, while a man packs a barrel on the left."
+  artist: "Eduardo Chicharro Agüera"
+  artist-life: "1873–1949"
+  title: "*Las uveras* (Grape Sellers)"
+  date: "1898"
+  medium: "Oil on canvas, 240 × 400 cm"
+  collection: "Museo Nacional Centro de Arte Reina Sofía, Madrid"
+  number: "AS05614"
+  rights: "© Herederos de Eduardo Chicharro Agüera. In copyright; not covered by this site's licence."
+  image-source: "Museo Nacional Centro de Arte Reina Sofía"
+  source: "https://www.museoreinasofia.es/en/collections/artwork/las-uveras-grape-sellers"
+  source-name: "Museo Reina Sofía, Las uveras"
+  provenance-text: "…; Museo Español de Arte Contemporáneo (MEAC), Madrid; Museo Nacional Centro de Arte Reina Sofía, Madrid, from 1988, on the reorganisation of the MEAC holdings"
+  provenance:
+    - date: "—"
+      event: "Earlier history not given in the record"
+      holder: ""
+      place: ""
+    - date: "until 1988"
+      event: "Held"
+      holder: "Museo Español de Arte Contemporáneo (MEAC)"
+      place: "Madrid"
+    - date: "1988"
+      event: "Transferred on the reorganisation of the MEAC holdings"
+      holder: "Museo Nacional Centro de Arte Reina Sofía"
+      place: "Madrid"
 ---
-
-::: {.under-construction .with-image style="background-image: url('images/structuring-bg.jpg');"}
-[Under construction]{.uc-label}
-
-[Eduardo Chicharro (signed "E. Chicharro, Almería")]{.uc-credit}
-:::
 
 <!-- Page template: delete the comment markers when you are ready to add content
 

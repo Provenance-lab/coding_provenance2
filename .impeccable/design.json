@@ -1,0 +1,454 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-23T21:20:50+00:00",
+  "title": "Design System: Coding Provenance Workshop, Second Edition",
+  "extensions": {
+    "colorMeta": {
+      "red": {
+        "role": "primary",
+        "displayName": "Margin Red",
+        "canonical": "oklch(49.4% 0.177 29)",
+        "tonalRamp": [
+          "oklch(15% 0.177 29)",
+          "oklch(26% 0.177 29)",
+          "oklch(38% 0.177 29)",
+          "oklch(49% 0.177 29)",
+          "oklch(61% 0.177 29)",
+          "oklch(72% 0.177 29)",
+          "oklch(84% 0.177 29)",
+          "oklch(95% 0.177 29)"
+        ]
+      },
+      "blue": {
+        "role": "secondary",
+        "displayName": "Ledger Blue Ink",
+        "canonical": "oklch(42.1% 0.123 258)",
+        "tonalRamp": [
+          "oklch(15% 0.123 258)",
+          "oklch(26% 0.123 258)",
+          "oklch(38% 0.123 258)",
+          "oklch(49% 0.123 258)",
+          "oklch(61% 0.123 258)",
+          "oklch(72% 0.123 258)",
+          "oklch(84% 0.123 258)",
+          "oklch(95% 0.123 258)"
+        ]
+      },
+      "blue-deep": {
+        "role": "secondary",
+        "displayName": "Deep Blue Ink",
+        "canonical": "oklch(33.4% 0.102 259)",
+        "tonalRamp": [
+          "oklch(15% 0.102 259)",
+          "oklch(26% 0.102 259)",
+          "oklch(38% 0.102 259)",
+          "oklch(49% 0.102 259)",
+          "oklch(61% 0.102 259)",
+          "oklch(72% 0.102 259)",
+          "oklch(84% 0.102 259)",
+          "oklch(95% 0.102 259)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Stock-Book Paper",
+        "canonical": "oklch(97.2% 0.005 106)",
+        "tonalRamp": [
+          "oklch(15% 0.005 106)",
+          "oklch(26% 0.005 106)",
+          "oklch(38% 0.005 106)",
+          "oklch(49% 0.005 106)",
+          "oklch(61% 0.005 106)",
+          "oklch(72% 0.005 106)",
+          "oklch(84% 0.005 106)",
+          "oklch(95% 0.005 106)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(22.4% 0.006 122)",
+        "tonalRamp": [
+          "oklch(15% 0.006 122)",
+          "oklch(26% 0.006 122)",
+          "oklch(38% 0.006 122)",
+          "oklch(49% 0.006 122)",
+          "oklch(61% 0.006 122)",
+          "oklch(72% 0.006 122)",
+          "oklch(84% 0.006 122)",
+          "oklch(95% 0.006 122)"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Second Ink",
+        "canonical": "oklch(41.5% 0.012 126)",
+        "tonalRamp": [
+          "oklch(15% 0.012 126)",
+          "oklch(26% 0.012 126)",
+          "oklch(38% 0.012 126)",
+          "oklch(49% 0.012 126)",
+          "oklch(61% 0.012 126)",
+          "oklch(72% 0.012 126)",
+          "oklch(84% 0.012 126)",
+          "oklch(95% 0.012 126)"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Third Ink",
+        "canonical": "oklch(50.5% 0.013 124)",
+        "tonalRamp": [
+          "oklch(15% 0.013 124)",
+          "oklch(26% 0.013 124)",
+          "oklch(38% 0.013 124)",
+          "oklch(49% 0.013 124)",
+          "oklch(61% 0.013 124)",
+          "oklch(72% 0.013 124)",
+          "oklch(84% 0.013 124)",
+          "oklch(95% 0.013 124)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Blue Ruling",
+        "canonical": "oklch(83.4% 0.028 253)",
+        "tonalRamp": [
+          "oklch(15% 0.028 253)",
+          "oklch(26% 0.028 253)",
+          "oklch(38% 0.028 253)",
+          "oklch(49% 0.028 253)",
+          "oklch(61% 0.028 253)",
+          "oklch(72% 0.028 253)",
+          "oklch(84% 0.028 253)",
+          "oklch(95% 0.028 253)"
+        ]
+      },
+      "rule-head": {
+        "role": "neutral",
+        "displayName": "Column-Head Ruling",
+        "canonical": "oklch(66.7% 0.049 252)",
+        "tonalRamp": [
+          "oklch(15% 0.049 252)",
+          "oklch(26% 0.049 252)",
+          "oklch(38% 0.049 252)",
+          "oklch(49% 0.049 252)",
+          "oklch(61% 0.049 252)",
+          "oklch(72% 0.049 252)",
+          "oklch(84% 0.049 252)",
+          "oklch(95% 0.049 252)"
+        ]
+      },
+      "wash": {
+        "role": "neutral",
+        "displayName": "Wash",
+        "canonical": "oklch(94.7% 0.010 253)",
+        "tonalRamp": [
+          "oklch(15% 0.010 253)",
+          "oklch(26% 0.010 253)",
+          "oklch(38% 0.010 253)",
+          "oklch(49% 0.010 253)",
+          "oklch(61% 0.010 253)",
+          "oklch(72% 0.010 253)",
+          "oklch(84% 0.010 253)",
+          "oklch(95% 0.010 253)"
+        ]
+      },
+      "code-ground": {
+        "role": "neutral",
+        "displayName": "Code Ground",
+        "canonical": "oklch(95.7% 0.005 248)",
+        "tonalRamp": [
+          "oklch(15% 0.005 248)",
+          "oklch(26% 0.005 248)",
+          "oklch(38% 0.005 248)",
+          "oklch(49% 0.005 248)",
+          "oklch(61% 0.005 248)",
+          "oklch(72% 0.005 248)",
+          "oklch(84% 0.005 248)",
+          "oklch(95% 0.005 248)"
+        ]
+      },
+      "plate-ground": {
+        "role": "neutral",
+        "displayName": "Plate Ground",
+        "canonical": "oklch(91.3% 0.008 91)",
+        "tonalRamp": [
+          "oklch(15% 0.008 91)",
+          "oklch(26% 0.008 91)",
+          "oklch(38% 0.008 91)",
+          "oklch(49% 0.008 91)",
+          "oklch(61% 0.008 91)",
+          "oklch(72% 0.008 91)",
+          "oklch(84% 0.008 91)",
+          "oklch(95% 0.008 91)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The landing cover title only; set with font-stretch 122%. Steps to clamp(2.1rem, 11vw, 2.75rem) at 104% width at 520px and below."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Each entry's page title; set with font-stretch 118%. Steps to clamp(1.75rem, 9vw, 2.5rem) at 100% width at 520px and below."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Section headings, ruled underneath in column-head ruling; 4.5rem above (3.5rem on phones), 1.25rem below."
+      },
+      "entry": {
+        "displayName": "Entry",
+        "purpose": "Third-level headings and the entry names in the materials ledger (1.15rem on phones)."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "The description under a page title, in second ink, up to 38rem wide."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All reading text, held to the 36rem measure; strong is 650."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Captions, plate captions, footer, bibliography URLs, affiliations; navbar links at 500 weight."
+      },
+      "label": {
+        "displayName": "Column Head",
+        "purpose": "Every field label: uppercase, second ink. The provenance switch uses it at 0.875rem. Never a kicker above a heading."
+      },
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "Red numbers in the gutter; page entry number 1rem (0.875rem on phones), row and bibliography numbers at body size; bibliography counters padded to three digits."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The one easing curve (--ease-out), for feedback transitions and the provenance morph."
+      },
+      {
+        "name": "feedback",
+        "value": "160ms",
+        "purpose": "Colour and background changes on ledger rows and the provenance switch."
+      },
+      {
+        "name": "plate-hover",
+        "value": "200ms",
+        "purpose": "Landing plate image opacity to 0.9 on hover."
+      },
+      {
+        "name": "provenance-morph",
+        "value": "520ms",
+        "purpose": "View Transitions morph: each provenance clause travels into its table row. Skipped (instant swap) under prefers-reduced-motion or without view-transition support."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "transition-duration: 0.01ms; view transitions off",
+        "purpose": "Applied to everything under prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "nav-tight",
+        "value": "1200px to 1399.98px",
+        "purpose": "Desktop navbar links tighten."
+      },
+      {
+        "name": "nav-collapse",
+        "value": "1199.98px",
+        "purpose": "Navbar collapses to a menu button and a stack of ruled rows."
+      },
+      {
+        "name": "grid-md",
+        "value": "1100px",
+        "purpose": "--gutter 4.5rem, --gap 1.75rem."
+      },
+      {
+        "name": "landing-md",
+        "value": "900px",
+        "purpose": "Landing record line to two columns; about section stacks."
+      },
+      {
+        "name": "phone",
+        "value": "720px",
+        "purpose": "--gutter 2.5rem, --gap 0.875rem, --num-pad 0.5rem; tables restack with numbers kept in the gutter; record grid, plates and link lists go to one column."
+      },
+      {
+        "name": "phone-narrow",
+        "value": "520px",
+        "purpose": "Landing record line becomes label and value rows; cover and page titles step down; carry-forward pair stacks."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Page Head with Margin Rule",
+      "kind": "custom",
+      "refersTo": "margin-number",
+      "description": "Signature: the red double margin rule with the entry number in the gutter, the headline title, the lede and the record line with Entry, Part and Status.",
+      "html": "<div class=\"ds-page\"><div class=\"ds-rule\" aria-hidden=\"true\"></div><header class=\"ds-head\"><p class=\"ds-gutter-no\" aria-hidden=\"true\">003</p><h1 class=\"ds-title\">Preprocessing Data</h1><p class=\"ds-lede\">Cleaning, standardising and preparing data for analysis.</p><dl class=\"ds-record\"><div><dt>Entry</dt><dd>No. 003</dd></div><div><dt>Part</dt><dd>Workflow, step 2 of 4</dd></div><div><dt>Status</dt><dd><span class=\"ds-status\">To come</span></dd></div></dl></header></div>",
+      "css": ".ds-page { position: relative; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; background: var(--paper, #f6f6f2); color: var(--ink, #1b1c19); padding: 2rem 1.5rem 2rem 8rem; } .ds-rule { position: absolute; top: 0; bottom: 0; left: 5.5rem; width: 4px; border-left: 1px solid var(--red, #b0241b); border-right: 1px solid var(--red, #b0241b); } .ds-head { position: relative; } .ds-gutter-no { position: absolute; top: 0.55em; left: -8rem; width: 4.5rem; margin: 0; text-align: right; font-size: 1rem; font-weight: 600; font-variant-numeric: tabular-nums lining-nums; color: var(--red, #b0241b); } .ds-title { margin: 0 0 1.25rem; font-size: clamp(2.5rem, 6vw, 4.75rem); font-weight: 800; font-stretch: 118%; letter-spacing: -0.025em; line-height: 0.98; } .ds-lede { margin: 0 0 2rem; max-width: 38rem; font-size: clamp(1.125rem, 1.5vw, 1.25rem); line-height: 1.45; color: var(--ink-2, #4a4d46); } .ds-record { display: flex; flex-wrap: wrap; margin: 0; border-top: 1px solid var(--rule-head, #7f97b2); border-bottom: 1px solid var(--rule, #bccadb); } .ds-record > div { display: flex; flex-direction: column; gap: 0.1rem; padding: 0.65rem 2.25rem 0.7rem 0; } .ds-record dt { font-size: 0.8125rem; font-weight: 600; font-stretch: 75%; letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink-2, #4a4d46); } .ds-record dd { margin: 0; font-weight: 500; font-variant-numeric: tabular-nums lining-nums; } .ds-status::before { content: ''; display: inline-block; width: 0.62em; height: 0.62em; margin-right: 0.45em; border: 1.5px solid var(--red, #b0241b); vertical-align: 0.02em; }"
+    },
+    {
+      "name": "Status Mark",
+      "kind": "chip",
+      "refersTo": "status-mark",
+      "description": "Status as a mark, not a colour: open red square for to come, filled for entered; the word stays ink.",
+      "html": "<p class=\"ds-status-row\"><span class=\"ds-status\">To come</span><span class=\"ds-status ds-status-entered\">Entered</span></p>",
+      "css": ".ds-status-row { display: flex; gap: 2rem; margin: 0; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; font-size: 1.0625rem; color: var(--ink, #1b1c19); } .ds-status::before { content: ''; display: inline-block; width: 0.62em; height: 0.62em; margin-right: 0.45em; border: 1.5px solid var(--red, #b0241b); vertical-align: 0.02em; } .ds-status-entered::before { background: var(--red, #b0241b); }"
+    },
+    {
+      "name": "Materials Ledger Row",
+      "kind": "custom",
+      "refersTo": "ledger-row",
+      "description": "The landing index: No. in the gutter, Entry with description, Part, Status; the whole row is the link and takes the wash on hover or focus, gutter cell excluded.",
+      "html": "<table class=\"ds-ledger\"><thead><tr><th class=\"ds-no\" scope=\"col\">No.</th><th scope=\"col\">Entry</th><th scope=\"col\">Part</th><th scope=\"col\">Status</th></tr></thead><tbody><tr><td class=\"ds-no\">002</td><td class=\"ds-entry\"><a href=\"#\">Structuring Data</a><span class=\"ds-desc\">Organising provenance data into consistent structures.</span></td><td class=\"ds-part\">Workflow, step 1 of 4</td><td class=\"ds-part\"><span class=\"ds-status\">To come</span></td></tr><tr><td class=\"ds-no\">006</td><td class=\"ds-entry\"><a href=\"#\">Bibliography &amp; Resources</a><span class=\"ds-desc\">Readings, tutorials, tools and datasets.</span></td><td class=\"ds-part\">Reference</td><td class=\"ds-part\"><span class=\"ds-status ds-status-entered\">Entered</span></td></tr></tbody></table>",
+      "css": ".ds-ledger { width: 100%; border-collapse: collapse; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; font-size: 1.0625rem; line-height: 1.6; font-variant-numeric: tabular-nums lining-nums; color: var(--ink, #1b1c19); background: var(--paper, #f6f6f2); } .ds-ledger th { font-size: 0.8125rem; font-weight: 600; font-stretch: 75%; letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink-2, #4a4d46); text-align: left; padding: 0 1.5rem 0.5rem 0; border-bottom: 1px solid var(--rule-head, #7f97b2); vertical-align: bottom; } .ds-ledger th.ds-no { border-bottom-color: transparent; } .ds-ledger .ds-no { width: 4rem; padding-right: 1.5rem; text-align: right; } .ds-ledger td { padding: 1rem 1.5rem 1rem 0; border-bottom: 1px solid var(--rule, #bccadb); vertical-align: baseline; } .ds-ledger td.ds-no { font-weight: 600; color: var(--red, #b0241b); border-bottom-color: transparent; } .ds-ledger tbody tr { position: relative; transition: background-color 160ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-entry a { font-size: 1.3125rem; font-weight: 650; font-stretch: 106%; letter-spacing: -0.01em; color: var(--ink, #1b1c19); text-decoration: none; } .ds-entry a::after { content: ''; position: absolute; inset: 0; } .ds-entry a:focus-visible { outline: 2px solid var(--blue, #1d4b8f); outline-offset: 3px; } .ds-desc { display: block; margin-top: 0.2rem; color: var(--ink-2, #4a4d46); } .ds-part { color: var(--ink-2, #4a4d46); white-space: nowrap; } .ds-ledger tbody tr:hover td:not(.ds-no), .ds-ledger tbody tr:focus-within td:not(.ds-no) { background: var(--wash, #e9eef4); } .ds-ledger tbody tr:hover .ds-entry a { color: var(--blue, #1d4b8f); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.2em; } .ds-status::before { content: ''; display: inline-block; width: 0.62em; height: 0.62em; margin-right: 0.45em; border: 1.5px solid var(--red, #b0241b); vertical-align: 0.02em; } .ds-status-entered::before { background: var(--red, #b0241b); }"
+    },
+    {
+      "name": "Provenance Switch",
+      "kind": "button",
+      "refersTo": "prov-switch-button",
+      "description": "Signature segmented control (Text / Table) at the right of the Provenance head; pressed is paper on ink, hover is ink on wash. Drives the one authored morph.",
+      "html": "<div class=\"ds-prov-head\"><h3>Provenance</h3><div class=\"ds-switch\" role=\"group\" aria-label=\"Show provenance as\"><button type=\"button\" aria-pressed=\"true\">Text</button><button type=\"button\" aria-pressed=\"false\">Table</button></div></div><p class=\"ds-prov-text\">Acquired by Felipe Arrieta, Vitoria, 1895<span class=\"ds-sep\">;</span> collection of Mar&iacute;a Luisa Gort&aacute;zar, Vitoria<span class=\"ds-sep\">;</span> collection of Juan Celaya Letamendi, Vitoria-Gasteiz</p>",
+      "css": ".ds-prov-head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 0.75rem 2rem; padding-bottom: 0.6rem; border-bottom: 1px solid var(--rule-head, #7f97b2); font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; } .ds-prov-head h3 { margin: 0; font-size: 1.3125rem; font-weight: 650; font-stretch: 106%; letter-spacing: -0.01em; color: var(--ink, #1b1c19); } .ds-switch { display: inline-flex; gap: 3px; padding: 3px; border: 1px solid var(--rule-head, #7f97b2); border-radius: 3px; } .ds-switch button { min-height: 2.75rem; min-width: 5rem; padding: 0 1.1rem; border: 0; border-radius: 2px; background: transparent; font: inherit; font-size: 0.875rem; font-weight: 600; font-stretch: 75%; letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink-2, #4a4d46); cursor: pointer; transition: background-color 160ms cubic-bezier(0.16, 1, 0.3, 1), color 160ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-switch button:hover { color: var(--ink, #1b1c19); background: var(--wash, #e9eef4); } .ds-switch button[aria-pressed='true'] { color: var(--paper, #f6f6f2); background: var(--ink, #1b1c19); } .ds-switch button:focus-visible { outline: 2px solid var(--blue, #1d4b8f); outline-offset: 3px; } .ds-prov-text { max-width: 36rem; margin: 1.25rem 0 0; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; font-size: 1.0625rem; line-height: 1.65; color: var(--ink, #1b1c19); } .ds-sep { color: var(--red, #b0241b); font-weight: 700; } @media (prefers-reduced-motion: reduce) { .ds-switch button { transition-duration: 0.01ms; } }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Paper bar ruled off below; ink links that turn blue on hover; the current page carries a 3px red bar on the hairline; outbound links in blue with a line arrow.",
+      "html": "<nav class=\"ds-nav\"><span class=\"ds-brand\">Coding Provenance</span><a class=\"ds-nav-link ds-active\" href=\"#\" aria-current=\"page\">Home</a><a class=\"ds-nav-link\" href=\"#\">Structuring</a><a class=\"ds-nav-link\" href=\"#\">Resources</a><a class=\"ds-nav-link ds-ext\" href=\"#\">Workshop home<svg viewBox=\"0 0 16 16\" width=\"12\" height=\"12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" aria-hidden=\"true\"><path d=\"M9 2.5h4.5V7M13.5 2.5 7 9M11.5 9.5v4H2.5v-9h4\"/></svg></a></nav>",
+      "css": ".ds-nav { display: flex; align-items: stretch; min-height: 3.75rem; padding: 0 1.5rem; background: var(--paper, #f6f6f2); border-bottom: 1px solid var(--rule, #bccadb); font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; } .ds-brand { display: flex; align-items: center; margin-right: 2.25rem; font-size: 1.125rem; font-weight: 800; font-stretch: 118%; letter-spacing: -0.01em; color: var(--ink, #1b1c19); white-space: nowrap; } .ds-nav-link { position: relative; display: flex; align-items: center; padding: 0 0.7rem; font-size: 0.9375rem; font-weight: 500; color: var(--ink, #1b1c19); text-decoration: none; } .ds-nav-link:hover { color: var(--blue, #1d4b8f); } .ds-nav-link:focus-visible { outline: 2px solid var(--blue, #1d4b8f); outline-offset: 3px; } .ds-active { font-weight: 650; color: var(--ink, #1b1c19); } .ds-active::after { content: ''; position: absolute; left: 0.7rem; right: 0.7rem; bottom: -1px; height: 3px; background: var(--red, #b0241b); } .ds-ext { margin-left: auto; gap: 0.4rem; color: var(--blue, #1d4b8f); } .ds-ext:hover { color: var(--blue-deep, #12346a); }"
+    },
+    {
+      "name": "Text Link",
+      "kind": "custom",
+      "refersTo": "link",
+      "description": "Blue with a thin 35% underline; hover deepens the ink and thickens the underline to 2px; focus is a 2px blue outline.",
+      "html": "<p class=\"ds-p\">Translated from the holding museum's record: <a class=\"ds-link\" href=\"#\">Museotik, Las planchadoras</a>.</p>",
+      "css": ".ds-p { font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; font-size: 1.0625rem; line-height: 1.6; color: var(--ink, #1b1c19); } .ds-link { color: var(--blue, #1d4b8f); text-decoration-line: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em; text-decoration-color: color-mix(in srgb, var(--blue, #1d4b8f) 35%, transparent); } .ds-link:hover { color: var(--blue-deep, #12346a); text-decoration-color: currentColor; text-decoration-thickness: 2px; } .ds-link:focus-visible { outline: 2px solid var(--blue, #1d4b8f); outline-offset: 3px; border-radius: 1px; }"
+    },
+    {
+      "name": "Record of the Painting",
+      "kind": "custom",
+      "refersTo": "column-head",
+      "description": "Two-column grid of ruled label and value rows under each plate; labels in the column-head voice, 7.5rem label column.",
+      "html": "<dl class=\"ds-record-grid\"><div><dt>Artist</dt><dd>Ignacio D&iacute;az Olano <span class=\"ds-life\">(1860&ndash;1937)</span></dd></div><div><dt>Title</dt><dd><em>Las planchadoras</em> (The Ironing Women)</dd></div><div><dt>Date</dt><dd>1895</dd></div><div><dt>Medium</dt><dd>Oil on canvas, 90 &times; 142 cm</dd></div><div><dt>Rights</dt><dd>Public domain.</dd></div><div><dt>Number</dt><dd>Inv. 3390</dd></div></dl>",
+      "css": ".ds-record-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 2.5rem; margin: 0; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; font-size: 1.0625rem; line-height: 1.6; color: var(--ink, #1b1c19); } .ds-record-grid > div { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 1rem; padding: 0.6rem 0; border-bottom: 1px solid var(--rule, #bccadb); } .ds-record-grid dt { font-size: 0.8125rem; font-weight: 600; font-stretch: 75%; letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink-2, #4a4d46); padding-top: 0.2rem; } .ds-record-grid dd { margin: 0; } .ds-life { color: var(--ink-2, #4a4d46); } @media (max-width: 720px) { .ds-record-grid { grid-template-columns: 1fr; } .ds-record-grid > div { grid-template-columns: 6rem minmax(0, 1fr); } }"
+    },
+    {
+      "name": "Bibliography Ledger List",
+      "kind": "custom",
+      "refersTo": "margin-number",
+      "description": "Numbered references as ruled rows, counters padded to three digits in red in the gutter; text held to the measure; URLs small.",
+      "html": "<div class=\"ds-biblio\"><div class=\"ds-rule\" aria-hidden=\"true\"></div><ol class=\"ds-list\"><li><b>Ahnert, Ruth, and Sebastian E. Ahnert.</b> <i>Tudor Networks of Power.</i> Oxford University Press, 2023.<br><a href=\"#\">https://doi.org/10.1093/oso/9780198858973.001.0001</a></li><li><b>Bishop, Claire.</b> &ldquo;Against Digital Art History.&rdquo; <i>International Journal for Digital Art History</i> 3 (2018).<br><a href=\"#\">https://doi.org/10.11588/dah.2018.3.49915</a></li></ol></div>",
+      "css": "@counter-style ds-ledger { system: extends decimal; pad: 3 '0'; } .ds-biblio { position: relative; padding-left: 8rem; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; font-size: 1.0625rem; line-height: 1.6; color: var(--ink, #1b1c19); background: var(--paper, #f6f6f2); } .ds-biblio .ds-rule { position: absolute; top: 0; bottom: 0; left: 5.5rem; width: 4px; border-left: 1px solid var(--red, #b0241b); border-right: 1px solid var(--red, #b0241b); } .ds-list { list-style: none; margin: 0; padding: 0; counter-reset: entry; } .ds-list li { position: relative; counter-increment: entry; padding: 0.85rem max(0px, calc(100% - 36rem)) 0.9rem 0; border-bottom: 1px solid var(--rule, #bccadb); } .ds-list li::before { content: counter(entry, ds-ledger); position: absolute; top: 0.85rem; left: -8rem; width: 4.5rem; text-align: right; font-weight: 600; font-variant-numeric: tabular-nums lining-nums; color: var(--red, #b0241b); } .ds-list b { font-weight: 650; } .ds-list a { font-size: 0.9375rem; overflow-wrap: anywhere; color: var(--blue, #1d4b8f); text-underline-offset: 0.2em; text-decoration-color: color-mix(in srgb, var(--blue, #1d4b8f) 35%, transparent); } .ds-list a:hover { color: var(--blue-deep, #12346a); text-decoration-color: currentColor; text-decoration-thickness: 2px; }"
+    },
+    {
+      "name": "Brought Forward / Carried Forward",
+      "kind": "nav",
+      "refersTo": "column-head",
+      "description": "Ruled pair of links to the previous and next entries: column-head label over the red number and entry name; next is right-aligned.",
+      "html": "<nav class=\"ds-carry\" aria-label=\"Neighbouring entries\"><a href=\"#\"><span class=\"ds-carry-label\">Brought forward</span><span class=\"ds-carry-entry\"><span class=\"ds-carry-no\">002</span> Structuring Data</span></a><a class=\"ds-carry-next\" href=\"#\"><span class=\"ds-carry-label\">Carried forward</span><span class=\"ds-carry-entry\"><span class=\"ds-carry-no\">004</span> Analysing Data</span></a></nav>",
+      "css": ".ds-carry { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; border-top: 1px solid var(--rule-head, #7f97b2); font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; } .ds-carry a { display: flex; flex-direction: column; gap: 0.25rem; padding: 1rem 0 1.5rem; color: var(--ink, #1b1c19); text-decoration: none; } .ds-carry a:focus-visible { outline: 2px solid var(--blue, #1d4b8f); outline-offset: 3px; } .ds-carry-label { font-size: 0.8125rem; font-weight: 600; font-stretch: 75%; letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink-2, #4a4d46); } .ds-carry-entry { font-size: 1.125rem; font-weight: 650; } .ds-carry-no { margin-right: 0.35em; color: var(--red, #b0241b); font-variant-numeric: tabular-nums lining-nums; } .ds-carry-next { align-items: flex-end; text-align: right; } .ds-carry a:hover .ds-carry-entry { color: var(--blue, #1d4b8f); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.2em; }"
+    },
+    {
+      "name": "Ruled Callout",
+      "kind": "card",
+      "refersTo": "column-head",
+      "description": "A note ruled above and below, transparent, no icon, no radius; title in the column-head voice, red for warnings.",
+      "html": "<div class=\"ds-callout\"><p class=\"ds-callout-title\">Note</p><p>Materials for this step will be entered here as the workshop approaches.</p></div><div class=\"ds-callout ds-callout-warning\"><p class=\"ds-callout-title\">Warning</p><p>Warnings take the red label; the note itself stays in ink.</p></div>",
+      "css": ".ds-callout { max-width: 36rem; margin: 2rem 0; border-top: 1px solid var(--rule-head, #7f97b2); border-bottom: 1px solid var(--rule, #bccadb); background: transparent; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; font-size: 1.0625rem; line-height: 1.6; color: var(--ink, #1b1c19); } .ds-callout-title { margin: 0; padding-top: 0.7rem; font-size: 0.8125rem; font-weight: 600; font-stretch: 75%; letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink-2, #4a4d46); } .ds-callout-warning .ds-callout-title { color: var(--red, #b0241b); } .ds-callout p:last-child { margin: 0.3rem 0 0; padding-bottom: 0.9rem; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Dealer's Stock Book",
+    "overview": "The site is kept like a dealer's stock book. Every page is an entry with a number, every set of materials is a ruled row, and every picture comes with its record. The world is the ledger's grammar, not its costume: numbered entries, ruled rows, a red double margin rule with the numbers to its left, column heads in condensed capitals, and tabular figures. It is not a picture of an old book. There is no paper texture, tape, handwriting, stain or shadow; the paper is near-white and flat, and the ink is screen ink.\n\nDensity is that of a working register. Rows are compact (0.6 to 1rem of padding), labels are small and condensed, and type is large only where a page names itself. One sans family, Archivo, carries the whole book through its width axis: condensed capitals for column heads, normal width for reading, wide and heavy for titles. Colour is nearly absent. Ink and two weights of blue hairline make the structure. Red is kept for the margin and for the marks that belong to it, and blue for links.\n\nThe book is built to fill. Pages that hold no materials yet still look intentional: the page head, the record line with its open status square, a status note, and on workflow pages a painting with its full record and a provenance that turns from the museum's sentence into a table. That Text-to-Table morph is the one authored movement in the system.",
+    "keyCharacteristics": [
+      "A red double margin rule runs the full height of every page; the page numbers, row numbers and bibliography counters sit in the gutter to its left.",
+      "Hairlines in two weights of blue, all running to one right edge; text is held to a 36rem measure inside them.",
+      "Archivo only, with voices made by width (75% to 122%) and weight (400 to 800).",
+      "Status shown by a mark, not a colour: an open square for \"to come\", a filled square for \"entered\".",
+      "Flat paper, no shadows, square corners.",
+      "Paintings in full colour, hung as plates, each with a full record, rights line and provenance."
+    ],
+    "rules": [
+      {
+        "name": "The Margin Red Rule",
+        "body": "Red belongs to the margin and its marks: the rule, the numbers left of it, status squares, the active-page bar, provenance separators. It is never a fill, a button, a heading colour or a background.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two-Weight Ruling Rule",
+        "body": "Hairlines come in two blues: column-head ruling under heads and above records, light ruling between rows and below records. Ink is used for a rule only at the footer, where the book is ruled off with a double line.",
+        "section": "colors"
+      },
+      {
+        "name": "The Status Is a Mark Rule",
+        "body": "An open red square means to come; a filled red square means entered. Status is never encoded by hue alone, and no green, amber or other signal colour exists.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Family Rule",
+        "body": "Archivo is the only text face. Voices come from the width axis (75% for labels, 100% for reading, 106 to 122% for headings) and from weight, never from a second family.",
+        "section": "typography"
+      },
+      {
+        "name": "The Column-Head Voice Rule",
+        "body": "Every label in the book speaks in one voice: condensed capitals, 0.8125rem, 600, 0.07em tracking, second ink. A label names a field of data. It is never a kicker or eyebrow above a heading.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Figures Rule",
+        "body": "Numbers that sit in rows, records, dates and the gutter use tabular lining figures so that columns of numbers align.",
+        "section": "typography"
+      },
+      {
+        "name": "The Gutter Rule",
+        "body": "The gutter, left of the red rule, carries only numbers (and the filled square of a required reading). No text, labels or hairlines go there.",
+        "section": "layout"
+      },
+      {
+        "name": "The One Right Edge Rule",
+        "body": "Every hairline runs to the content column's right edge. Width for reading is controlled inside the row (36rem measure), never by shortening the rule.",
+        "section": "layout"
+      },
+      {
+        "name": "The Restack Rule",
+        "body": "On phones a table becomes label and value rows, and its number stays in the gutter. The margin rule is never dropped.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Book Rule",
+        "body": "No shadows, gradients, textures or raised surfaces. Hierarchy is the weight of a rule, the weight of a type, or a number.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** give every new page the entry grammar: a three-digit entry number, Part, Status and, where a step has one, a painting with its full record. Add the page to the book's order and to the landing ledger.",
+      "**Do** put numbers in the gutter, right-aligned a number pad (1rem, 0.5rem on phones) short of the red rule, in red, 600, tabular figures.",
+      "**Do** run every hairline to the content column's right edge, and hold prose inside it to the 36rem measure.",
+      "**Do** use column-head ruling (rule-head) under heads and above records, and light ruling (rule) between rows and below records.",
+      "**Do** show status with the square: open for to come, filled for entered.",
+      "**Do** label fields in the column-head voice: condensed capitals, 0.8125rem, 600, 0.07em tracking, second ink.",
+      "**Do** hang paintings at full colour and uncropped, with a record, a rights line and, for works in copyright, a © line.",
+      "**Do** keep interaction feedback to colour, wash and underline changes of 160 to 200ms on the ease-out curve, and honour reduced motion."
+    ],
+    "donts": [
+      "**Don't** add paper textures, tape, stains, handwriting or script fonts, drop shadows or other skeuomorphic costume. The book is its grammar, not its look.",
+      "**Don't** box content in cards or tinted panels; group it with ruled rows. The wash is for hover and focus only.",
+      "**Don't** put text, labels or hairlines in the gutter, and don't run rules across the red margin rule.",
+      "**Don't** use red for fills, buttons, headings or large areas, and don't add signal colours (green, amber) for status.",
+      "**Don't** crop, tint or duotone a painting, set text over it, or use it as a banner or background.",
+      "**Don't** add a second text face or fall back to a system display face. Archivo's widths and weights do the work.",
+      "**Don't** round structural shapes; small controls take 2px at most (3px for the switch's outer frame), and nothing is a pill.",
+      "**Don't** use the column-head label as a kicker or eyebrow above a heading.",
+      "**Don't** add motion beyond feedback transitions. The provenance morph is the system's one authored movement."
+    ]
+  }
+}

@@ -1,14 +1,45 @@
 ---
 title: "Analysing Data"
 description: "Methods and approaches for analysing provenance data."
-body-classes: full-bg
+entry: "004"
+part: "Workflow, step 3 of 4"
+status: "To come"
+status-note: "Materials for this step will be entered here as the workshop approaches."
+plate:
+  image: analysing
+  width: 1600
+  height: 1360
+  alt: "Two women in aprons bent double, weeding a field with hoes; more workers and a wide green plain stretch out behind them."
+  artist: "Laureano Barrau Buñol"
+  artist-life: "1863–1957"
+  title: "*Escardadoras* (Women Weeding the Field)"
+  date: "1891"
+  medium: "Oil on canvas, 160.5 × 188 cm"
+  collection: "Museo Nacional del Prado, Madrid"
+  number: "P007667"
+  rights: "© rights holder to be confirmed (the artist died in 1957). In copyright; not covered by this site's licence."
+  image-source: "Museo Nacional del Prado"
+  source: "https://www.museodelprado.es/coleccion/obra-de-arte/escardadoras/cca54178-b69d-443c-abb2-e1b53d3e7ccd"
+  source-name: "Museo del Prado, Escardadoras"
+  provenance-text: "Acquired from the artist, 1892; Museo del Prado, 1892–1896; Museo de Arte Moderno, 1896–1971; Museo del Prado, from 1971"
+  provenance:
+    - date: "1892"
+      event: "Acquired from the artist"
+      holder: ""
+      place: ""
+    - date: "1892–1896"
+      event: "Held"
+      holder: "Museo del Prado"
+      place: "Madrid"
+    - date: "1896–1971"
+      event: "Held"
+      holder: "Museo de Arte Moderno"
+      place: "Madrid"
+    - date: "1971"
+      event: "Entered"
+      holder: "Museo del Prado"
+      place: "Madrid"
 ---
-
-::: {.under-construction .with-image style="background-image: url('images/analysing-bg.jpg');"}
-[Under construction]{.uc-label}
-
-[Painting signed "L. Barrau"]{.uc-credit}
-:::
 
 <!-- Page template: delete the comment markers when you are ready to add content
 

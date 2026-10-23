@@ -1,14 +1,49 @@
 ---
 title: "Preprocessing Data"
 description: "Cleaning, standardising and preparing data for analysis."
-body-classes: full-bg
+entry: "003"
+part: "Workflow, step 2 of 4"
+status: "To come"
+status-note: "Materials for this step will be entered here as the workshop approaches."
+plate:
+  image: preprocessing
+  width: 1600
+  height: 995
+  alt: "Women dressed in white ironing and folding linen at long tables in a bright workroom; in the foreground an older woman talks with a young newcomer."
+  artist: "Ignacio Díaz Olano"
+  artist-life: "1860–1937"
+  title: "*Las planchadoras* (The Ironing Women)"
+  date: "1895"
+  medium: "Oil on canvas, 90 × 142 cm"
+  collection: "Museo de Bellas Artes de Álava, Vitoria-Gasteiz (Diputación Foral de Álava)"
+  number: "Inv. 3390"
+  rights: "Public domain."
+  image-source: "Museo de Bellas Artes de Álava, via Museotik"
+  source: "https://museotik.euskadi.eus/coleccion/-/autoria-diaz-ruiz-de-olano-ignacio/titulo-las-planchadoras/objeto-pintura/museotik-ca-334201/"
+  source-name: "Museotik, Las planchadoras"
+  provenance-text: "Acquired by Felipe Arrieta, Vitoria, 1895; collection of María Luisa Gortázar, Vitoria; collection of Juan Celaya Letamendi, Vitoria-Gasteiz; deposited by the Fundación Juan Celaya Letamendi with the Diputación Foral de Álava, 2018; transferred to the Diputación Foral de Álava in payment of tax debts (dación), 2022"
+  provenance:
+    - date: "1895"
+      event: "Acquisition"
+      holder: "Felipe Arrieta"
+      place: "Vitoria"
+    - date: "—"
+      event: "Collection"
+      holder: "María Luisa Gortázar"
+      place: "Vitoria"
+    - date: "—"
+      event: "Collection"
+      holder: "Juan Celaya Letamendi"
+      place: "Vitoria-Gasteiz"
+    - date: "2018"
+      event: "Deposit"
+      holder: "Fundación Juan Celaya Letamendi, with the Diputación Foral de Álava"
+      place: "Vitoria-Gasteiz"
+    - date: "2022"
+      event: "Payment in kind of tax debts (dación)"
+      holder: "Diputación Foral de Álava"
+      place: "Vitoria-Gasteiz"
 ---
-
-::: {.under-construction .with-image style="background-image: url('images/preprocessing-bg.jpg');"}
-[Under construction]{.uc-label}
-
-[Painting signed "I. Díaz, Roma 1895"]{.uc-credit}
-:::
 
 <!-- Page template: delete the comment markers when you are ready to add content
 

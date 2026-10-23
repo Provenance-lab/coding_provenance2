@@ -1,15 +1,15 @@
 ---
 title: "Bibliography & other Resources"
-toc: false
-page-layout: full
-body-classes: resources-body
+description: "Readings, tutorials, tools and datasets for the workshop."
+entry: "006"
+part: "Reference"
+status: "Entered"
 ---
 
-::: {.resources-page}
 
-::: {.readings-box}
+## Mandatory readings
 
-### Mandatory Readings
+::: {.ledger-list .required}
 
 **Rother, Lynn, Max Koss, and Fabio Mariani.** “Taking Care of History: Toward a Politics of Provenance Linked Open Data in Museums.” In *Perspectives on Data*, edited by Emily Lew Fry and Erin Canning. Art Institute of Chicago, 2022.\
 <https://www.artic.edu/digital-publications/37/perspectives-on-data/25/taking-care-of-history>
@@ -19,9 +19,7 @@ body-classes: resources-body
 
 :::
 
----
-
-### Getty Provenance Index Tutorials
+## Getty Provenance Index tutorials
 
 ::: {.link-list}
 - [Introduction to the Getty Provenance Index](https://www.youtube.com/watch?v=2Z1tyMOE6IE)
@@ -30,15 +28,15 @@ body-classes: resources-body
 - [Getty Provenance Index Explained: A Walkthrough](https://www.youtube.com/watch?v=RFvYS_5HrfI)
 :::
 
----
+## Bibliography
 
-### Bibliography
+::: {.ledger-list}
 
 **Ahnert, Ruth, and Sebastian E. Ahnert.** *Tudor Networks of Power.* Oxford University Press, 2023.\
 <https://doi.org/10.1093/oso/9780198858973.001.0001>
 
 **Ahnert, Ruth, Sebastian E. Ahnert, and Catherine Nicole Coleman.** *The Network Turn.* Cambridge University Press, 2021.\
-<https://doi.org/10.1017/9781108911466>
+<https://doi.org/10.1017/9781108866804>
 
 **Barabási, Albert-László**, et al. “Quantifying Reputation and Success in Art.” *Science* 362, no. 6416 (2018): 825–829.\
 <https://doi.org/10.1126/science.aau7224>
@@ -55,7 +53,7 @@ body-classes: resources-body
 <https://data-feminism.mitpress.mit.edu/>
 
 **Drucker, Johanna.** *Graphesis: Visual Forms of Knowledge Production.* Harvard University Press, 2014.\
-<https://doi.org/10.4159/9780674727558>
+<https://www.hup.harvard.edu/books/9780674724938>
 
 **Huemer, Christian.** “The Provenance of Provenances.” In *Collecting & Provenance: A Multidisciplinary Approach*, edited by Jane C. Milosch and Nick Pearce. Rowman & Littlefield, 2019.\
 <https://www.academia.edu/43252971/The_Provenance_of_Provenances>
@@ -64,7 +62,7 @@ body-classes: resources-body
 <https://www.karsdorp.io/python-course/>
 
 **Karsdorp, Folgert, Mike Kestemont, and Allen Riddell.** *Humanities Data Analysis: Case Studies with Python.* Princeton University Press, 2021.\
-<https://doi.org/10.2307/j.ctv1dxdxhf>
+<https://www.humanitiesdataanalysis.org/>
 
 **Lincoln, Matthew D.** “Tangled Metaphors: Network Thinking and Network Analysis in the History of Art.” In *The Routledge Companion to Digital Humanities and Art History*, Routledge, 2020.
 
@@ -85,7 +83,7 @@ body-classes: resources-body
 **Meirelles, Isabel.** *Design for Information.* Rockport Publishers, 2013.
 
 **Poirier, Lindsay.** “Ethnographies of Datasets: Teaching Critical Data Analysis Through R Notebooks.” 2020.\
-<https://shorturl.at/lAUgn>
+<https://jitp.commons.gc.cuny.edu/ethnographies-of-datasets-teaching-critical-data-analysis-through-r-notebooks/>
 
 **Porras, Stephanie.** “Keeping Our Eyes Open: Visualizing Networks and Art History.” *Artl@s Bulletin* 6, no. 3 (2017).\
 <https://docs.lib.purdue.edu/artlas/vol6/iss3/3>
@@ -103,12 +101,12 @@ body-classes: resources-body
 **Shekhtman, Louis Michael, and Albert-László Barabási.** “Philanthropy in Art: Locality, Donor Retention, and Prestige.” *Scientific Reports* 13, no. 1 (2023): 12157.\
 <https://doi.org/10.1038/s41598-023-38815-1>
 
----
+:::
 
-### Other Resources
+## Other resources
 
 ::: {.link-list}
-- [CARE Principles for Indigenous Data Governance](https://www.gida-global.org/care)
+- [CARE Principles for Indigenous Data Governance](https://www.gida-global.org/careprinciples)
 - [CIDOC CRM, Version 7.3](https://cidoc-crm.org/Version/version-7.3)
 - [Creating a Data Cleaning Workflow](https://cghlewis.com/blog/data_clean_02/)
 - [Dataviz Project](https://datavizproject.com/)
@@ -122,4 +120,3 @@ body-classes: resources-body
 - [Wikidata: A Free and Open Knowledge Base](https://www.wikidata.org/)
 :::
 
-:::

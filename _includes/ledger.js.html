@@ -1,0 +1,51 @@
+<script>
+// Provenance switch: the museum's sentence and the same record as a table.
+// Each clause of the sentence and its table row share a view-transition name,
+// so where the browser supports it the clause travels into its row.
+(() => {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  document.querySelectorAll('.prov').forEach((prov, p) => {
+    const text = prov.querySelector('.prov-text');
+    const rows = [...prov.querySelectorAll('.prov-table tbody tr')];
+    const buttons = [...prov.querySelectorAll('.prov-switch button')];
+
+    const clauses = text.textContent.trim().split(/;\s*/);
+    text.textContent = '';
+    clauses.forEach((clause, i) => {
+      const span = document.createElement('span');
+      span.className = 'clause';
+      span.textContent = clause;
+      span.style.viewTransitionName = `prov-${p}-${i}`;
+      text.append(span);
+      // The semicolons are where the sentence will split, so they are marked.
+      if (i < clauses.length - 1) {
+        const sep = document.createElement('span');
+        sep.className = 'sep';
+        sep.textContent = ';';
+        text.append(sep, ' ');
+      }
+      if (rows[i]) rows[i].style.viewTransitionName = `prov-${p}-${i}`;
+    });
+
+    const apply = (view) => {
+      prov.dataset.view = view;
+      buttons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.view === view)));
+    };
+
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const view = button.dataset.view;
+        if (prov.dataset.view === view) return;
+        if (!document.startViewTransition || reduceMotion.matches) {
+          apply(view);
+          return;
+        }
+        document.documentElement.classList.add('prov-morphing');
+        const transition = document.startViewTransition(() => apply(view));
+        transition.finished.finally(() => document.documentElement.classList.remove('prov-morphing'));
+      });
+    });
+  });
+})();
+</script>

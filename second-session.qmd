@@ -1,10 +1,11 @@
 ---
 title: "Second Online Session"
+description: "Agenda, recordings and slides."
+entry: "001"
+part: "Online session"
+status: "To come"
+status-note: "The date, agenda, recordings and slides will be entered here."
 ---
-
-::: {.under-construction}
-Under construction
-:::
 
 <!-- Page template: delete the comment markers when you are ready to add content
 

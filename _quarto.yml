@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: _site
+  render:
+    - "*.qmd"
   resources:
     - images/
 
@@ -8,10 +10,15 @@ website:
   title: "Coding Provenance"
   description: "Coding Provenance Workshop — Second Edition. December 1 to 4, 2026, Getty Research Institute, Los Angeles, USA"
   site-url: "https://provenance-lab.github.io/coding_provenance2/"
-  page-navigation: true
-  back-to-top-navigation: true
+  favicon: favicon.svg
+  image: images/og-card.png
+  open-graph: true
+  twitter-card: true
+  page-navigation: false
+  back-to-top-navigation: false
   search: false
   navbar:
+    collapse-below: xl
     left:
       - href: index.qmd
         text: Home
@@ -27,17 +34,47 @@ website:
         text: Visualising
       - href: resources.qmd
         text: Resources
+    right:
+      - href: https://provenance-lab.github.io/coding_provenance/
+        text: First edition
+      - href: https://barbararomero.github.io/codingprovenanceworkshop/
+        text: Workshop home
   page-footer:
     center: |
       © 2026 Coding Provenance Workshop — Licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).<br>
-      Reuse is encouraged — we happily promote changes of custody. Just be sure to write a good provenance record and cite this workshop.
+      Reuse is encouraged — we happily promote changes of custody. Just be sure to write a good provenance record and cite this workshop.<br>
+      <span class="footer-note">The painting reproductions are not covered by this licence; see the credit with each one.</span>
+
+# The order of the book: each entry's "brought forward / carried forward"
+# links come from this list (see _filters/carry-forward.lua).
+ledger-order:
+  - { page: second-session, entry: "001", title: "Second Online Session" }
+  - { page: structuring-data, entry: "002", title: "Structuring Data" }
+  - { page: preprocessing-data, entry: "003", title: "Preprocessing Data" }
+  - { page: analysing-data, entry: "004", title: "Analysing Data" }
+  - { page: visualising-data, entry: "005", title: "Visualising Data" }
+  - { page: resources, entry: "006", title: "Bibliography & other Resources" }
 
 format:
   html:
+    filters:
+      - _filters/carry-forward.lua
     theme: [default, custom.scss]
-    toc: true
+    lang: en
+    page-layout: full
+    toc: false
+    anchor-sections: false
+    footnotes-hover: false
+    citations-hover: false
+    crossrefs-hover: false
+    smooth-scroll: false
     code-copy: true
     code-overflow: wrap
+    template-partials:
+      - _partials/title-block.html
+    include-in-header: _includes/head.html
+    include-before-body: _includes/contract.html
+    include-after-body: _includes/ledger.js.html
 
 execute:
   freeze: auto
