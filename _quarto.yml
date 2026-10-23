@@ -10,7 +10,7 @@ project:
 website:
   title: "Coding Provenance"
   description: "Coding Provenance Workshop — Second Edition. December 1 to 4, 2026, Getty Research Institute, Los Angeles, USA"
-  site-url: "https://coding-provenance.pages.dev/"
+  site-url: "https://codingprovenance.org/"
   favicon: favicon.svg
   image: images/og-card.png
   open-graph: true

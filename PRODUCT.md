@@ -16,7 +16,7 @@ Secondary, after the workshop: the wider provenance and digital humanities field
 
 The materials website of the second edition. It holds what participants need for each step of a computational provenance workflow (structuring, preprocessing, analysing, visualising data), the online sessions, and a bibliography of readings, tutorials and tools. Success: a participant can find any session's materials in seconds, and an outsider understands what the workshop is and wants to use and cite it.
 
-This site's front page is the workshop's home. The earlier workshop site (https://barbararomero.github.io/codingprovenanceworkshop/) carried the team and alumni pages; the first edition's materials stay at https://provenance-lab.github.io/coding_provenance/ and are linked from the participant area's Editions menu.
+This site's front page is the workshop's home, to be served at https://codingprovenance.org/ (GitHub Pages). The earlier workshop site (https://barbararomero.github.io/codingprovenanceworkshop/) carried the team and alumni pages; the first edition's materials stay at https://provenance-lab.github.io/coding_provenance/ and are linked from the participant area's Editions menu.
 
 Structure: a public front page (what the workshop is, the second edition's dates and venue, organisers, editions, and the Provenance Lab newsletter sign-up), a participant gate, and the participant area under `participants/` with the materials. The participant area is password protected by a v1 client-side gate (hashed password; not real security); proper protection is planned for v2.
 
