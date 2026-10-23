@@ -1,0 +1,43 @@
+# Builds the Quarto site and publishes it with GitHub Pages.
+#
+# Manual only for now: it runs when started from the Actions tab, and it can
+# only publish once the repository's Pages source is set to "GitHub Actions"
+# (Settings > Pages). Until then the current site keeps serving from the
+# gh-pages branch. See "Serving with GitHub Pages" in README.md.
+name: Publish site
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/configure-pages@v6
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 1.10.19
+      - run: quarto render
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

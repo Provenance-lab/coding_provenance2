@@ -8,6 +8,27 @@ Built with [Quarto](https://quarto.org/).
 
 Edit the `.qmd` files to update page content; the navigation menu is in `_quarto.yml`.
 
+## Serving with GitHub Pages (custom domain)
+
+The site is ready to be served by GitHub Pages from `.github/workflows/publish.yml`. Nothing changes until you switch it on: today the repository's Pages site still serves the old build from the `gh-pages` branch.
+
+When you are ready:
+
+1. Merge this branch into `main`.
+2. In the repository, open **Settings → Pages** and set **Source** to **GitHub Actions**. From this moment the old `gh-pages` site stops being served, so do steps 3 and 4 straight away.
+3. Open the **Actions** tab, choose **Publish site**, and click **Run workflow**. It builds the site with Quarto and publishes it.
+4. In **Settings → Pages → Custom domain**, enter your domain and save. With an Actions-published site no `CNAME` file is needed; the domain lives in this setting.
+5. At your DNS provider:
+   - for a subdomain such as `workshop.example.org`: a `CNAME` record pointing to `provenance-lab.github.io`;
+   - for an apex domain such as `example.org`: `A` records to `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` (and optionally `AAAA` records to `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`).
+   Verifying the domain for the organisation (**Organisation settings → Pages**) protects it from takeover.
+6. Once the DNS check passes, tick **Enforce HTTPS**.
+7. Set `site-url` in `_quarto.yml` to the new address (for example `https://workshop.example.org/`), commit, and run **Publish site** again. The share card and the 404 page use this address.
+
+To publish automatically on every push to `main` later, add `push: branches: [main]` under `on:` in the workflow.
+
+The Cloudflare Pages copy at https://coding-provenance.pages.dev/ is independent and can stay or be removed.
+
 ## Site structure
 
 - `index.qmd`: the public front page, in the Provenance Lab's style (statement on provenance timelines, the Lab's MailerLite newsletter form).
