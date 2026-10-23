@@ -4,9 +4,27 @@ Built with [Quarto](https://quarto.org/).
 
 - Preview locally: `quarto preview`
 - Build: `quarto render`
-- Publish to GitHub Pages: `quarto publish gh-pages`
+- Publish to Cloudflare Pages (https://coding-provenance.pages.dev/): `quarto render`, then `npx wrangler pages deploy _site --project-name coding-provenance --branch main`
 
 Edit the `.qmd` files to update page content; the navigation menu is in `_quarto.yml`.
+
+## Site structure
+
+- `index.qmd`: the public front page, in the Provenance Lab's style (statement on provenance timelines, the Lab's MailerLite newsletter form).
+- `access.qmd`: the participant gate, between the front page and the materials.
+- `participants/`: the materials site (the stock-book pages described below). The navbar brand links to `participants/index.html`.
+
+### The participant password (v1)
+
+The gate compares a hash of what is typed with the value of `window.CP_ACCESS` in `_includes/head.html`; every page under `participants/` checks the same value and sends visitors without it to the gate. This keeps casual visitors out. It is **not** security: the pages are still public files, and anyone who reads the source can get past it. Search engines are asked not to index the participant pages. Do it properly in v2 (for example Cloudflare Access in front of GitHub Pages, or StatiCrypt to encrypt the pages).
+
+To change the password, compute the new hash and replace the value of `window.CP_ACCESS`:
+
+```sh
+python3 -c "import hashlib,getpass; print(hashlib.pbkdf2_hmac('sha256', getpass.getpass().encode(), b'coding-provenance-2026', 310000).hex())"
+```
+
+Participants who ticked "Keep me signed in" stay signed in until the value changes.
 
 ## How the pages are kept
 
@@ -76,5 +94,6 @@ On the Resources page, entries inside a `::: {.ledger-list}` block are numbered 
 - `custom.scss`: all styling (colour, type and spacing tokens at the top)
 - `_partials/title-block.html`: page heading, record line, painting and provenance
 - `_includes/`: font preload, the design contract comment, and the provenance switch script
-- `fonts/`: Archivo (SIL Open Font License, see `fonts/OFL.txt`)
+- `fonts/`: Archivo and Spectral (SIL Open Font License, see `fonts/OFL.txt` and `fonts/OFL-Spectral.txt`)
+- `assets/public.js`: the timelines and the gate on the public pages
 - `images/plates/`: the paintings in WebP; the original JPEGs stay in `images/`

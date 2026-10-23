@@ -1,3 +1,6 @@
+$if(hide-title-block)$
+<header id="title-block-header" class="quarto-title-block"></header>
+$else$
 <header id="title-block-header" class="quarto-title-block ledger-head">
 $if(entry)$
 <p class="ledger-gutter" aria-hidden="true">$entry$</p>
@@ -26,7 +29,7 @@ $endif$
 </header>
 $if(plate)$
 <figure class="plate">
-<img src="images/plates/$plate.image$-1600.webp" srcset="images/plates/$plate.image$-960.webp 960w, images/plates/$plate.image$-1600.webp 1600w" sizes="(min-width: 80rem) 66rem, (min-width: 45rem) calc(100vw - 12rem), calc(100vw - 4rem)" width="$plate.width$" height="$plate.height$" alt="$plate.alt$" decoding="async" fetchpriority="high">
+<img src="$site-root$images/plates/$plate.image$-1600.webp" srcset="$site-root$images/plates/$plate.image$-960.webp 960w, $site-root$images/plates/$plate.image$-1600.webp 1600w" sizes="(min-width: 80rem) 66rem, (min-width: 45rem) calc(100vw - 12rem), calc(100vw - 4rem)" width="$plate.width$" height="$plate.height$" alt="$plate.alt$" decoding="async" fetchpriority="high">
 <figcaption>$plate.artist$, $plate.title$, $plate.date$. $plate.collection$.</figcaption>
 </figure>
 <section class="plate-record" aria-labelledby="plate-record">
@@ -64,4 +67,5 @@ $endfor$
 </div>
 $endif$
 </section>
+$endif$
 $endif$

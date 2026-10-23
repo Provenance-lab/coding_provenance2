@@ -5,11 +5,12 @@ project:
     - "*.qmd"
   resources:
     - images/
+    - assets/
 
 website:
   title: "Coding Provenance"
   description: "Coding Provenance Workshop — Second Edition. December 1 to 4, 2026, Getty Research Institute, Los Angeles, USA"
-  site-url: "https://provenance-lab.github.io/coding_provenance2/"
+  site-url: "https://coding-provenance.pages.dev/"
   favicon: favicon.svg
   image: images/og-card.png
   open-graph: true
@@ -19,26 +20,28 @@ website:
   search: false
   navbar:
     collapse-below: xl
+    logo-href: /participants/index.qmd
+    # The brand links home; the six entries of this edition; other editions in one menu.
     left:
-      - href: index.qmd
-        text: Home
-      - href: second-session.qmd
+      - href: participants/second-session.qmd
         text: Session 2
-      - href: structuring-data.qmd
+      - href: participants/structuring-data.qmd
         text: Structuring
-      - href: preprocessing-data.qmd
+      - href: participants/preprocessing-data.qmd
         text: Preprocessing
-      - href: analysing-data.qmd
+      - href: participants/analysing-data.qmd
         text: Analysing
-      - href: visualising-data.qmd
+      - href: participants/visualising-data.qmd
         text: Visualising
-      - href: resources.qmd
+      - href: participants/resources.qmd
         text: Resources
     right:
-      - href: https://provenance-lab.github.io/coding_provenance/
-        text: First edition
-      - href: https://barbararomero.github.io/codingprovenanceworkshop/
-        text: Workshop home
+      - text: Editions
+        menu:
+          - href: https://provenance-lab.github.io/coding_provenance/
+            text: First edition
+          - href: index.qmd
+            text: Workshop home
   page-footer:
     center: |
       © 2026 Coding Provenance Workshop — Licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).<br>
@@ -58,6 +61,7 @@ ledger-order:
 format:
   html:
     filters:
+      - _filters/site-root.lua
       - _filters/carry-forward.lua
     theme: [default, custom.scss]
     lang: en

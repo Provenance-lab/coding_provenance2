@@ -166,7 +166,7 @@ A near-monochrome register in warm paper and ink, with blue-grey ruling, one red
 - **Margin Red** (red): the red double margin rule; numbers in the gutter (page entry numbers, ledger row numbers, bibliography counters, provenance table rows); status squares; the active-page bar in the navbar; the semicolons that divide a provenance sentence; numeric literals in code; the labels of warning, important and caution callouts; the text caret. Contrast on paper 6.2:1.
 
 ### Secondary
-- **Ledger Blue Ink** (blue): links, the external links at the right of the navbar, the focus ring, string literals in code, the checked copy icon. Contrast on paper 7.9:1.
+- **Ledger Blue Ink** (blue): links, the Editions menu at the right of the navbar and its outbound links, the focus ring, string literals in code, the checked copy icon. Contrast on paper 7.9:1.
 - **Deep Blue Ink** (blue-deep): link hover only.
 
 ### Neutral
@@ -227,7 +227,7 @@ Spacing rhythm: page heads sit 3.5rem below the navbar and 3rem above the conten
 
 Responsive steps:
 - **Up to 1100px:** gutter 4.5rem, gap 1.75rem.
-- **Below 1200px:** the navbar collapses to a menu button; the open menu is a stack of ruled rows. Between 1200 and 1400px the desktop links tighten.
+- **Below 1200px:** the navbar collapses to a menu button; the open menu is a stack of ruled rows, with the other editions as a labelled group at its end.
 - **Up to 900px:** the landing record line becomes two columns (partners on their own row); the about section stacks its prose above the record of people.
 - **Up to 720px:** gutter 2.5rem, gap 0.875rem, number pad 0.5rem. The margin rule and gutter numbers stay. Tables restack: column heads are hidden, each row becomes a small grid with its number still in the gutter, and the painting record grid becomes one column. Plates and link lists stack.
 - **Up to 520px:** the landing record line becomes label and value rows; the cover title and page titles step down.
@@ -252,14 +252,14 @@ The book is flat. No element has a shadow, and the build removes the framework's
 
 The form language is square. Records, rows, tables, callouts, plates and the navbar have no corner radius. Small controls take a 2px radius (the menu button, the provenance switch's segments, code blocks, inline code); the provenance switch's outer frame is 3px so its corners nest around the 2px segments. The focus ring has a 1px radius.
 
-The recurring marks are the ledger's own. The margin rule is two 1px red lines, 2px apart (a 4px strip). The status mark is a 0.62em square with a 1.5px red stroke, filled when the entry is entered. The required-reading mark is the same square, filled, in the gutter. The footer's rule is a 3px double line in ink. Two icons exist, both thin line drawings masked in the current text colour: the external-link arrow after the navbar's outbound links, and the copy and check marks on code blocks.
+The recurring marks are the ledger's own. The margin rule is two 1px red lines, 2px apart (a 4px strip). The status mark is a 0.62em square with a 1.5px red stroke, filled when the entry is entered. The required-reading mark is the same square, filled, in the gutter. The footer's rule is a 3px double line in ink. Two icons exist, both thin line drawings masked in the current text colour: the external-link arrow after the outbound links in the Editions menu, and the copy and check marks on code blocks.
 
 ## Components
 
 ### Navigation
 Plain words on the paper, ruled off below.
 - **Bar:** paper ground, one light-blue hairline below, 3.75rem tall, aligned to the content column. Brand: "Coding Provenance" at 1.125rem, 800 weight, 118% width.
-- **Links:** small size (0.9375rem) at 500 weight, ink; hover turns blue. Outbound links ("First edition", "Workshop home") sit at the right in blue, each followed by a small external arrow.
+- **Links:** small size (0.9375rem) at 500 weight, ink; hover turns blue. The brand links home. The other editions ("First edition", "Workshop home") sit in one Editions menu at the right, in blue: a ruled panel under a 2px ink rule, each link followed by a small external arrow.
 - **Current page:** marked rather than recoloured: 650 weight plus a 3px red bar on the navbar's bottom hairline.
 - **Phones and tablets (below 1200px):** a square-cornered menu button (1px column-head ruling, 2px radius) opens a stack of ruled rows (2.75rem high). The current page is marked with a short red double rule at its left, a miniature of the margin rule.
 
@@ -324,9 +324,17 @@ The book ruled off: a 3px double ink line at the content column, then three line
 - **Don't** add paper textures, tape, stains, handwriting or script fonts, drop shadows or other skeuomorphic costume. The book is its grammar, not its look.
 - **Don't** box content in cards or tinted panels; group it with ruled rows. The wash is for hover and focus only.
 - **Don't** put text, labels or hairlines in the gutter, and don't run rules across the red margin rule.
-- **Don't** use red for fills, buttons, headings or large areas, and don't add signal colours (green, amber) for status.
-- **Don't** crop, tint or duotone a painting, set text over it, or use it as a banner or background.
-- **Don't** add a second text face or fall back to a system display face. Archivo's widths and weights do the work.
-- **Don't** round structural shapes; small controls take 2px at most (3px for the switch's outer frame), and nothing is a pill.
-- **Don't** use the column-head label as a kicker or eyebrow above a heading.
-- **Don't** add motion beyond feedback transitions. The provenance morph is the system's one authored movement.
+
+## Public surface (front page and participant gate)
+
+The public pages (`index.qmd`, `participants.qmd`, `body.public`) are inspired by the Provenance Lab's visual language (provenancelab.org) without copying its layout: they borrow its ground, inks, entity colours, dots and hatching, and keep the participant area's heavy Archivo for titles so the two halves of the site read as one workshop.
+
+- **Ground and ink (warm):** the Lab's palette taken toward sand and apricot to feel inviting. Ground #faf6f0, field #f3e9dc (behind the animation and the gate panel), newsletter band #eedcc6, surface #fffcf8, ink #1e1915, secondary #5b5048 (7.4:1 on ground, 6.0:1 on the band), tertiary #74685e (ground only), rules #e6dbcd and #cfbfac, timeline line #b3a697.
+- **Type:** Archivo 800 at 118% width for titles (the participant area's voice); Spectral (300, 400, 600) for source text, the summary and the newsletter line; Archivo for interface text; labels are Archivo at 75% width, 600 weight, 0.14em tracking, in capitals.
+- **Entity colours:** person #0072b2, place #d55e00, institution #009e73, event or date #7a52cc, object #cc79a7. They mark meaning, never decorate: 2px underlines on entities in a record, dots on timelines and in the key. Text stays ink, so contrast never depends on the colour.
+- **The four steps, drawn:** the front page's signature is an abstract animation (`assets/public.js`, SVG) of the workshop's method, with no specific content: a sentence of grey word-bars; Structuring colours its entities; Preprocessing lifts them into table rows, hatched where a date is missing; Analysing collapses each holder to a dot (hollow when undated); Visualising carries the dots onto a timeline drawn to scale, the undated stretch hatched. A caption row (01 Structuring to 04 Visualising) follows the phases. Set on the sand field, no border.
+- **Motion:** one authored moment: the animation loops (12s cycle: the four steps, a hold on the timeline, a fade) while it is on screen, and pauses off screen. A quiet Pause / Play link satisfies WCAG 2.2.2. With reduced motion it shows the finished timeline and no control.
+- **Buttons and fields:** square, ink buttons with a trailing arrow; fields on the surface colour with a 1px strong rule, 2px ink on focus. The newsletter form is the Lab's MailerLite form (account 2534376, form 5hCcaw), restyled to match.
+- **Page:** header with the brand and one Participants button; hero (title, edition, summary, dates / venue / partners) beside the animation; organisers in one row; the newsletter band; footer.
+- **Gate:** a centred 36rem panel on the sand field: heavy Archivo title, one line of context, the password field and button, "keep me signed in", the error line (red, announced politely), a hatched rule and help text.
+- **Shared with the participant area:** Archivo, the 17px root size, square corners, no shadows. The red margin rule, the navbar and the footer of the participant area are hidden on public pages.

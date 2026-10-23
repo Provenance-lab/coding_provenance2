@@ -1,0 +1,39 @@
+---
+title: "Participant area"
+pagetitle: "Participant area — Coding Provenance Workshop"
+hide-title-block: true
+description: "Sign in to the participant area of the Coding Provenance Workshop, Second Edition."
+body-classes: public
+---
+
+```{=html}
+<header class="pub-head">
+  <a class="pub-brand" href="index.html">Coding Provenance Workshop</a>
+  <nav class="pub-nav" aria-label="Site">
+    <a href="index.html">About the workshop</a>
+  </nav>
+</header>
+
+<section class="gate" aria-labelledby="gate-title">
+  <div class="gate-panel">
+    <h1 class="gate-title" id="gate-title">Participant area</h1>
+    <p class="gate-lede">Session links, readings and materials for the second edition, 1–4 December 2026. Enter the participant password to continue.</p>
+
+    <form class="gate-form" novalidate>
+      <label class="pub-label" for="gate-password">Password</label>
+      <div class="gate-field">
+        <input id="gate-password" name="password" type="password" autocomplete="current-password" required aria-describedby="gate-message">
+        <button type="submit">Enter</button>
+      </div>
+      <p class="gate-message" id="gate-message" role="status" aria-live="polite"></p>
+      <label class="gate-remember"><input type="checkbox" name="remember" checked> Keep me signed in on this device</label>
+      <noscript><p class="gate-message">The participant area needs JavaScript.</p></noscript>
+    </form>
+
+    <div class="rule-hatched" aria-hidden="true"></div>
+    <p class="gate-help">No password? Ask the <a href="index.html#organisers">workshop organisers</a>.</p>
+  </div>
+</section>
+
+<script src="assets/public.js"></script>
+```
