@@ -4,43 +4,34 @@ Built with [Quarto](https://quarto.org/).
 
 - Preview locally: `quarto preview`
 - Build: `quarto render`
-- Publish to Cloudflare Pages (https://coding-provenance.pages.dev/): `quarto render`, then `npx wrangler pages deploy _site --project-name coding-provenance --branch main`
+- Publish to https://codingprovenance.org/: see "Publishing" below
 
 Edit the `.qmd` files to update page content; the navigation menu is in `_quarto.yml`.
 
-## Serving with GitHub Pages at codingprovenance.org
+## Publishing
 
-The site is ready to be served by GitHub Pages at https://codingprovenance.org/ from `.github/workflows/publish.yml`. Nothing changes until you switch it on: today the repository's Pages site still serves the old build from the `gh-pages` branch, and the domain still shows Namecheap's parking page.
+https://codingprovenance.org/ is served by GitHub Pages from the `gh-pages` branch, which holds the built site (Settings → Pages: source `gh-pages`, `/`). The domain's DNS at Namecheap already points at GitHub, and the domain is verified for the repository.
 
-When you are ready:
+To publish a change, build the site and replace the contents of `gh-pages` with `_site`, keeping its `CNAME` and `.nojekyll`:
 
-1. Merge this branch into `main`.
-2. In the repository, open **Settings → Pages** and set **Source** to **GitHub Actions**. From this moment the old `gh-pages` site stops being served, so do steps 3 to 6 straight away.
-3. Open the **Actions** tab, choose **Publish site**, and click **Run workflow**. It builds the site with Quarto and publishes it.
-4. In **Settings → Pages → Custom domain**, enter `codingprovenance.org` and save. With an Actions-published site no `CNAME` file is needed; the domain lives in this setting.
-5. At Namecheap (**Domain List → codingprovenance.org → Advanced DNS**), delete the parking records (the `A` record for `@` and the `www` `CNAME` to `parkingpage.namecheap.com`, or any URL-redirect record), then add:
+```sh
+quarto render
+git fetch origin
+git worktree add ../gh-pages gh-pages
+cd ../gh-pages
+git rm -rq . ':!CNAME' ':!.nojekyll'
+cp -R ../coding_provenance2/_site/. .
+git add -A && git commit -m "Publish site" && git push origin gh-pages
+cd - && git worktree remove ../gh-pages
+```
 
-   | Type | Host | Value |
-   |---|---|---|
-   | A | @ | 185.199.108.153 |
-   | A | @ | 185.199.109.153 |
-   | A | @ | 185.199.110.153 |
-   | A | @ | 185.199.111.153 |
-   | AAAA | @ | 2606:50c0:8000::153 |
-   | AAAA | @ | 2606:50c0:8001::153 |
-   | AAAA | @ | 2606:50c0:8002::153 |
-   | AAAA | @ | 2606:50c0:8003::153 |
-   | CNAME | www | provenance-lab.github.io. |
+GitHub rebuilds the site within a minute or two of the push.
 
-   GitHub then serves `codingprovenance.org` and redirects `www.codingprovenance.org` to it.
-6. Once the DNS check in **Settings → Pages** passes (minutes to a few hours), tick **Enforce HTTPS**.
-7. Recommended: verify the domain for the organisation (**Provenance-lab organisation settings → Pages → Add a domain**). GitHub gives a `TXT` record to add at Namecheap; it stops anyone else claiming the domain on GitHub Pages.
+`site-url` in `_quarto.yml` is `https://codingprovenance.org/`, which the share card and the 404 page use.
 
-`site-url` in `_quarto.yml` is already `https://codingprovenance.org/`, which the share card and the 404 page use.
+### Publishing from GitHub Actions instead
 
-To publish automatically on every push to `main` later, add `push: branches: [main]` under `on:` in the workflow.
-
-The Cloudflare Pages copy at https://coding-provenance.pages.dev/ is independent and can stay or be removed.
+`.github/workflows/publish.yml` builds and publishes the site without the `gh-pages` branch. It is manual-only. To switch to it: merge this branch into `main`, set **Settings → Pages → Source** to **GitHub Actions**, then run **Publish site** from the Actions tab straight away (the `gh-pages` site stops being served as soon as the source changes). Check that **Custom domain** still reads `codingprovenance.org`. To publish on every push to `main`, add `push: branches: [main]` under `on:` in the workflow.
 
 ## Site structure
 

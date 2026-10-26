@@ -3,7 +3,7 @@
 # Manual only for now: it runs when started from the Actions tab, and it can
 # only publish once the repository's Pages source is set to "GitHub Actions"
 # (Settings > Pages). Until then the current site keeps serving from the
-# gh-pages branch. See "Serving with GitHub Pages" in README.md.
+# gh-pages branch. See "Publishing" in README.md.
 name: Publish site
 
 on:
