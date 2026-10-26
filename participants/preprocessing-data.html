@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Cleaning, standardising and preparing data for analysis.">
+
+<title>Preprocessing Data – Coding Provenance</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<link href="../favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-2549fc1f01fa49af99d2cbd73b361303.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
+document.documentElement.classList.add('js');
+// v1 participant gate. Not security: it keeps casual visitors out of
+// participants/, nothing more. The value is a PBKDF2-SHA256 hash of the
+// password (salt "coding-provenance-2026", 310000 iterations); see README.
+window.CP_ACCESS = '062700d22bef93b41f571f6d42141770156273d443aee65560a75a34b747d1ec';
+(function () {
+  var path = location.pathname;
+  var at = path.indexOf('/participants/');
+  if (at === -1) return;
+  var token = null;
+  try { token = sessionStorage.getItem('cp-access') || localStorage.getItem('cp-access'); } catch (e) {}
+  if (token === window.CP_ACCESS) return;
+  var next = path.slice(at + '/participants/'.length) || 'index.html';
+  location.replace('../access.html?next=' + encodeURIComponent(next));
+})();
+</script>
+<meta name="theme-color" content="#f6f6f2">
+<link rel="preload" href="../site_libs/bootstrap/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin="">
+<meta name="robots" content="noindex, nofollow">
+
+
+<meta property="og:title" content="Preprocessing Data – Coding Provenance">
+<meta property="og:description" content="Cleaning, standardising and preparing data for analysis.">
+<meta property="og:image" content="https://codingprovenance.org/images/plates/preprocessing-1600.webp">
+<meta property="og:site_name" content="Coding Provenance">
+<meta property="og:image:alt" content="Women dressed in white ironing and folding linen at long tables in a bright workroom; in the foreground an older woman talks with a young newcomer.">
+<meta name="twitter:title" content="Preprocessing Data – Coding Provenance">
+<meta name="twitter:description" content="Cleaning, standardising and preparing data for analysis.">
+<meta name="twitter:image" content="https://codingprovenance.org/images/plates/preprocessing-1600.webp">
+<meta name="twitter:image:alt" content="Women dressed in white ironing and folding linen at long tables in a bright workroom; in the foreground an older woman talks with a young newcomer.">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-xl " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../participants/index.html">
+    <span class="navbar-title">Coding Provenance</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../participants/second-session.html"> 
+<span class="menu-text">Session 2</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../participants/structuring-data.html"> 
+<span class="menu-text">Structuring</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../participants/preprocessing-data.html" aria-current="page"> 
+<span class="menu-text">Preprocessing</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../participants/analysing-data.html"> 
+<span class="menu-text">Analysing</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../participants/visualising-data.html"> 
+<span class="menu-text">Visualising</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../participants/resources.html"> 
+<span class="menu-text">Resources</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-editions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Editions</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-editions">    
+        <li>
+    <a class="dropdown-item" href="https://provenance-lab.github.io/coding_provenance/">
+ <span class="dropdown-text">First edition</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../index.html">
+ <span class="dropdown-text">Workshop home</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content column-page" id="quarto-document-content">
+<!--
+THESIS: Kept like a dealer's stock book: every page an entry, the materials and the bibliography numbered rows, every picture with its record. Refuses the hero-photo-over-card-grid workshop page.
+OWN-WORLD: Near-white paper, ink, blue hairline rules, one red double margin rule with numbers to its left; Archivo across widths, tabular figures; no textures, handwriting or shadows.
+STORY: A participant sees what, when and where, finds any session in seconds, and watches a museum's provenance sentence become a table.
+FIRST VIEWPORT: Heavy expanded title right of the red rule; a short summary of what the site is (the user's addition); dates, venue and partners on one ruled record line; then the materials ledger (No. in the margin, Entry, Part, Status). No hero image.
+FORM: Dealer's stock book, #2 of the grounded list, user's pick from the safer hand; seed 781d0acb.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+-->
+<a class="skip-link" href="#quarto-document-content">Skip to content</a>
+
+<header id="title-block-header" class="quarto-title-block ledger-head">
+<p class="ledger-gutter" aria-hidden="true">003</p>
+<h1 class="title display-7">Preprocessing Data</h1>
+<p class="description">Cleaning, standardising and preparing data for analysis.</p>
+<dl class="ledger-record">
+<div><dt>Entry</dt><dd>No. 003</dd></div>
+<div><dt>Part</dt><dd>Workflow, step 2 of 4</dd></div>
+<div><dt>Status</dt><dd class="status" data-status="To come">To come</dd></div>
+</dl>
+<p class="status-note">Materials for this step will be entered here as the workshop approaches.</p>
+</header>
+<figure class="plate figure">
+<img src="../images/plates/preprocessing-1600.webp" srcset="../images/plates/preprocessing-960.webp 960w, ../images/plates/preprocessing-1600.webp 1600w" sizes="(min-width: 80rem) 66rem, (min-width: 45rem) calc(100vw - 12rem), calc(100vw - 4rem)" width="1600" height="995" alt="Women dressed in white ironing and folding linen at long tables in a bright workroom; in the foreground an older woman talks with a young newcomer." decoding="async" fetchpriority="high" class="figure-img">
+<figcaption>Ignacio Díaz Olano, <em>Las planchadoras</em> (The Ironing Women), 1895. Museo de Bellas Artes de Álava, Vitoria-Gasteiz (Diputación Foral de Álava).</figcaption>
+</figure>
+<section class="plate-record" aria-labelledby="plate-record">
+<h2 id="plate-record">Record of the painting</h2>
+<dl class="record-grid">
+<div><dt>Artist</dt><dd>Ignacio Díaz Olano <span class="life">(1860–1937)</span></dd></div>
+<div><dt>Title</dt><dd><em>Las planchadoras</em> (The Ironing Women)</dd></div>
+<div><dt>Date</dt><dd>1895</dd></div>
+<div><dt>Medium</dt><dd>Oil on canvas, 90 × 142 cm</dd></div>
+<div><dt>Collection</dt><dd>Museo de Bellas Artes de Álava, Vitoria-Gasteiz (Diputación Foral de Álava)</dd></div>
+<div><dt>Number</dt><dd>Inv. 3390</dd></div>
+<div><dt>Rights</dt><dd>Public domain.</dd></div>
+<div><dt>Image</dt><dd>Museo de Bellas Artes de Álava, via Museotik</dd></div>
+</dl>
+<div class="prov" data-view="text">
+<div class="prov-head">
+<h3 id="provenance">Provenance</h3>
+<div class="prov-switch" role="group" aria-label="Show provenance as">
+<button type="button" data-view="text" aria-pressed="true">Text</button>
+<button type="button" data-view="table" aria-pressed="false">Table</button>
+</div>
+</div>
+<p class="prov-text">Acquired by Felipe Arrieta, Vitoria, 1895; collection of María Luisa Gortázar, Vitoria; collection of Juan Celaya Letamendi, Vitoria-Gasteiz; deposited by the Fundación Juan Celaya Letamendi with the Diputación Foral de Álava, 2018; transferred to the Diputación Foral de Álava in payment of tax debts (dación), 2022</p>
+<table class="prov-table">
+<caption>The same provenance, one event per row</caption>
+<thead><tr><th scope="col">Date</th><th scope="col">Event</th><th scope="col">Holder</th><th scope="col">Place</th></tr></thead>
+<tbody>
+<tr><td>1895</td><td>Acquisition</td><td>Felipe Arrieta</td><td>Vitoria</td></tr>
+<tr><td>—</td><td>Collection</td><td>María Luisa Gortázar</td><td>Vitoria</td></tr>
+<tr><td>—</td><td>Collection</td><td>Juan Celaya Letamendi</td><td>Vitoria-Gasteiz</td></tr>
+<tr><td>2018</td><td>Deposit</td><td>Fundación Juan Celaya Letamendi, with the Diputación Foral de Álava</td><td>Vitoria-Gasteiz</td></tr>
+<tr><td>2022</td><td>Payment in kind of tax debts (dación)</td><td>Diputación Foral de Álava</td><td>Vitoria-Gasteiz</td></tr>
+</tbody>
+</table>
+<p class="prov-source">Translated from the holding museum's record: <a href="https://museotik.euskadi.eus/coleccion/-/autoria-diaz-ruiz-de-olano-ignacio/titulo-las-planchadoras/objeto-pintura/museotik-ca-334201/">Museotik, Las planchadoras</a>.</p>
+</div>
+</section>
+
+
+
+<!-- Page template: delete the comment markers when you are ready to add content
+
+## Introduction
+
+*Explain the purpose of this step in the workflow.*
+
+## Key concepts
+
+- Concept 1
+- Concept 2
+
+## Example
+
+```r
+# Add example code here
+```
+
+## Exercises
+
+1. *Exercise description*
+
+## Further reading
+
+*See also [Bibliography & Resources](resources.qmd).*
+
+-->
+
+
+<nav class="carry-forward" aria-label="Neighbouring entries"><div class="carry carry-prev"><a href="structuring-data.html"><span class="carry-label">Brought forward</span><span class="carry-entry"><span class="carry-no">002</span> Structuring Data</span></a></div><div class="carry carry-next"><a href="analysing-data.html"><span class="carry-label">Carried forward</span><span class="carry-entry"><span class="carry-no">004</span> Analysing Data</span></a></div></nav>
+
+</main> <!-- /main -->
+<script>
+// Provenance switch: the museum's sentence and the same record as a table.
+// Each clause of the sentence and its table row share a view-transition name,
+// so where the browser supports it the clause travels into its row.
+(() => {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  document.querySelectorAll('.prov').forEach((prov, p) => {
+    const text = prov.querySelector('.prov-text');
+    const rows = [...prov.querySelectorAll('.prov-table tbody tr')];
+    const buttons = [...prov.querySelectorAll('.prov-switch button')];
+
+    const clauses = text.textContent.trim().split(/;\s*/);
+    text.textContent = '';
+    clauses.forEach((clause, i) => {
+      const span = document.createElement('span');
+      span.className = 'clause';
+      span.textContent = clause;
+      span.style.viewTransitionName = `prov-${p}-${i}`;
+      text.append(span);
+      // The semicolons are where the sentence will split, so they are marked.
+      if (i < clauses.length - 1) {
+        const sep = document.createElement('span');
+        sep.className = 'sep';
+        sep.textContent = ';';
+        text.append(sep, ' ');
+      }
+      if (rows[i]) rows[i].style.viewTransitionName = `prov-${p}-${i}`;
+    });
+
+    const apply = (view) => {
+      prov.dataset.view = view;
+      buttons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.view === view)));
+    };
+
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const view = button.dataset.view;
+        if (prov.dataset.view === view) return;
+        if (!document.startViewTransition || reduceMotion.matches) {
+          apply(view);
+          return;
+        }
+        document.documentElement.classList.add('prov-morphing');
+        const transition = document.startViewTransition(() => apply(view));
+        transition.finished.finally(() => document.documentElement.classList.remove('prov-morphing'));
+      });
+    });
+  });
+})();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/codingprovenance\.org\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 Coding Provenance Workshop — Licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br> Reuse is encouraged — we happily promote changes of custody. Just be sure to write a good provenance record and cite this workshop.<br> <span class="footer-note">The painting reproductions are not covered by this licence; see the credit with each one.</span></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

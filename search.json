@@ -1,72 +1,93 @@
 [
   {
-    "objectID": "resources.html",
-    "href": "resources.html",
-    "title": "Bibliography & other Resources",
+    "objectID": "participants/visualising-data.html",
+    "href": "participants/visualising-data.html",
+    "title": "Visualising Data",
     "section": "",
-    "text": "Mandatory Readings\nRother, Lynn, Max Koss, and Fabio Mariani. “Taking Care of History: Toward a Politics of Provenance Linked Open Data in Museums.” In Perspectives on Data, edited by Emily Lew Fry and Erin Canning. Art Institute of Chicago, 2022.\nhttps://www.artic.edu/digital-publications/37/perspectives-on-data/25/taking-care-of-history\nSchich, Maximilian, Christian Huemer, Patryk Adamczyk, Lev Manovich, and Yang-Yu Liu. “Network Dimensions in the Getty Provenance Index.” arXiv (2017).\nhttps://arxiv.org/abs/1706.02804\n\n\n\nGetty Provenance Index Tutorials\n\n\nIntroduction to the Getty Provenance Index\nArtists, Collectors & Dealers in the GPI\nUsing the Getty Provenance Index Databases\nGetty Provenance Index Explained: A Walkthrough\n\n\n\n\n\nBibliography\nAhnert, Ruth, and Sebastian E. Ahnert. Tudor Networks of Power. Oxford University Press, 2023.\nhttps://doi.org/10.1093/oso/9780198858973.001.0001\nAhnert, Ruth, Sebastian E. Ahnert, and Catherine Nicole Coleman. The Network Turn. Cambridge University Press, 2021.\nhttps://doi.org/10.1017/9781108911466\nBarabási, Albert-László, et al. “Quantifying Reputation and Success in Art.” Science 362, no. 6416 (2018): 825–829.\nhttps://doi.org/10.1126/science.aau7224\nBarabási, Albert-László, et al. Network Science.\nhttp://networksciencebook.com/\nBishop, Claire. “Against Digital Art History.” International Journal for Digital Art History 3 (2018).\nhttps://doi.org/10.11588/dah.2018.3.49915\nCairo, Alberto. How Charts Lie: Getting Smarter About Visual Information. W. W. Norton, 2020.\nD’Ignazio, Catherine, and Lauren F. Klein. Data Feminism. MIT Press, 2023.\nhttps://data-feminism.mitpress.mit.edu/\nDrucker, Johanna. Graphesis: Visual Forms of Knowledge Production. Harvard University Press, 2014.\nhttps://doi.org/10.4159/9780674727558\nHuemer, Christian. “The Provenance of Provenances.” In Collecting & Provenance: A Multidisciplinary Approach, edited by Jane C. Milosch and Nick Pearce. Rowman & Littlefield, 2019.\nhttps://www.academia.edu/43252971/The_Provenance_of_Provenances\nKarsdorp, Folgert. Python Programming for the Humanities.\nhttps://www.karsdorp.io/python-course/\nKarsdorp, Folgert, Mike Kestemont, and Allen Riddell. Humanities Data Analysis: Case Studies with Python. Princeton University Press, 2021.\nhttps://doi.org/10.2307/j.ctv1dxdxhf\nLincoln, Matthew D. “Tangled Metaphors: Network Thinking and Network Analysis in the History of Art.” In The Routledge Companion to Digital Humanities and Art History, Routledge, 2020.\nLove, Heather. “Close but Not Deep: Literary Ethics and the Descriptive Turn.” New Literary History 41, no. 2 (2010): 371–391.\nhttps://doi.org/10.1353/nlh.2010.0003\nMariani, Fabio. “Introducing VISU: Vagueness, Incompleteness, Subjectivity, and Uncertainty in Art Provenance Data.” In Computational Methods in the Humanities 2022, CEUR Workshop Proceedings, 3602 (2023).\nhttps://ceur-ws.org/Vol-3602/\nMariani, Fabio, Max Koss, and Lynn Rother. “People Information in Provenance Data: Biographical Entity Linking with Wikidata and ULAN.” Život Umjetnosti 114, no. 1 (2024): 148–161.\nhttps://doi.org/10.31664/zu.2024.114.07\nMariani, Fabio, Lynn Rother, and Max Koss. “Teaching Provenance to AI: An Annotation Scheme for Museum Data.” In AI in Museums: Reflections, Perspectives and Applications, edited by Sonja Thiel and Johannes Bernhardt. Transcript Verlag, 2023.\nhttps://doi.org/10.1515/9783839467107-014\nMcNeill, J. R., and William H. McNeill. The Human Web: A Bird’s-Eye View of World History. W. W. Norton, 2003.\nMeirelles, Isabel. Design for Information. Rockport Publishers, 2013.\nPoirier, Lindsay. “Ethnographies of Datasets: Teaching Critical Data Analysis Through R Notebooks.” 2020.\nhttps://shorturl.at/lAUgn\nPorras, Stephanie. “Keeping Our Eyes Open: Visualizing Networks and Art History.” Artl@s Bulletin 6, no. 3 (2017).\nhttps://docs.lib.purdue.edu/artlas/vol6/iss3/3\nRicaurte, Paola. “Data Epistemologies, the Coloniality of Power, and Resistance.” Television & New Media 20, no. 4 (2019): 350–365.\nhttps://doi.org/10.1177/1527476419831640\nRother, Lynn. “Uncanny Provenance: Art History and Its Double / Unheimliche Provenienz: Kunstgeschichte und ihr Doppelgänger.” Texte zur Kunst 32, no. 128 (2022): 84–97.\nRother, Lynn. “Institutionalisierte Institutionskritik: Lynn Rother über ‘Wege der Kunst’ im Museum Rietberg, Zürich, sowie ‘Zerrissene Moderne’ und ‘Der Sammler Curt Glaser’ im Kunstmuseum Basel.” Texte zur Kunst 33, no. 131 (2023): 214–219.\nRother, Lynn, Max Koss, and Fabio Mariani. “Interpreting Strings, Weaving Threads: Structuring Provenance Data with AI.” In Sammlungsforschung im Digitalen Zeitalter, edited by Stefan Alschner and Katharina Günther. Wallstein Verlag, 2024.\nhttps://doi.org/10.15499/kds-005-008\nShekhtman, Louis Michael, and Albert-László Barabási. “Philanthropy in Art: Locality, Donor Retention, and Prestige.” Scientific Reports 13, no. 1 (2023): 12157.\nhttps://doi.org/10.1038/s41598-023-38815-1\n\n\n\nOther Resources\n\n\nCARE Principles for Indigenous Data Governance\nCIDOC CRM, Version 7.3\nCreating a Data Cleaning Workflow\nDataviz Project\nGetty Vocabularies (AAT, ULAN, TGN)\nLinked Art — Linked Art Community\nProgramming Historian\nThe FAIR Guiding Principles for Scientific Data Management and Stewardship\nThe Virtual International Authority File (VIAF)\nVisualizing Historical Networks\nVoyant Tools\nWikidata: A Free and Open Knowledge Base\n\n\n\n\n\n\n\n Back to top"
+    "text": "Skip to content\n\n\n\n\nDomingo Muñoz y Cuesta, La amiga (En Córdoba) (The Friend, in Córdoba), 1901. Museo Nacional del Prado, Madrid; on deposit at the Universidad de Jaén.\n\n\nRecord of the painting\n\nArtistDomingo Muñoz y Cuesta (1850–1935)\nTitleLa amiga (En Córdoba) (The Friend, in Córdoba)\nDate1901\nMediumOil on canvas, 146 × 200.5 cm\nCollectionMuseo Nacional del Prado, Madrid; on deposit at the Universidad de Jaén\nNumberP006372\nRightsPublic domain.\nImageMuseo Nacional del Prado\n\n\n\nProvenance\n\nText\nTable\n\n\nAcquired from the artist for the Museo de Arte Moderno, 1901; Museo de Arte Moderno, 1901–1971; Museo Nacional Centro de Arte Reina Sofía, 2016; Museo del Prado, from 2016, on deposit at the Universidad de Jaén\n\nThe same provenance, one event per row\nDateEventHolderPlace\n\n1901Acquired from the artistMuseo de Arte ModernoMadrid\n1901–1971HeldMuseo de Arte ModernoMadrid\n2016Transferred fromMuseo Nacional Centro de Arte Reina SofíaMadrid\n2016Entered; on deposit at the Universidad de JaénMuseo del PradoMadrid; Jaén\n\n\nTranslated from the holding museum's record: Museo del Prado, La amiga (En Córdoba).\n\n\n\n\n\n\n\n\nBrought forward004 Analysing DataCarried forward006 Bibliography & other Resources"
+  },
+  {
+    "objectID": "participants/second-session.html",
+    "href": "participants/second-session.html",
+    "title": "Second Online Session",
+    "section": "",
+    "text": "Skip to content\n\n\n\n\n\n\n\n\nCarried forward002 Structuring Data"
+  },
+  {
+    "objectID": "participants/preprocessing-data.html",
+    "href": "participants/preprocessing-data.html",
+    "title": "Preprocessing Data",
+    "section": "",
+    "text": "Skip to content\n\n\n\n\nIgnacio Díaz Olano, Las planchadoras (The Ironing Women), 1895. Museo de Bellas Artes de Álava, Vitoria-Gasteiz (Diputación Foral de Álava).\n\n\nRecord of the painting\n\nArtistIgnacio Díaz Olano (1860–1937)\nTitleLas planchadoras (The Ironing Women)\nDate1895\nMediumOil on canvas, 90 × 142 cm\nCollectionMuseo de Bellas Artes de Álava, Vitoria-Gasteiz (Diputación Foral de Álava)\nNumberInv. 3390\nRightsPublic domain.\nImageMuseo de Bellas Artes de Álava, via Museotik\n\n\n\nProvenance\n\nText\nTable\n\n\nAcquired by Felipe Arrieta, Vitoria, 1895; collection of María Luisa Gortázar, Vitoria; collection of Juan Celaya Letamendi, Vitoria-Gasteiz; deposited by the Fundación Juan Celaya Letamendi with the Diputación Foral de Álava, 2018; transferred to the Diputación Foral de Álava in payment of tax debts (dación), 2022\n\nThe same provenance, one event per row\nDateEventHolderPlace\n\n1895AcquisitionFelipe ArrietaVitoria\n—CollectionMaría Luisa GortázarVitoria\n—CollectionJuan Celaya LetamendiVitoria-Gasteiz\n2018DepositFundación Juan Celaya Letamendi, with the Diputación Foral de ÁlavaVitoria-Gasteiz\n2022Payment in kind of tax debts (dación)Diputación Foral de ÁlavaVitoria-Gasteiz\n\n\nTranslated from the holding museum's record: Museotik, Las planchadoras.\n\n\n\n\n\n\n\n\nBrought forward002 Structuring DataCarried forward004 Analysing Data"
+  },
+  {
+    "objectID": "participants/analysing-data.html",
+    "href": "participants/analysing-data.html",
+    "title": "Analysing Data",
+    "section": "",
+    "text": "Skip to content\n\n\n\n\nLaureano Barrau Buñol, Escardadoras (Women Weeding the Field), 1891. Museo Nacional del Prado, Madrid.\n\n\nRecord of the painting\n\nArtistLaureano Barrau Buñol (1863–1957)\nTitleEscardadoras (Women Weeding the Field)\nDate1891\nMediumOil on canvas, 160.5 × 188 cm\nCollectionMuseo Nacional del Prado, Madrid\nNumberP007667\nRights© rights holder to be confirmed (the artist died in 1957). In copyright; not covered by this site’s licence.\nImageMuseo Nacional del Prado\n\n\n\nProvenance\n\nText\nTable\n\n\nAcquired from the artist, 1892; Museo del Prado, 1892–1896; Museo de Arte Moderno, 1896–1971; Museo del Prado, from 1971\n\nThe same provenance, one event per row\nDateEventHolderPlace\n\n1892Acquired from the artist\n1892–1896HeldMuseo del PradoMadrid\n1896–1971HeldMuseo de Arte ModernoMadrid\n1971EnteredMuseo del PradoMadrid\n\n\nTranslated from the holding museum's record: Museo del Prado, Escardadoras.\n\n\n\n\n\n\n\n\nBrought forward003 Preprocessing DataCarried forward005 Visualising Data"
+  },
+  {
+    "objectID": "access.html",
+    "href": "access.html",
+    "title": "Participant area",
+    "section": "",
+    "text": "Skip to content\n\n\n\n\n\n\n  Coding Provenance Workshop\n  \n    About the workshop\n  \n\n\n\n  \n    Participant area\n    Session links, readings and materials for the second edition, 1–4 December 2026. Enter the participant password to continue.\n\n    \n      Password\n      \n        \n        Enter\n      \n      \n       Keep me signed in on this device\n      The participant area needs JavaScript.\n    \n\n    \n    No password? Ask the workshop organisers."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Coding Provenance",
+    "title": "Coding Provenance Workshop",
     "section": "",
-    "text": "Coding Provenance Workshop\n    Second Edition\n    Getty Provenance Index, Los Angeles\n  \n  \n    Session 2\n    Structuring\n    Preprocessing\n    Analysing\n    Visualising\n    Resources\n    Workshop home ↗"
+    "text": "Skip to content\n\n\n\n\n\n\n  Coding Provenance Workshop\n  \n    Participants\n  \n\n\n\n  \n    Coding Provenance Workshop\n    Second edition\n    Four days of computational methods for provenance research: structuring, preprocessing, analysing and visualising the records of how art has changed hands.\n    \n      Dates1–4 December 2026\n      VenueGetty Research Institute, Los Angeles\n      PartnersThe Provenance Lab, Leuphana University of Lüneburg, and the Getty Provenance Index\n    \n  \n\n  \n    \n    \n      \n        01 Structuring\n        02 Preprocessing\n        03 Analysing\n        04 Visualising\n      \n    \n    A provenance record, from sentence to timeline: the workshop's four steps.\n  \n\n\n\n  Organisers and instructors\n  \n    Bárbara Romero Ferrón, PhDProvenance Lab, Leuphana University of Lüneburg\n    Prof. Dr. Lynn RotherProvenance Lab, Leuphana University of Lüneburg\n    Sandra van Ginhoven, PhDGetty Provenance Index, Getty Research Institute\n  \n\n\n\n  \n    \n      Follow the work.\n      Occasional notes on new research, open positions, and events from the Provenance Lab.\n    \n    \n      \n      Newsletter sign-up requires JavaScript. You can also email info@provenancelab.org.\n    \n  \n\n\n\n  \n  \n    \n      Organised by\n      \n        The Provenance Lab, Leuphana University of Lüneburg\n        Getty Provenance Index, Getty Research Institute\n      \n    \n    \n      Licence\n      © 2026 Coding Provenance Workshop. Texts licensed under CC BY 4.0. Reuse is encouraged — we happily promote changes of custody. Just be sure to write a good provenance record and cite this workshop. Painting reproductions are not covered by this licence."
   },
   {
-    "objectID": "index.html#about",
-    "href": "index.html#about",
-    "title": "Coding Provenance",
-    "section": "About",
-    "text": "About\n\nUnder construction"
+    "objectID": "participants/index.html",
+    "href": "participants/index.html",
+    "title": "\n    Coding Provenance\n    Workshop\n  ",
+    "section": "",
+    "text": "Skip to content\n\n\n\n\n\n  \n  Adriaan de Lelie, The Art Gallery of Jan Gildemeester Jansz, 1794–95. Oil on panel. Rijksmuseum, Amsterdam (SK-A-4100). Public domain.\n\n\n\n  \n    Coding Provenance\n    Workshop\n  \n  Second Edition\n  This is the materials site for the second edition of the Coding Provenance Workshop: four days on computational provenance, meaning provenance research with statistics, network analysis, optical character recognition, large language models and natural language processing. Here you find the sessions, the readings and the materials for each step of the workflow.\n  \n    Dates1–4 December 2026\n    VenueGetty Research Institute, Los Angeles\n    PartnersProvenance Lab, Leuphana University of Lüneburg, and the Getty Provenance Index\n  \n\n\n\n  Materials\n  \n\n\n\nNo.\nEntry\nPart\nStatus\n\n\n\n\n001\nSecond Online SessionAgenda, recordings and slides.\nOnline session\nTo come\n\n\n002\nStructuring DataOrganising provenance data into consistent structures.\nWorkflow, step 1 of 4\nTo come\n\n\n003\nPreprocessing DataCleaning, standardising and preparing data.\nWorkflow, step 2 of 4\nTo come\n\n\n004\nAnalysing DataMethods and approaches for analysis.\nWorkflow, step 3 of 4\nTo come\n\n\n005\nVisualising DataCharts, maps and networks.\nWorkflow, step 4 of 4\nTo come\n\n\n006\nBibliography & ResourcesReadings, tutorials, tools and datasets.\nReference\nEntered\n\n\n\n\n\n\n\n  About the workshop\n  \n    After decades working as provenance and art history researchers, we have watched the field change in many ways. Computational techniques and a more data-driven approach can reveal patterns, structures and dynamics that are hard to uncover through close reading, and lead to research questions that were previously impossible to answer or even to ask. We call it computational provenance: provenance research using statistics, network analysis, optical character recognition, large language models and natural language processing.\n    This workshop gives researchers and practitioners a first encounter with these theories, methods and tools, so they can bring new policies, methods and techniques into their institutions and their own research. Interdisciplinary work with computer scientists and digital humanities specialists is extremely valuable, and fair and equal collaboration starts with a good understanding of what can be done and how.\n  \n  \n    \n      Organisers and instructors\n      Bárbara Romero FerrónProvenance Lab, Leuphana University of Lüneburg\n      Lynn RotherProvenance Lab, Leuphana University of Lüneburg\n      Sandra van GinhovenGetty Provenance Index, Getty Research Institute\n    \n    \n      Schedule\n      To be announced\n    \n    \n      Workshop home\n      Coding Provenance Workshop\n    \n  \n\n\n\n  Plates\n  Each workflow page carries one painting with its record and provenance.\n  \n    \n      \n        \n        No. 002Structuring DataEduardo Chicharro Agüera, Las uveras, 1898© Herederos de Eduardo Chicharro Agüera\n      \n    \n    \n      \n        \n        No. 003Preprocessing DataIgnacio Díaz Olano, Las planchadoras, 1895\n      \n    \n    \n      \n        \n        No. 004Analysing DataLaureano Barrau Buñol, Escardadoras, 1891© rights holder to be confirmed\n      \n    \n    \n      \n        \n        No. 005Visualising DataDomingo Muñoz y Cuesta, La amiga (En Córdoba), 1901"
   },
   {
-    "objectID": "index.html#materials",
-    "href": "index.html#materials",
-    "title": "Coding Provenance",
-    "section": "Materials",
-    "text": "Materials\n\n\nSecond Online Session\nAgenda, recordings and slides.\n\n\nStructuring Data\nOrganising provenance data into consistent structures.\n\n\nPreprocessing Data\nCleaning, standardising and preparing data.\n\n\nAnalysing Data\nMethods and approaches for analysis.\n\n\nVisualising Data\nCharts, maps and networks.\n\n\nBibliography & Resources\nReadings, tools and datasets."
+    "objectID": "participants/resources.html",
+    "href": "participants/resources.html",
+    "title": "Bibliography & other Resources",
+    "section": "",
+    "text": "Skip to content"
   },
   {
-    "objectID": "index.html#schedule",
-    "href": "index.html#schedule",
-    "title": "Coding Provenance",
-    "section": "Schedule",
-    "text": "Schedule\nSchedule to be announced."
+    "objectID": "participants/resources.html#mandatory-readings",
+    "href": "participants/resources.html#mandatory-readings",
+    "title": "Bibliography & other Resources",
+    "section": "Mandatory readings",
+    "text": "Mandatory readings\n\nRother, Lynn, Max Koss, and Fabio Mariani. “Taking Care of History: Toward a Politics of Provenance Linked Open Data in Museums.” In Perspectives on Data, edited by Emily Lew Fry and Erin Canning. Art Institute of Chicago, 2022.\nhttps://www.artic.edu/digital-publications/37/perspectives-on-data/25/taking-care-of-history\nSchich, Maximilian, Christian Huemer, Patryk Adamczyk, Lev Manovich, and Yang-Yu Liu. “Network Dimensions in the Getty Provenance Index.” arXiv (2017).\nhttps://arxiv.org/abs/1706.02804"
   },
   {
-    "objectID": "structuring-data.html",
-    "href": "structuring-data.html",
+    "objectID": "participants/resources.html#getty-provenance-index-tutorials",
+    "href": "participants/resources.html#getty-provenance-index-tutorials",
+    "title": "Bibliography & other Resources",
+    "section": "Getty Provenance Index tutorials",
+    "text": "Getty Provenance Index tutorials\n\n\nIntroduction to the Getty Provenance Index\nArtists, Collectors & Dealers in the GPI\nUsing the Getty Provenance Index Databases\nGetty Provenance Index Explained: A Walkthrough"
+  },
+  {
+    "objectID": "participants/resources.html#bibliography",
+    "href": "participants/resources.html#bibliography",
+    "title": "Bibliography & other Resources",
+    "section": "Bibliography",
+    "text": "Bibliography\n\nAhnert, Ruth, and Sebastian E. Ahnert. Tudor Networks of Power. Oxford University Press, 2023.\nhttps://doi.org/10.1093/oso/9780198858973.001.0001\nAhnert, Ruth, Sebastian E. Ahnert, and Catherine Nicole Coleman. The Network Turn. Cambridge University Press, 2021.\nhttps://doi.org/10.1017/9781108866804\nBarabási, Albert-László, et al. “Quantifying Reputation and Success in Art.” Science 362, no. 6416 (2018): 825–829.\nhttps://doi.org/10.1126/science.aau7224\nBarabási, Albert-László, et al. Network Science.\nhttp://networksciencebook.com/\nBishop, Claire. “Against Digital Art History.” International Journal for Digital Art History 3 (2018).\nhttps://doi.org/10.11588/dah.2018.3.49915\nCairo, Alberto. How Charts Lie: Getting Smarter About Visual Information. W. W. Norton, 2020.\nD’Ignazio, Catherine, and Lauren F. Klein. Data Feminism. MIT Press, 2023.\nhttps://data-feminism.mitpress.mit.edu/\nDrucker, Johanna. Graphesis: Visual Forms of Knowledge Production. Harvard University Press, 2014.\nhttps://www.hup.harvard.edu/books/9780674724938\nHuemer, Christian. “The Provenance of Provenances.” In Collecting & Provenance: A Multidisciplinary Approach, edited by Jane C. Milosch and Nick Pearce. Rowman & Littlefield, 2019.\nhttps://www.academia.edu/43252971/The_Provenance_of_Provenances\nKarsdorp, Folgert. Python Programming for the Humanities.\nhttps://www.karsdorp.io/python-course/\nKarsdorp, Folgert, Mike Kestemont, and Allen Riddell. Humanities Data Analysis: Case Studies with Python. Princeton University Press, 2021.\nhttps://www.humanitiesdataanalysis.org/\nLincoln, Matthew D. “Tangled Metaphors: Network Thinking and Network Analysis in the History of Art.” In The Routledge Companion to Digital Humanities and Art History, Routledge, 2020.\nLove, Heather. “Close but Not Deep: Literary Ethics and the Descriptive Turn.” New Literary History 41, no. 2 (2010): 371–391.\nhttps://doi.org/10.1353/nlh.2010.0003\nMariani, Fabio. “Introducing VISU: Vagueness, Incompleteness, Subjectivity, and Uncertainty in Art Provenance Data.” In Computational Methods in the Humanities 2022, CEUR Workshop Proceedings, 3602 (2023).\nhttps://ceur-ws.org/Vol-3602/\nMariani, Fabio, Max Koss, and Lynn Rother. “People Information in Provenance Data: Biographical Entity Linking with Wikidata and ULAN.” Život Umjetnosti 114, no. 1 (2024): 148–161.\nhttps://doi.org/10.31664/zu.2024.114.07\nMariani, Fabio, Lynn Rother, and Max Koss. “Teaching Provenance to AI: An Annotation Scheme for Museum Data.” In AI in Museums: Reflections, Perspectives and Applications, edited by Sonja Thiel and Johannes Bernhardt. Transcript Verlag, 2023.\nhttps://doi.org/10.1515/9783839467107-014\nMcNeill, J. R., and William H. McNeill. The Human Web: A Bird’s-Eye View of World History. W. W. Norton, 2003.\nMeirelles, Isabel. Design for Information. Rockport Publishers, 2013.\nPoirier, Lindsay. “Ethnographies of Datasets: Teaching Critical Data Analysis Through R Notebooks.” 2020.\nhttps://jitp.commons.gc.cuny.edu/ethnographies-of-datasets-teaching-critical-data-analysis-through-r-notebooks/\nPorras, Stephanie. “Keeping Our Eyes Open: Visualizing Networks and Art History.” Artl@s Bulletin 6, no. 3 (2017).\nhttps://docs.lib.purdue.edu/artlas/vol6/iss3/3\nRicaurte, Paola. “Data Epistemologies, the Coloniality of Power, and Resistance.” Television & New Media 20, no. 4 (2019): 350–365.\nhttps://doi.org/10.1177/1527476419831640\nRother, Lynn. “Uncanny Provenance: Art History and Its Double / Unheimliche Provenienz: Kunstgeschichte und ihr Doppelgänger.” Texte zur Kunst 32, no. 128 (2022): 84–97.\nRother, Lynn. “Institutionalisierte Institutionskritik: Lynn Rother über ‘Wege der Kunst’ im Museum Rietberg, Zürich, sowie ‘Zerrissene Moderne’ und ‘Der Sammler Curt Glaser’ im Kunstmuseum Basel.” Texte zur Kunst 33, no. 131 (2023): 214–219.\nRother, Lynn, Max Koss, and Fabio Mariani. “Interpreting Strings, Weaving Threads: Structuring Provenance Data with AI.” In Sammlungsforschung im Digitalen Zeitalter, edited by Stefan Alschner and Katharina Günther. Wallstein Verlag, 2024.\nhttps://doi.org/10.15499/kds-005-008\nShekhtman, Louis Michael, and Albert-László Barabási. “Philanthropy in Art: Locality, Donor Retention, and Prestige.” Scientific Reports 13, no. 1 (2023): 12157.\nhttps://doi.org/10.1038/s41598-023-38815-1"
+  },
+  {
+    "objectID": "participants/resources.html#other-resources",
+    "href": "participants/resources.html#other-resources",
+    "title": "Bibliography & other Resources",
+    "section": "Other resources",
+    "text": "Other resources\n\n\nCARE Principles for Indigenous Data Governance\nCIDOC CRM, Version 7.3\nCreating a Data Cleaning Workflow\nDataviz Project\nGetty Vocabularies (AAT, ULAN, TGN)\nLinked Art — Linked Art Community\nProgramming Historian\nThe FAIR Guiding Principles for Scientific Data Management and Stewardship\nThe Virtual International Authority File (VIAF)\nVisualizing Historical Networks\nVoyant Tools\nWikidata: A Free and Open Knowledge Base\n\n\n\n\nBrought forward005 Visualising Data"
+  },
+  {
+    "objectID": "participants/structuring-data.html",
+    "href": "participants/structuring-data.html",
     "title": "Structuring Data",
     "section": "",
-    "text": "Under construction\nEduardo Chicharro (signed “E. Chicharro, Almería”)\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "analysing-data.html",
-    "href": "analysing-data.html",
-    "title": "Analysing Data",
-    "section": "",
-    "text": "Under construction\nPainting signed “L. Barrau”\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "visualising-data.html",
-    "href": "visualising-data.html",
-    "title": "Visualising Data",
-    "section": "",
-    "text": "Under construction\nCredit to be confirmed\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "second-session.html",
-    "href": "second-session.html",
-    "title": "Second Online Session",
-    "section": "",
-    "text": "Under construction\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "preprocessing-data.html",
-    "href": "preprocessing-data.html",
-    "title": "Preprocessing Data",
-    "section": "",
-    "text": "Under construction\nPainting signed “I. Díaz, Roma 1895”\n\n\n\n\n\n Back to top"
+    "text": "Skip to content\n\n\n\n\nEduardo Chicharro Agüera, Las uveras (Grape Sellers), 1898. Museo Nacional Centro de Arte Reina Sofía, Madrid.\n\n\nRecord of the painting\n\nArtistEduardo Chicharro Agüera (1873–1949)\nTitleLas uveras (Grape Sellers)\nDate1898\nMediumOil on canvas, 240 × 400 cm\nCollectionMuseo Nacional Centro de Arte Reina Sofía, Madrid\nNumberAS05614\nRights© Herederos de Eduardo Chicharro Agüera. In copyright; not covered by this site’s licence.\nImageMuseo Nacional Centro de Arte Reina Sofía\n\n\n\nProvenance\n\nText\nTable\n\n\n…; Museo Español de Arte Contemporáneo (MEAC), Madrid; Museo Nacional Centro de Arte Reina Sofía, Madrid, from 1988, on the reorganisation of the MEAC holdings\n\nThe same provenance, one event per row\nDateEventHolderPlace\n\n—Earlier history not given in the record\nuntil 1988HeldMuseo Español de Arte Contemporáneo (MEAC)Madrid\n1988Transferred on the reorganisation of the MEAC holdingsMuseo Nacional Centro de Arte Reina SofíaMadrid\n\n\nTranslated from the holding museum's record: Museo Reina Sofía, Las uveras.\n\n\n\n\n\n\n\n\nBrought forward001 Second Online SessionCarried forward003 Preprocessing Data"
   }
 ]

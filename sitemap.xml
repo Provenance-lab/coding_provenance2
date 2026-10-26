@@ -1,31 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://provenance-lab.github.io/coding_provenance2/resources.html</loc>
-    <lastmod>2026-10-04T18:17:58.237Z</lastmod>
+    <loc>https://codingprovenance.org/participants/visualising-data.html</loc>
+    <lastmod>2026-10-23T20:33:30.499Z</lastmod>
   </url>
   <url>
-    <loc>https://provenance-lab.github.io/coding_provenance2/index.html</loc>
-    <lastmod>2026-10-14T18:57:39.860Z</lastmod>
+    <loc>https://codingprovenance.org/participants/second-session.html</loc>
+    <lastmod>2026-10-23T20:33:30.502Z</lastmod>
   </url>
   <url>
-    <loc>https://provenance-lab.github.io/coding_provenance2/structuring-data.html</loc>
-    <lastmod>2026-10-04T17:27:26.798Z</lastmod>
+    <loc>https://codingprovenance.org/participants/preprocessing-data.html</loc>
+    <lastmod>2026-10-23T20:33:30.498Z</lastmod>
   </url>
   <url>
-    <loc>https://provenance-lab.github.io/coding_provenance2/analysing-data.html</loc>
-    <lastmod>2026-10-04T17:37:59.287Z</lastmod>
+    <loc>https://codingprovenance.org/participants/analysing-data.html</loc>
+    <lastmod>2026-10-23T20:50:46.680Z</lastmod>
   </url>
   <url>
-    <loc>https://provenance-lab.github.io/coding_provenance2/visualising-data.html</loc>
-    <lastmod>2026-10-04T17:42:07.238Z</lastmod>
+    <loc>https://codingprovenance.org/access.html</loc>
+    <lastmod>2026-10-23T22:50:54.486Z</lastmod>
   </url>
   <url>
-    <loc>https://provenance-lab.github.io/coding_provenance2/second-session.html</loc>
-    <lastmod>2026-10-04T17:22:18.443Z</lastmod>
+    <loc>https://codingprovenance.org/index.html</loc>
+    <lastmod>2026-10-24T17:11:40.419Z</lastmod>
   </url>
   <url>
-    <loc>https://provenance-lab.github.io/coding_provenance2/preprocessing-data.html</loc>
-    <lastmod>2026-10-04T17:32:44.836Z</lastmod>
+    <loc>https://codingprovenance.org/participants/index.html</loc>
+    <lastmod>2026-10-23T23:00:43.062Z</lastmod>
+  </url>
+  <url>
+    <loc>https://codingprovenance.org/participants/resources.html</loc>
+    <lastmod>2026-10-23T20:45:23.919Z</lastmod>
+  </url>
+  <url>
+    <loc>https://codingprovenance.org/participants/structuring-data.html</loc>
+    <lastmod>2026-10-23T20:33:30.498Z</lastmod>
   </url>
 </urlset>

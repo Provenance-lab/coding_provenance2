@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Materials for the second edition of the Coding Provenance Workshop, 1 to 4 December 2026, Getty Research Institute, Los Angeles.">
+
+<title>Coding Provenance Workshop — Second Edition – Coding Provenance</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<link href="../favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-2549fc1f01fa49af99d2cbd73b361303.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
+document.documentElement.classList.add('js');
+// v1 participant gate. Not security: it keeps casual visitors out of
+// participants/, nothing more. The value is a PBKDF2-SHA256 hash of the
+// password (salt "coding-provenance-2026", 310000 iterations); see README.
+window.CP_ACCESS = '062700d22bef93b41f571f6d42141770156273d443aee65560a75a34b747d1ec';
+(function () {
+  var path = location.pathname;
+  var at = path.indexOf('/participants/');
+  if (at === -1) return;
+  var token = null;
+  try { token = sessionStorage.getItem('cp-access') || localStorage.getItem('cp-access'); } catch (e) {}
+  if (token === window.CP_ACCESS) return;
+  var next = path.slice(at + '/participants/'.length) || 'index.html';
+  location.replace('../access.html?next=' + encodeURIComponent(next));
+})();
+</script>
+<meta name="theme-color" content="#f6f6f2">
+<link rel="preload" href="../site_libs/bootstrap/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin="">
+<meta name="robots" content="noindex, nofollow">
+
+
+<meta property="og:title" content="Coding Provenance Workshop — Second Edition">
+<meta property="og:description" content="Materials for the second edition of the Coding Provenance Workshop, 1 to 4 December 2026, Getty Research Institute, Los Angeles.">
+<meta property="og:image" content="https://codingprovenance.org/images/plates/gallery-1600.webp">
+<meta property="og:site_name" content="Coding Provenance">
+<meta property="og:image:alt" content="Visitors in late eighteenth-century dress gather in a picture gallery hung frame to frame with paintings; a woman sits before a painting on an easel while the host greets a guest in a red coat.">
+<meta name="twitter:title" content="Coding Provenance Workshop — Second Edition">
+<meta name="twitter:description" content="Materials for the second edition of the Coding Provenance Workshop, 1 to 4 December 2026, Getty Research Institute, Los Angeles.">
+<meta name="twitter:image" content="https://codingprovenance.org/images/plates/gallery-1600.webp">
+<meta name="twitter:image:alt" content="Visitors in late eighteenth-century dress gather in a picture gallery hung frame to frame with paintings; a woman sits before a painting on an easel while the host greets a guest in a red coat.">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed landing quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-xl " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../participants/index.html">
+    <span class="navbar-title">Coding Provenance</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../participants/second-session.html"> 
+<span class="menu-text">Session 2</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../participants/structuring-data.html"> 
+<span class="menu-text">Structuring</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../participants/preprocessing-data.html"> 
+<span class="menu-text">Preprocessing</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../participants/analysing-data.html"> 
+<span class="menu-text">Analysing</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../participants/visualising-data.html"> 
+<span class="menu-text">Visualising</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../participants/resources.html"> 
+<span class="menu-text">Resources</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-editions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Editions</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-editions">    
+        <li>
+    <a class="dropdown-item" href="https://provenance-lab.github.io/coding_provenance/">
+ <span class="dropdown-text">First edition</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../index.html">
+ <span class="dropdown-text">Workshop home</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<!--
+THESIS: Kept like a dealer's stock book: every page an entry, the materials and the bibliography numbered rows, every picture with its record. Refuses the hero-photo-over-card-grid workshop page.
+OWN-WORLD: Near-white paper, ink, blue hairline rules, one red double margin rule with numbers to its left; Archivo across widths, tabular figures; no textures, handwriting or shadows.
+STORY: A participant sees what, when and where, finds any session in seconds, and watches a museum's provenance sentence become a table.
+FIRST VIEWPORT: Heavy expanded title right of the red rule; a short summary of what the site is (the user's addition); dates, venue and partners on one ruled record line; then the materials ledger (No. in the margin, Entry, Part, Status). No hero image.
+FORM: Dealer's stock book, #2 of the grounded list, user's pick from the safer hand; seed 781d0acb.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+-->
+<a class="skip-link" href="#quarto-document-content">Skip to content</a>
+
+
+
+
+<figure class="welcome figure">
+  <img src="../images/plates/gallery-1600.webp" srcset="../images/plates/gallery-960.webp 960w, ../images/plates/gallery-1600.webp 1600w, ../images/plates/gallery-2400.webp 2400w" sizes="(min-width: 80rem) 70rem, calc(100vw - 4rem)" width="1600" height="1194" alt="Visitors in late eighteenth-century dress gather in a picture gallery hung frame to frame with paintings; a woman sits before a painting on an easel while the host greets a guest in a red coat." fetchpriority="high" decoding="async" class="figure-img">
+  <figcaption>Adriaan de Lelie, <em>The Art Gallery of Jan Gildemeester Jansz</em>, 1794–95. Oil on panel. Rijksmuseum, Amsterdam (SK-A-4100). Public domain.</figcaption>
+</figure>
+
+<section class="cover" aria-labelledby="cover-title">
+  <h1 id="cover-title" class="cover-title">
+    <span>Coding Provenance</span>
+    <span>Workshop</span>
+  </h1>
+  <p class="cover-edition">Second Edition</p>
+  <p class="cover-summary">This is the materials site for the second edition of the Coding Provenance Workshop: four days on computational provenance, meaning provenance research with statistics, network analysis, optical character recognition, large language models and natural language processing. Here you find the sessions, the readings and the materials for each step of the workflow.</p>
+  <dl class="cover-meta">
+    <div><dt>Dates</dt><dd><time datetime="2026-12-01">1</time>–<time datetime="2026-12-04">4 December 2026</time></dd></div>
+    <div><dt>Venue</dt><dd>Getty Research Institute, Los Angeles</dd></div>
+    <div><dt>Partners</dt><dd>Provenance Lab, Leuphana University of Lüneburg, and the Getty Provenance Index</dd></div>
+  </dl>
+</section>
+
+<section class="ledger" aria-labelledby="materials">
+  <h2 id="materials">Materials</h2>
+  
+<table class="ledger-table caption-top table">
+<thead>
+<tr class="header">
+<th class="no" data-quarto-table-cell-role="th" scope="col">No.</th>
+<th data-quarto-table-cell-role="th" scope="col">Entry</th>
+<th data-quarto-table-cell-role="th" scope="col">Part</th>
+<th data-quarto-table-cell-role="th" scope="col">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td class="no">001</td>
+<td class="entry"><a href="second-session.html">Second Online Session</a><span class="desc">Agenda, recordings and slides.</span></td>
+<td class="part">Online session</td>
+<td class="status-cell"><span class="status" data-status="to come">To come</span></td>
+</tr>
+<tr class="even">
+<td class="no">002</td>
+<td class="entry"><a href="structuring-data.html">Structuring Data</a><span class="desc">Organising provenance data into consistent structures.</span></td>
+<td class="part">Workflow, step 1 of 4</td>
+<td class="status-cell"><span class="status" data-status="to come">To come</span></td>
+</tr>
+<tr class="odd">
+<td class="no">003</td>
+<td class="entry"><a href="preprocessing-data.html">Preprocessing Data</a><span class="desc">Cleaning, standardising and preparing data.</span></td>
+<td class="part">Workflow, step 2 of 4</td>
+<td class="status-cell"><span class="status" data-status="to come">To come</span></td>
+</tr>
+<tr class="even">
+<td class="no">004</td>
+<td class="entry"><a href="analysing-data.html">Analysing Data</a><span class="desc">Methods and approaches for analysis.</span></td>
+<td class="part">Workflow, step 3 of 4</td>
+<td class="status-cell"><span class="status" data-status="to come">To come</span></td>
+</tr>
+<tr class="odd">
+<td class="no">005</td>
+<td class="entry"><a href="visualising-data.html">Visualising Data</a><span class="desc">Charts, maps and networks.</span></td>
+<td class="part">Workflow, step 4 of 4</td>
+<td class="status-cell"><span class="status" data-status="to come">To come</span></td>
+</tr>
+<tr class="even">
+<td class="no">006</td>
+<td class="entry"><a href="resources.html">Bibliography &amp; Resources</a><span class="desc">Readings, tutorials, tools and datasets.</span></td>
+<td class="part">Reference</td>
+<td class="status-cell"><span class="status" data-status="entered">Entered</span></td>
+</tr>
+</tbody>
+</table>
+
+</section>
+
+<section class="about" aria-labelledby="about">
+  <h2 id="about">About the workshop</h2>
+  <div class="about-text">
+    <p>After decades working as provenance and art history researchers, we have watched the field change in many ways. Computational techniques and a more data-driven approach can reveal patterns, structures and dynamics that are hard to uncover through close reading, and lead to research questions that were previously impossible to answer or even to ask. We call it computational provenance: provenance research using statistics, network analysis, optical character recognition, large language models and natural language processing.</p>
+    <p>This workshop gives researchers and practitioners a first encounter with these theories, methods and tools, so they can bring new policies, methods and techniques into their institutions and their own research. Interdisciplinary work with computer scientists and digital humanities specialists is extremely valuable, and fair and equal collaboration starts with a good understanding of what can be done and how.</p>
+  </div>
+  <dl class="about-record">
+    <div>
+      <dt>Organisers and instructors</dt>
+      <dd>Bárbara Romero Ferrón<span class="affil">Provenance Lab, Leuphana University of Lüneburg</span></dd>
+      <dd>Lynn Rother<span class="affil">Provenance Lab, Leuphana University of Lüneburg</span></dd>
+      <dd>Sandra van Ginhoven<span class="affil">Getty Provenance Index, Getty Research Institute</span></dd>
+    </div>
+    <div>
+      <dt>Schedule</dt>
+      <dd><span class="status" data-status="to come">To be announced</span></dd>
+    </div>
+    <div>
+      <dt>Workshop home</dt>
+      <dd><a href="../index.html">Coding Provenance Workshop</a></dd>
+    </div>
+  </dl>
+</section>
+
+<section class="plates" aria-labelledby="plates">
+  <h2 id="plates">Plates</h2>
+  <p class="plates-intro">Each workflow page carries one painting with its record and provenance.</p>
+  <div class="plate-grid">
+    <figure class="figure">
+      <a href="structuring-data.html">
+        <img src="../images/plates/structuring-960.webp" srcset="../images/plates/structuring-960.webp 960w, ../images/plates/structuring-1600.webp 1600w" sizes="(min-width: 80rem) 36rem, (min-width: 45rem) 50vw, 100vw" width="960" height="567" alt="Women in shawls and flowered skirts sorting bunches of grapes in a whitewashed room, among baskets and barrels." loading="lazy" decoding="async" class="figure-img">
+        <figcaption><span class="pl-no">No. 002</span><span><span class="pl-step">Structuring Data</span>Eduardo Chicharro Agüera, <em>Las uveras</em>, 1898<span class="pl-rights">© Herederos de Eduardo Chicharro Agüera</span></span></figcaption>
+      </a>
+    </figure>
+    <figure class="figure">
+      <a href="preprocessing-data.html">
+        <img src="../images/plates/preprocessing-960.webp" srcset="../images/plates/preprocessing-960.webp 960w, ../images/plates/preprocessing-1600.webp 1600w" sizes="(min-width: 80rem) 34rem, (min-width: 45rem) 50vw, 100vw" width="960" height="597" alt="Women dressed in white ironing and folding linen at long tables in a bright workroom." loading="lazy" decoding="async" class="figure-img">
+        <figcaption><span class="pl-no">No. 003</span><span><span class="pl-step">Preprocessing Data</span>Ignacio Díaz Olano, <em>Las planchadoras</em>, 1895</span></figcaption>
+      </a>
+    </figure>
+    <figure class="figure">
+      <a href="analysing-data.html">
+        <img src="../images/plates/analysing-960.webp" srcset="../images/plates/analysing-960.webp 960w, ../images/plates/analysing-1600.webp 1600w" sizes="(min-width: 80rem) 30rem, (min-width: 45rem) 45vw, 100vw" width="960" height="816" alt="Two women in aprons bent double, weeding a field with hoes, a wide green plain behind them." loading="lazy" decoding="async" class="figure-img">
+        <figcaption><span class="pl-no">No. 004</span><span><span class="pl-step">Analysing Data</span>Laureano Barrau Buñol, <em>Escardadoras</em>, 1891<span class="pl-rights">© rights holder to be confirmed</span></span></figcaption>
+      </a>
+    </figure>
+    <figure class="figure">
+      <a href="visualising-data.html">
+        <img src="../images/plates/visualising-960.webp" srcset="../images/plates/visualising-960.webp 960w, ../images/plates/visualising-1600.webp 1600w" sizes="(min-width: 80rem) 36rem, (min-width: 45rem) 55vw, 100vw" width="960" height="687" alt="Young girls in white dresses sewing on small chairs while a woman by the window sews and watches over them." loading="lazy" decoding="async" class="figure-img">
+        <figcaption><span class="pl-no">No. 005</span><span><span class="pl-step">Visualising Data</span>Domingo Muñoz y Cuesta, <em>La amiga (En Córdoba)</em>, 1901</span></figcaption>
+      </a>
+    </figure>
+  </div>
+</section>
+
+
+
+</main> <!-- /main -->
+<script>
+// Provenance switch: the museum's sentence and the same record as a table.
+// Each clause of the sentence and its table row share a view-transition name,
+// so where the browser supports it the clause travels into its row.
+(() => {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  document.querySelectorAll('.prov').forEach((prov, p) => {
+    const text = prov.querySelector('.prov-text');
+    const rows = [...prov.querySelectorAll('.prov-table tbody tr')];
+    const buttons = [...prov.querySelectorAll('.prov-switch button')];
+
+    const clauses = text.textContent.trim().split(/;\s*/);
+    text.textContent = '';
+    clauses.forEach((clause, i) => {
+      const span = document.createElement('span');
+      span.className = 'clause';
+      span.textContent = clause;
+      span.style.viewTransitionName = `prov-${p}-${i}`;
+      text.append(span);
+      // The semicolons are where the sentence will split, so they are marked.
+      if (i < clauses.length - 1) {
+        const sep = document.createElement('span');
+        sep.className = 'sep';
+        sep.textContent = ';';
+        text.append(sep, ' ');
+      }
+      if (rows[i]) rows[i].style.viewTransitionName = `prov-${p}-${i}`;
+    });
+
+    const apply = (view) => {
+      prov.dataset.view = view;
+      buttons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.view === view)));
+    };
+
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const view = button.dataset.view;
+        if (prov.dataset.view === view) return;
+        if (!document.startViewTransition || reduceMotion.matches) {
+          apply(view);
+          return;
+        }
+        document.documentElement.classList.add('prov-morphing');
+        const transition = document.startViewTransition(() => apply(view));
+        transition.finished.finally(() => document.documentElement.classList.remove('prov-morphing'));
+      });
+    });
+  });
+})();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/codingprovenance\.org\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 Coding Provenance Workshop — Licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br> Reuse is encouraged — we happily promote changes of custody. Just be sure to write a good provenance record and cite this workshop.<br> <span class="footer-note">The painting reproductions are not covered by this licence; see the credit with each one.</span></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

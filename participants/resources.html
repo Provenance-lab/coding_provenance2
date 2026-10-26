@@ -2,17 +2,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.31">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Readings, tutorials, tools and datasets for the workshop.">
 
 <title>Bibliography &amp; other Resources – Coding Provenance</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -23,19 +30,19 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b305670ef94c0602ac7fcde6bb80c743.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<link href="../favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-2549fc1f01fa49af99d2cbd73b361303.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -51,18 +58,46 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+document.documentElement.classList.add('js');
+// v1 participant gate. Not security: it keeps casual visitors out of
+// participants/, nothing more. The value is a PBKDF2-SHA256 hash of the
+// password (salt "coding-provenance-2026", 310000 iterations); see README.
+window.CP_ACCESS = '062700d22bef93b41f571f6d42141770156273d443aee65560a75a34b747d1ec';
+(function () {
+  var path = location.pathname;
+  var at = path.indexOf('/participants/');
+  if (at === -1) return;
+  var token = null;
+  try { token = sessionStorage.getItem('cp-access') || localStorage.getItem('cp-access'); } catch (e) {}
+  if (token === window.CP_ACCESS) return;
+  var next = path.slice(at + '/participants/'.length) || 'index.html';
+  location.replace('../access.html?next=' + encodeURIComponent(next));
+})();
+</script>
+<meta name="theme-color" content="#f6f6f2">
+<link rel="preload" href="../site_libs/bootstrap/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin="">
+<meta name="robots" content="noindex, nofollow">
 
 
+<meta property="og:title" content="Bibliography &amp; other Resources – Coding Provenance">
+<meta property="og:description" content="Readings, tutorials, tools and datasets for the workshop.">
+<meta property="og:image" content="https://codingprovenance.org/participants/images/og-card.png">
+<meta property="og:site_name" content="Coding Provenance">
+<meta name="twitter:title" content="Bibliography &amp; other Resources – Coding Provenance">
+<meta name="twitter:description" content="Readings, tutorials, tools and datasets for the workshop.">
+<meta name="twitter:image" content="https://codingprovenance.org/participants/images/og-card.png">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed resources-body quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-xl " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../participants/index.html">
     <span class="navbar-title">Coding Provenance</span>
     </a>
   </div>
@@ -72,33 +107,46 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./second-session.html"> 
+    <a class="nav-link" href="../participants/second-session.html"> 
 <span class="menu-text">Session 2</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./structuring-data.html"> 
+    <a class="nav-link" href="../participants/structuring-data.html"> 
 <span class="menu-text">Structuring</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./preprocessing-data.html"> 
+    <a class="nav-link" href="../participants/preprocessing-data.html"> 
 <span class="menu-text">Preprocessing</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./analysing-data.html"> 
+    <a class="nav-link" href="../participants/analysing-data.html"> 
 <span class="menu-text">Analysing</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./visualising-data.html"> 
+    <a class="nav-link" href="../participants/visualising-data.html"> 
 <span class="menu-text">Visualising</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./resources.html" aria-current="page"> 
+    <a class="nav-link active" href="../participants/resources.html" aria-current="page"> 
 <span class="menu-text">Resources</span></a>
   </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-editions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Editions</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-editions">    
+        <li>
+    <a class="dropdown-item" href="https://provenance-lab.github.io/coding_provenance/">
+ <span class="dropdown-text">First edition</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../index.html">
+ <span class="dropdown-text">Workshop home</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -113,37 +161,40 @@ ul.task-list li input[type="checkbox"] {
     
 <!-- main -->
 <main class="content column-page" id="quarto-document-content">
+<!--
+THESIS: Kept like a dealer's stock book: every page an entry, the materials and the bibliography numbered rows, every picture with its record. Refuses the hero-photo-over-card-grid workshop page.
+OWN-WORLD: Near-white paper, ink, blue hairline rules, one red double margin rule with numbers to its left; Archivo across widths, tabular figures; no textures, handwriting or shadows.
+STORY: A participant sees what, when and where, finds any session in seconds, and watches a museum's provenance sentence become a table.
+FIRST VIEWPORT: Heavy expanded title right of the red rule; a short summary of what the site is (the user's addition); dates, venue and partners on one ruled record line; then the materials ledger (No. in the margin, Entry, Part, Status). No hero image.
+FORM: Dealer's stock book, #2 of the grounded list, user's pick from the safer hand; seed 781d0acb.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+-->
+<a class="skip-link" href="#quarto-document-content">Skip to content</a>
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Bibliography &amp; other Resources</h1>
-</div>
-
-
-
-<div class="quarto-title-meta column-page">
-
-    
-  
-    
-  </div>
-  
-
-
+<header id="title-block-header" class="quarto-title-block ledger-head">
+<p class="ledger-gutter" aria-hidden="true">006</p>
+<h1 class="title display-7">Bibliography &amp; other Resources</h1>
+<p class="description">Readings, tutorials, tools and datasets for the workshop.</p>
+<dl class="ledger-record">
+<div><dt>Entry</dt><dd>No. 006</dd></div>
+<div><dt>Part</dt><dd>Reference</dd></div>
+<div><dt>Status</dt><dd class="status" data-status="Entered">Entered</dd></div>
+</dl>
 </header>
 
 
-<div class="resources-page">
-<section id="mandatory-readings" class="level3 readings-box">
-<h3 class="anchored" data-anchor-id="mandatory-readings">Mandatory Readings</h3>
+
+<section id="mandatory-readings" class="level2">
+<h2 data-anchor-id="mandatory-readings">Mandatory readings</h2>
+<div class="ledger-list required">
 <p><strong>Rother, Lynn, Max Koss, and Fabio Mariani.</strong> “Taking Care of History: Toward a Politics of Provenance Linked Open Data in Museums.” In <em>Perspectives on Data</em>, edited by Emily Lew Fry and Erin Canning. Art Institute of Chicago, 2022.<br>
 <a href="https://www.artic.edu/digital-publications/37/perspectives-on-data/25/taking-care-of-history" class="uri">https://www.artic.edu/digital-publications/37/perspectives-on-data/25/taking-care-of-history</a></p>
 <p><strong>Schich, Maximilian, Christian Huemer, Patryk Adamczyk, Lev Manovich, and Yang-Yu Liu.</strong> “Network Dimensions in the Getty Provenance Index.” <em>arXiv</em> (2017).<br>
 <a href="https://arxiv.org/abs/1706.02804" class="uri">https://arxiv.org/abs/1706.02804</a></p>
+</div>
 </section>
-<hr>
-<section id="getty-provenance-index-tutorials" class="level3">
-<h3 class="anchored" data-anchor-id="getty-provenance-index-tutorials">Getty Provenance Index Tutorials</h3>
+<section id="getty-provenance-index-tutorials" class="level2">
+<h2 data-anchor-id="getty-provenance-index-tutorials">Getty Provenance Index tutorials</h2>
 <div class="link-list">
 <ul>
 <li><a href="https://www.youtube.com/watch?v=2Z1tyMOE6IE">Introduction to the Getty Provenance Index</a></li>
@@ -152,14 +203,14 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://www.youtube.com/watch?v=RFvYS_5HrfI">Getty Provenance Index Explained: A Walkthrough</a></li>
 </ul>
 </div>
-<hr>
 </section>
-<section id="bibliography" class="level3">
-<h3 class="anchored" data-anchor-id="bibliography">Bibliography</h3>
+<section id="bibliography" class="level2">
+<h2 data-anchor-id="bibliography">Bibliography</h2>
+<div class="ledger-list">
 <p><strong>Ahnert, Ruth, and Sebastian E. Ahnert.</strong> <em>Tudor Networks of Power.</em> Oxford University Press, 2023.<br>
 <a href="https://doi.org/10.1093/oso/9780198858973.001.0001" class="uri">https://doi.org/10.1093/oso/9780198858973.001.0001</a></p>
 <p><strong>Ahnert, Ruth, Sebastian E. Ahnert, and Catherine Nicole Coleman.</strong> <em>The Network Turn.</em> Cambridge University Press, 2021.<br>
-<a href="https://doi.org/10.1017/9781108911466" class="uri">https://doi.org/10.1017/9781108911466</a></p>
+<a href="https://doi.org/10.1017/9781108866804" class="uri">https://doi.org/10.1017/9781108866804</a></p>
 <p><strong>Barabási, Albert-László</strong>, et al.&nbsp;“Quantifying Reputation and Success in Art.” <em>Science</em> 362, no. 6416 (2018): 825–829.<br>
 <a href="https://doi.org/10.1126/science.aau7224" class="uri">https://doi.org/10.1126/science.aau7224</a></p>
 <p><strong>Barabási, Albert-László, et al.</strong> <em>Network Science.</em><br>
@@ -170,13 +221,13 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>D’Ignazio, Catherine, and Lauren F. Klein.</strong> <em>Data Feminism.</em> MIT Press, 2023.<br>
 <a href="https://data-feminism.mitpress.mit.edu/" class="uri">https://data-feminism.mitpress.mit.edu/</a></p>
 <p><strong>Drucker, Johanna.</strong> <em>Graphesis: Visual Forms of Knowledge Production.</em> Harvard University Press, 2014.<br>
-<a href="https://doi.org/10.4159/9780674727558" class="uri">https://doi.org/10.4159/9780674727558</a></p>
+<a href="https://www.hup.harvard.edu/books/9780674724938" class="uri">https://www.hup.harvard.edu/books/9780674724938</a></p>
 <p><strong>Huemer, Christian.</strong> “The Provenance of Provenances.” In <em>Collecting &amp; Provenance: A Multidisciplinary Approach</em>, edited by Jane C. Milosch and Nick Pearce. Rowman &amp; Littlefield, 2019.<br>
 <a href="https://www.academia.edu/43252971/The_Provenance_of_Provenances" class="uri">https://www.academia.edu/43252971/The_Provenance_of_Provenances</a></p>
 <p><strong>Karsdorp, Folgert.</strong> <em>Python Programming for the Humanities.</em><br>
 <a href="https://www.karsdorp.io/python-course/" class="uri">https://www.karsdorp.io/python-course/</a></p>
 <p><strong>Karsdorp, Folgert, Mike Kestemont, and Allen Riddell.</strong> <em>Humanities Data Analysis: Case Studies with Python.</em> Princeton University Press, 2021.<br>
-<a href="https://doi.org/10.2307/j.ctv1dxdxhf" class="uri">https://doi.org/10.2307/j.ctv1dxdxhf</a></p>
+<a href="https://www.humanitiesdataanalysis.org/" class="uri">https://www.humanitiesdataanalysis.org/</a></p>
 <p><strong>Lincoln, Matthew D.</strong> “Tangled Metaphors: Network Thinking and Network Analysis in the History of Art.” In <em>The Routledge Companion to Digital Humanities and Art History</em>, Routledge, 2020.</p>
 <p><strong>Love, Heather.</strong> “Close but Not Deep: Literary Ethics and the Descriptive Turn.” <em>New Literary History</em> 41, no. 2 (2010): 371–391.<br>
 <a href="https://doi.org/10.1353/nlh.2010.0003" class="uri">https://doi.org/10.1353/nlh.2010.0003</a></p>
@@ -189,7 +240,7 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>McNeill, J. R., and William H. McNeill.</strong> <em>The Human Web: A Bird’s-Eye View of World History.</em> W. W. Norton, 2003.</p>
 <p><strong>Meirelles, Isabel.</strong> <em>Design for Information.</em> Rockport Publishers, 2013.</p>
 <p><strong>Poirier, Lindsay.</strong> “Ethnographies of Datasets: Teaching Critical Data Analysis Through R Notebooks.” 2020.<br>
-<a href="https://shorturl.at/lAUgn" class="uri">https://shorturl.at/lAUgn</a></p>
+<a href="https://jitp.commons.gc.cuny.edu/ethnographies-of-datasets-teaching-critical-data-analysis-through-r-notebooks/" class="uri">https://jitp.commons.gc.cuny.edu/ethnographies-of-datasets-teaching-critical-data-analysis-through-r-notebooks/</a></p>
 <p><strong>Porras, Stephanie.</strong> “Keeping Our Eyes Open: Visualizing Networks and Art History.” <em>Artl@s Bulletin</em> 6, no. 3 (2017).<br>
 <a href="https://docs.lib.purdue.edu/artlas/vol6/iss3/3" class="uri">https://docs.lib.purdue.edu/artlas/vol6/iss3/3</a></p>
 <p><strong>Ricaurte, Paola.</strong> “Data Epistemologies, the Coloniality of Power, and Resistance.” <em>Television &amp; New Media</em> 20, no. 4 (2019): 350–365.<br>
@@ -200,13 +251,13 @@ ul.task-list li input[type="checkbox"] {
 <a href="https://doi.org/10.15499/kds-005-008" class="uri">https://doi.org/10.15499/kds-005-008</a></p>
 <p><strong>Shekhtman, Louis Michael, and Albert-László Barabási.</strong> “Philanthropy in Art: Locality, Donor Retention, and Prestige.” <em>Scientific Reports</em> 13, no. 1 (2023): 12157.<br>
 <a href="https://doi.org/10.1038/s41598-023-38815-1" class="uri">https://doi.org/10.1038/s41598-023-38815-1</a></p>
-<hr>
+</div>
 </section>
-<section id="other-resources" class="level3">
-<h3 class="anchored" data-anchor-id="other-resources">Other Resources</h3>
+<section id="other-resources" class="level2">
+<h2 data-anchor-id="other-resources">Other resources</h2>
 <div class="link-list">
 <ul>
-<li><a href="https://www.gida-global.org/care">CARE Principles for Indigenous Data Governance</a></li>
+<li><a href="https://www.gida-global.org/careprinciples">CARE Principles for Indigenous Data Governance</a></li>
 <li><a href="https://cidoc-crm.org/Version/version-7.3">CIDOC CRM, Version 7.3</a></li>
 <li><a href="https://cghlewis.com/blog/data_clean_02/">Creating a Data Cleaning Workflow</a></li>
 <li><a href="https://datavizproject.com/">Dataviz Project</a></li>
@@ -220,21 +271,65 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://www.wikidata.org/">Wikidata: A Free and Open Knowledge Base</a></li>
 </ul>
 </div>
+
+
+<nav class="carry-forward" aria-label="Neighbouring entries"><div class="carry carry-prev"><a href="visualising-data.html"><span class="carry-label">Brought forward</span><span class="carry-entry"><span class="carry-no">005</span> Visualising Data</span></a></div><div class="carry carry-next"></div></nav>
 </section>
-</div>
 
+</main> <!-- /main -->
+<script>
+// Provenance switch: the museum's sentence and the same record as a table.
+// Each clause of the sentence and its table row share a view-transition name,
+// so where the browser supports it the clause travels into its row.
+(() => {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
+  document.querySelectorAll('.prov').forEach((prov, p) => {
+    const text = prov.querySelector('.prov-text');
+    const rows = [...prov.querySelectorAll('.prov-table tbody tr')];
+    const buttons = [...prov.querySelectorAll('.prov-switch button')];
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+    const clauses = text.textContent.trim().split(/;\s*/);
+    text.textContent = '';
+    clauses.forEach((clause, i) => {
+      const span = document.createElement('span');
+      span.className = 'clause';
+      span.textContent = clause;
+      span.style.viewTransitionName = `prov-${p}-${i}`;
+      text.append(span);
+      // The semicolons are where the sentence will split, so they are marked.
+      if (i < clauses.length - 1) {
+        const sep = document.createElement('span');
+        sep.className = 'sep';
+        sep.textContent = ';';
+        text.append(sep, ' ');
+      }
+      if (rows[i]) rows[i].style.viewTransitionName = `prov-${p}-${i}`;
+    });
+
+    const apply = (view) => {
+      prov.dataset.view = view;
+      buttons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.view === view)));
+    };
+
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const view = button.dataset.view;
+        if (prov.dataset.view === view) return;
+        if (!document.startViewTransition || reduceMotion.matches) {
+          apply(view);
+          return;
+        }
+        document.documentElement.classList.add('prov-morphing');
+        const transition = document.startViewTransition(() => apply(view));
+        transition.finished.finally(() => document.documentElement.classList.remove('prov-morphing'));
+      });
+    });
+  });
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -277,13 +372,14 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -298,7 +394,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/provenance-lab\.github\.io\/coding_provenance2\/");
+        var filterRegex = new RegExp("https:\/\/codingprovenance\.org\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -338,140 +434,6 @@ ul.task-list li input[type="checkbox"] {
         config.onUntrigger = onUntriggerFn;
       }
       window.tippy(el, config); 
-    }
-    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-    for (var i=0; i<noterefs.length; i++) {
-      const ref = noterefs[i];
-      tippyHover(ref, function() {
-        // use id or data attribute instead here
-        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-        try { href = new URL(href).hash; } catch {}
-        const id = href.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note) {
-          return note.innerHTML;
-        } else {
-          return "";
-        }
-      });
-    }
-    const xrefs = window.document.querySelectorAll('a.quarto-xref');
-    const processXRef = (id, note) => {
-      // Strip column container classes
-      const stripColumnClz = (el) => {
-        el.classList.remove("page-full", "page-columns");
-        if (el.children) {
-          for (const child of el.children) {
-            stripColumnClz(child);
-          }
-        }
-      }
-      stripColumnClz(note)
-      if (id === null || id.startsWith('sec-')) {
-        // Special case sections, only their first couple elements
-        const container = document.createElement("div");
-        if (note.children && note.children.length > 2) {
-          container.appendChild(note.children[0].cloneNode(true));
-          for (let i = 1; i < note.children.length; i++) {
-            const child = note.children[i];
-            if (child.tagName === "P" && child.innerText === "") {
-              continue;
-            } else {
-              container.appendChild(child.cloneNode(true));
-              break;
-            }
-          }
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(container);
-          }
-          return container.innerHTML
-        } else {
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(note);
-          }
-          return note.innerHTML;
-        }
-      } else {
-        // Remove any anchor links if they are present
-        const anchorLink = note.querySelector('a.anchorjs-link');
-        if (anchorLink) {
-          anchorLink.remove();
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        if (note.classList.contains("callout")) {
-          return note.outerHTML;
-        } else {
-          return note.innerHTML;
-        }
-      }
-    }
-    for (var i=0; i<xrefs.length; i++) {
-      const xref = xrefs[i];
-      tippyHover(xref, undefined, function(instance) {
-        instance.disable();
-        let url = xref.getAttribute('href');
-        let hash = undefined; 
-        if (url.startsWith('#')) {
-          hash = url;
-        } else {
-          try { hash = new URL(url).hash; } catch {}
-        }
-        if (hash) {
-          const id = hash.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note !== null) {
-            try {
-              const html = processXRef(id, note.cloneNode(true));
-              instance.setContent(html);
-            } finally {
-              instance.enable();
-              instance.show();
-            }
-          } else {
-            // See if we can fetch this
-            fetch(url.split('#')[0])
-            .then(res => res.text())
-            .then(html => {
-              const parser = new DOMParser();
-              const htmlDoc = parser.parseFromString(html, "text/html");
-              const note = htmlDoc.getElementById(id);
-              if (note !== null) {
-                const html = processXRef(id, note);
-                instance.setContent(html);
-              } 
-            }).finally(() => {
-              instance.enable();
-              instance.show();
-            });
-          }
-        } else {
-          // See if we can fetch a full url (with no hash to target)
-          // This is a special case and we should probably do some content thinning / targeting
-          fetch(url)
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.querySelector('main.content');
-            if (note !== null) {
-              // This should only happen for chapter cross references
-              // (since there is no id in the URL)
-              // remove the first header
-              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-                note.children[0].remove();
-              }
-              const html = processXRef(null, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      }, function(instance) {
-      });
     }
         let selectedAnnoteEl;
         const selectorForAnnotation = ( cell, annotation) => {
@@ -586,43 +548,6 @@ ul.task-list li input[type="checkbox"] {
             }
           });
         }
-    const findCites = (el) => {
-      const parentEl = el.parentElement;
-      if (parentEl) {
-        const cites = parentEl.dataset.cites;
-        if (cites) {
-          return {
-            el,
-            cites: cites.split(' ')
-          };
-        } else {
-          return findCites(el.parentElement)
-        }
-      } else {
-        return undefined;
-      }
-    };
-    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-    for (var i=0; i<bibliorefs.length; i++) {
-      const ref = bibliorefs[i];
-      const citeInfo = findCites(ref);
-      if (citeInfo) {
-        tippyHover(citeInfo.el, function() {
-          var popup = window.document.createElement('div');
-          citeInfo.cites.forEach(function(cite) {
-            var citeDiv = window.document.createElement('div');
-            citeDiv.classList.add('hanging-indent');
-            citeDiv.classList.add('csl-entry');
-            var biblioDiv = window.document.getElementById('ref-' + cite);
-            if (biblioDiv) {
-              citeDiv.innerHTML = biblioDiv.innerHTML;
-            }
-            popup.appendChild(citeDiv);
-          });
-          return popup.innerHTML;
-        });
-      }
-    }
   });
   </script>
 </div> <!-- /content -->
@@ -632,7 +557,7 @@ ul.task-list li input[type="checkbox"] {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>© 2026 Coding Provenance Workshop — Licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br> Reuse is encouraged — we happily promote changes of custody. Just be sure to write a good provenance record and cite this workshop.</p>
+<p>© 2026 Coding Provenance Workshop — Licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br> Reuse is encouraged — we happily promote changes of custody. Just be sure to write a good provenance record and cite this workshop.<br> <span class="footer-note">The painting reproductions are not covered by this licence; see the credit with each one.</span></p>
 </div>
     <div class="nav-footer-right">
       &nbsp;
