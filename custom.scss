@@ -468,7 +468,7 @@ main.content > section > ol {
   font-weight: 800;
   font-stretch: 118%;
   letter-spacing: -0.025em;
-  line-height: 0.98;
+  line-height: 1;
   margin: 0 0 1.25rem;
 }
 
@@ -781,7 +781,8 @@ body.landing .cover { padding-top: 2.5rem; }
   font-weight: 800;
   font-stretch: 122%;
   letter-spacing: -0.03em;
-  line-height: 0.92;
+  // Tighter than 1 and the g of "Coding" touches the h of "Workshop".
+  line-height: 1;
 
   span { display: block; }
 }
@@ -1274,7 +1275,7 @@ body.public {
   font-weight: 800 !important;
   font-stretch: 118%;
   letter-spacing: -0.03em;
-  line-height: 0.95 !important;
+  line-height: 1 !important;
   margin: 0 !important;
   text-wrap: balance;
 }
@@ -1429,7 +1430,7 @@ body.public {
 }
 .gate-panel { width: min(100%, 36rem); margin: 0 auto; padding: 2.25rem 2.25rem 2rem; background: var(--pl-field); }
 @media (max-width: 600px) { .gate-panel { padding: 1.5rem 1.25rem 1.25rem; } }
-.gate-title { font-family: var(--pl-ui); font-weight: 800 !important; font-stretch: 118%; font-size: clamp(2.25rem, 4.5vw, 3.25rem) !important; letter-spacing: -0.03em; line-height: 0.98 !important; }
+.gate-title { font-family: var(--pl-ui); font-weight: 800 !important; font-stretch: 118%; font-size: clamp(2.25rem, 4.5vw, 3.25rem) !important; letter-spacing: -0.03em; line-height: 1 !important; }
 .gate-lede { margin: 1rem 0 2.5rem; color: var(--pl-ink-2); font-size: 1.0625rem; line-height: 1.55; }
 .gate-form { margin: 0 0 2.5rem; }
 .gate-field { display: flex; align-items: stretch; }

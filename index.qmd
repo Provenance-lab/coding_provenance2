@@ -43,9 +43,9 @@ body-classes: public
 <section class="pub-more" aria-labelledby="organisers">
   <h2 class="pub-label" id="organisers">Organisers and instructors</h2>
   <ul class="pub-people">
-    <li>Bárbara Romero Ferrón<span>Provenance Lab, Leuphana University of Lüneburg</span></li>
-    <li>Lynn Rother<span>Provenance Lab, Leuphana University of Lüneburg</span></li>
-    <li>Sandra van Ginhoven<span>Getty Provenance Index, Getty Research Institute</span></li>
+    <li>Bárbara Romero Ferrón, PhD<span>Provenance Lab, Leuphana University of Lüneburg</span></li>
+    <li>Prof. Dr. Lynn Rother<span>Provenance Lab, Leuphana University of Lüneburg</span></li>
+    <li>Sandra van Ginhoven, PhD<span>Getty Provenance Index, Getty Research Institute</span></li>
   </ul>
 </section>
 

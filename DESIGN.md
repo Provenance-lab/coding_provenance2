@@ -19,14 +19,14 @@ typography:
     fontFamily: "Archivo, 'Helvetica Neue', Arial, sans-serif"
     fontSize: "clamp(2.75rem, 7.4vw, 6rem)"
     fontWeight: 800
-    lineHeight: 0.92
+    lineHeight: 1
     letterSpacing: "-0.03em"
     fontVariation: "'wdth' 122"
   headline:
     fontFamily: "Archivo, 'Helvetica Neue', Arial, sans-serif"
     fontSize: "clamp(2.5rem, 6vw, 4.75rem)"
     fontWeight: 800
-    lineHeight: 0.98
+    lineHeight: 1
     letterSpacing: "-0.025em"
     fontVariation: "'wdth' 118"
   title:
@@ -198,8 +198,8 @@ Two further literals are set once each and are not tokens: the selection tint (#
 **Character:** A grotesque that works like a ledger's printed headings. Wide and heavy, it names the book; condensed capitals label its columns; normal width carries the reading. Width is set with `font-stretch`, which drives Archivo's width axis.
 
 ### Hierarchy
-- **Display** (800, clamp(2.75rem, 7.4vw, 6rem), line-height 0.92, width 122%, tracking -0.03em): the landing cover title only, set as two lines ("Coding Provenance / Workshop"). On phones (520px and below) it drops to clamp(2.1rem, 11vw, 2.75rem) at 104% width. Under it, the edition line ("Second Edition") is set at 400 weight, clamp(1.4rem, 2.6vw, 2.1rem), 112% width, in second ink.
-- **Headline** (800, clamp(2.5rem, 6vw, 4.75rem), line-height 0.98, width 118%, tracking -0.025em): the page title of each entry. On phones it drops to clamp(1.75rem, 9vw, 2.5rem) at 100% width and breaks long words.
+- **Display** (800, clamp(2.75rem, 7.4vw, 6rem), line-height 1, width 122%, tracking -0.03em): the landing cover title only, set as two lines ("Coding Provenance / Workshop"). Line-height 1 is the floor for every two-line heading in Archivo 800: below it a descender (the g of "Coding") touches the ascender under it (the h of "Workshop"). On phones (520px and below) it drops to clamp(2.1rem, 11vw, 2.75rem) at 104% width. Under it, the edition line ("Second Edition") is set at 400 weight, clamp(1.4rem, 2.6vw, 2.1rem), 112% width, in second ink.
+- **Headline** (800, clamp(2.5rem, 6vw, 4.75rem), line-height 1, width 118%, tracking -0.025em): the page title of each entry. On phones it drops to clamp(1.75rem, 9vw, 2.5rem) at 100% width and breaks long words.
 - **Title** (700, clamp(1.75rem, 2.6vw, 2.125rem), line-height 1.1, width 112%, tracking -0.015em): section headings, ruled underneath in column-head ruling. They sit 4.5rem below the previous section (3.5rem on phones) and 1.25rem above their content.
 - **Entry** (650, 1.3125rem, width 106%, tracking -0.01em): third-level headings ("Provenance") and the entry names in the materials ledger (1.15rem on phones).
 - **Lede** (400, clamp(1.125rem, 1.5vw, 1.25rem), line-height 1.45): the description under a page title, in second ink, up to 38rem wide. The landing's summary paragraph is a close sibling: full ink, clamp(1.0625rem, 1.4vw, 1.1875rem), line-height 1.55, held to the measure.
