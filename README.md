@@ -10,22 +10,9 @@ Edit the `.qmd` files to update page content; the navigation menu is in `_quarto
 
 ## Publishing
 
-https://codingprovenance.org/ is served by GitHub Pages from the `gh-pages` branch, which holds the built site (Settings → Pages: source `gh-pages`, `/`). The domain's DNS at Namecheap already points at GitHub, and the domain is verified for the repository.
+https://codingprovenance.org/ is served by GitHub Pages from the `gh-pages` branch, which holds the built site (Settings → Pages: source `gh-pages`, `/`). The domain's DNS at Namecheap already points at GitHub, the domain is verified for the repository, and HTTPS is enforced.
 
-To publish a change, build the site and replace the contents of `gh-pages` with `_site`, keeping its `CNAME` and `.nojekyll`:
-
-```sh
-quarto render
-git fetch origin
-git worktree add ../gh-pages gh-pages
-cd ../gh-pages
-git rm -rq . ':!CNAME' ':!.nojekyll'
-cp -R ../coding_provenance2/_site/. .
-git add -A && git commit -m "Publish site" && git push origin gh-pages
-cd - && git worktree remove ../gh-pages
-```
-
-GitHub rebuilds the site within a minute or two of the push.
+To publish a change, build the site and replace the contents of `gh-pages` with `_site`, keeping its `CNAME` and `.nojekyll`. The exact commands, and the steps around them, are in `CLAUDE.md`: written for Claude Code, which reads it automatically when it opens this folder, and just as usable by hand.
 
 `site-url` in `_quarto.yml` is `https://codingprovenance.org/`, which the share card and the 404 page use.
 
@@ -70,7 +57,7 @@ status-note: "Materials for this step will be entered here as the workshop appro
 ---
 ```
 
-When a page gets its content, change `status` to `"Entered"`, delete `status-note`, and write the page below the front matter as usual. Update the matching row in the Materials table on the home page (`index.qmd`) too.
+When a page gets its content, change `status` to `"Entered"`, delete `status-note`, and write the page below the front matter as usual. Update the matching row in the Materials table on the participants' home page (`participants/index.qmd`) too.
 
 ### Paintings
 
