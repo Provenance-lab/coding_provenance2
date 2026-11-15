@@ -1,0 +1,60 @@
+---
+title: "Coding Provenance Cohorts"
+pagetitle: "Cohorts — Coding Provenance Workshop"
+description: "The participants of each edition of the Coding Provenance Workshop."
+hide-title-block: true
+body-classes: public
+---
+
+```{=html}
+<header class="pub-head">
+  <a class="pub-brand" href="index.html">Coding Provenance Workshop</a>
+  <details class="pub-menu">
+    <summary>Menu</summary>
+    <nav class="pub-menu-panel" aria-label="Site">
+      <a class="pub-menu-link" href="about.html">About us</a>
+      <a class="pub-menu-link" href="cohorts.html">Coding Provenance Cohorts</a>
+      <p class="pub-label pub-menu-label">Materials</p>
+      <a class="pub-button pub-button-small pub-button-light" href="https://provenance-lab.github.io/coding_provenance/">First edition</a>
+      <a class="pub-button pub-button-small" href="access.html">Second edition</a>
+    </nav>
+  </details>
+</header>
+
+<main class="pub-page">
+  <h1 class="pub-page-title">Coding Provenance Cohorts</h1>
+
+  <section class="pub-page-section" id="cohort-2026" aria-labelledby="cohort-2026-title">
+    <h2 class="pub-label" id="cohort-2026-title">Second cohort (2026)</h2>
+    <ul class="pub-people">
+      <li>Names to come</li>
+    </ul>
+  </section>
+
+  <section class="pub-page-section" id="cohort-2025" aria-labelledby="cohort-2025-title">
+    <h2 class="pub-label" id="cohort-2025-title">First cohort (2025)</h2>
+    <ul class="pub-people">
+      <li>Names to come</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="pub-foot">
+  <div class="rule-hatched" aria-hidden="true"></div>
+  <div class="pub-foot-grid">
+    <div>
+      <h2 class="pub-label">Organised by</h2>
+      <ul class="pub-foot-list">
+        <li><a href="https://provenancelab.org/">The Provenance Lab</a> Leuphana University of Lüneburg</li>
+        <li><a href="https://www.getty.edu/research/tools/provenance/">Getty Provenance Index</a> Getty Research Institute</li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="pub-label">Licence</h2>
+      <p>© 2026 Coding Provenance Workshop. Texts licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Reuse is encouraged — we happily promote changes of custody. Just be sure to write a good provenance record and cite this workshop. Painting reproductions are not covered by this licence.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/public.js"></script>
+```

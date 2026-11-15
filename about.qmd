@@ -1,0 +1,87 @@
+---
+title: "About us"
+pagetitle: "About us — Coding Provenance Workshop"
+description: "The organisers, instructors and previous contributors of the Coding Provenance Workshop."
+hide-title-block: true
+body-classes: public
+---
+
+```{=html}
+<header class="pub-head">
+  <a class="pub-brand" href="index.html">Coding Provenance Workshop</a>
+  <details class="pub-menu">
+    <summary>Menu</summary>
+    <nav class="pub-menu-panel" aria-label="Site">
+      <a class="pub-menu-link" href="about.html">About us</a>
+      <a class="pub-menu-link" href="cohorts.html">Coding Provenance Cohorts</a>
+      <p class="pub-label pub-menu-label">Materials</p>
+      <a class="pub-button pub-button-small pub-button-light" href="https://provenance-lab.github.io/coding_provenance/">First edition</a>
+      <a class="pub-button pub-button-small" href="access.html">Second edition</a>
+    </nav>
+  </details>
+</header>
+
+<main class="pub-page">
+  <h1 class="pub-page-title">About us</h1>
+
+  <section class="pub-page-section" aria-labelledby="organisers">
+    <h2 class="pub-label" id="organisers">Organisers and instructors</h2>
+    <div class="pub-bios">
+    <article class="pub-bio">
+      <div class="pub-portrait" aria-hidden="true">BR</div>
+      <div>
+        <h3 class="pub-bio-name">Bárbara Romero Ferrón, PhD</h3>
+        <p class="pub-bio-aff">Provenance Lab, Leuphana University of Lüneburg</p>
+        <p class="pub-bio-text">Short CV to come.</p>
+      </div>
+    </article>
+    <article class="pub-bio">
+      <div class="pub-portrait" aria-hidden="true">LR</div>
+      <div>
+        <h3 class="pub-bio-name">Prof. Dr. Lynn Rother</h3>
+        <p class="pub-bio-aff">Provenance Lab, Leuphana University of Lüneburg</p>
+        <p class="pub-bio-text">Short CV to come.</p>
+      </div>
+    </article>
+    <article class="pub-bio">
+      <div class="pub-portrait" aria-hidden="true">SG</div>
+      <div>
+        <h3 class="pub-bio-name">Sandra van Ginhoven, PhD</h3>
+        <p class="pub-bio-aff">Getty Provenance Index, Getty Research Institute</p>
+        <p class="pub-bio-text">Short CV to come.</p>
+      </div>
+    </article>
+    </div>
+  </section>
+
+  <section class="pub-page-section" aria-labelledby="contributors">
+    <h2 class="pub-label" id="contributors">Previous contributors</h2>
+    <ul class="pub-name-list">
+      <li>Giulia Taurino</li>
+      <li>Max Koss</li>
+      <li>Katharina Hilgert</li>
+      <li>Coco Rufer</li>
+      <li>Julia Knapmeyer</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="pub-foot">
+  <div class="rule-hatched" aria-hidden="true"></div>
+  <div class="pub-foot-grid">
+    <div>
+      <h2 class="pub-label">Organised by</h2>
+      <ul class="pub-foot-list">
+        <li><a href="https://provenancelab.org/">The Provenance Lab</a> Leuphana University of Lüneburg</li>
+        <li><a href="https://www.getty.edu/research/tools/provenance/">Getty Provenance Index</a> Getty Research Institute</li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="pub-label">Licence</h2>
+      <p>© 2026 Coding Provenance Workshop. Texts licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Reuse is encouraged — we happily promote changes of custody. Just be sure to write a good provenance record and cite this workshop. Painting reproductions are not covered by this licence.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/public.js"></script>
+```

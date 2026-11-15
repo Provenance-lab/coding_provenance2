@@ -1484,3 +1484,124 @@ body.public {
   *, *::before, *::after { transition-duration: 0.01ms !important; }
   ::view-transition-group(*) { animation: none !important; }
 }
+
+// Front page: the about text, in two columns below the hero.
+.pub-about {
+  padding: 0 var(--pl-gutter) 5rem;
+  column-count: 2;
+  column-gap: 5rem;
+
+  .pub-summary { max-width: none; margin: 0 0 1rem; break-inside: avoid; }
+}
+@media (max-width: 899px) { .pub-about { column-count: 1; } }
+
+
+// Front page: the brand stays in place but out of sight; the menu at top right.
+.pub-brand-hidden { visibility: hidden; }
+.pub-menu {
+  position: relative;
+
+  summary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    min-height: 2.5rem;
+    padding: 0 1rem;
+    border: 1px solid var(--pl-rule-strong);
+    border-radius: 2px;
+    font-family: var(--pl-ui);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    cursor: pointer;
+    list-style: none;
+    &::-webkit-details-marker { display: none; }
+    &::after { content: "▾"; font-size: 0.75rem; transition: transform 0.15s ease-out; }
+    &:hover { border-color: var(--pl-ink); }
+  }
+  &[open] summary::after { transform: rotate(180deg); }
+}
+.pub-menu-panel {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.5rem);
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  min-width: 15rem;
+  padding: 0.5rem 1.25rem 1.25rem;
+  background: var(--pl-ground);
+  border: 1px solid var(--pl-rule-strong);
+  border-top: 2px solid var(--pl-ink);
+  box-shadow: 0 8px 24px rgba(30, 25, 21, 0.08);
+
+  .pub-button { margin-top: 0.5rem; justify-content: space-between; }
+}
+.pub-menu-link {
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--pl-rule);
+  color: var(--pl-ink) !important;
+  font-family: var(--pl-ui);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+}
+.pub-menu-label { margin: 1.25rem 0 0.25rem !important; }
+.pub-button-light { background: var(--pl-ink-2); }
+#about, #cohorts { scroll-margin-top: 2rem; }
+
+// ---------- Public inner pages: About us, Cohorts ----------
+.pub-page { padding: 3rem var(--pl-gutter) 1rem; }
+.pub-page-title {
+  margin: 0 0 3rem !important;
+  font-family: var(--pl-ui);
+  font-size: clamp(2.2rem, 4vw, 3.5rem) !important;
+  font-weight: 800 !important;
+  font-stretch: 118%;
+  letter-spacing: -0.03em;
+  line-height: 1 !important;
+}
+.pub-page-section { padding-bottom: 4rem; scroll-margin-top: 2rem; }
+.pub-bios {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.5rem 3rem;
+}
+@media (max-width: 1099px) { .pub-bios { grid-template-columns: minmax(0, 1fr); max-width: 40rem; } }
+.pub-bio {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--pl-rule-strong);
+}
+.pub-portrait {
+  display: grid;
+  place-items: center;
+  width: 8.5rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--pl-field);
+  border: 1px solid var(--pl-rule-strong);
+  color: var(--pl-ink-3);
+  font-family: var(--pl-ui);
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+
+  img { width: 100%; height: 100%; object-fit: cover; }
+}
+.pub-bio-name { margin: 0 !important; font-family: var(--pl-ui); font-size: 1.0625rem !important; font-weight: 600 !important; }
+.pub-bio-aff { margin: 0.15rem 0 0; color: var(--pl-ink-2); font-size: 0.9375rem; }
+.pub-bio-text { margin: 0.9rem 0 0; font-family: var(--pl-text); font-size: 1.0625rem; line-height: 1.55; }
+.pub-people a { color: var(--pl-ink); }
+.pub-name-list {
+  margin: 0;
+  padding: 0.9rem 0 0;
+  border-top: 1px solid var(--pl-rule-strong);
+  list-style: none;
+  font-size: 0.8125rem;
+  line-height: 1.7;
+  color: var(--pl-ink-2);
+}
