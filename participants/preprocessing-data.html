@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Cleaning, standardising and preparing data for analysis.">
+<meta name="description" content="Python, from raw text to structured data, and preparing data for analysis.">
 
 <title>Preprocessing Data – Coding Provenance</title>
 <style>
@@ -36,7 +36,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-4c49cca1c2bb33b86ea4de8b8d642ad7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-ab46de1e8f5193945057ec846f57dea8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -75,12 +75,12 @@ window.CP_ACCESS = '062700d22bef93b41f571f6d42141770156273d443aee65560a75a34b747
 
 
 <meta property="og:title" content="Preprocessing Data – Coding Provenance">
-<meta property="og:description" content="Cleaning, standardising and preparing data for analysis.">
+<meta property="og:description" content="Python, from raw text to structured data, and preparing data for analysis.">
 <meta property="og:image" content="https://codingprovenance.org/images/plates/preprocessing-1600.webp">
 <meta property="og:site_name" content="Coding Provenance">
 <meta property="og:image:alt" content="Women dressed in white ironing and folding linen at long tables in a bright workroom; in the foreground an older woman talks with a young newcomer.">
 <meta name="twitter:title" content="Preprocessing Data – Coding Provenance">
-<meta name="twitter:description" content="Cleaning, standardising and preparing data for analysis.">
+<meta name="twitter:description" content="Python, from raw text to structured data, and preparing data for analysis.">
 <meta name="twitter:image" content="https://codingprovenance.org/images/plates/preprocessing-1600.webp">
 <meta name="twitter:image:alt" content="Women dressed in white ironing and folding linen at long tables in a bright workroom; in the foreground an older woman talks with a young newcomer.">
 <meta name="twitter:card" content="summary_large_image">
@@ -103,12 +103,8 @@ window.CP_ACCESS = '062700d22bef93b41f571f6d42141770156273d443aee65560a75a34b747
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../participants/second-session.html"> 
-<span class="menu-text">Session 2</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../participants/structuring-data.html"> 
-<span class="menu-text">Structuring</span></a>
+<span class="menu-text">Knowledge Design</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="../participants/preprocessing-data.html" aria-current="page"> 
@@ -168,15 +164,13 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <a class="skip-link" href="#quarto-document-content">Skip to content</a>
 
 <header id="title-block-header" class="quarto-title-block ledger-head">
-<p class="ledger-gutter" aria-hidden="true">003</p>
+<p class="ledger-gutter" aria-hidden="true">002</p>
 <h1 class="title display-7">Preprocessing Data</h1>
-<p class="description">Cleaning, standardising and preparing data for analysis.</p>
+<p class="description">Python, from raw text to structured data, and preparing data for analysis.</p>
 <dl class="ledger-record">
-<div><dt>Entry</dt><dd>No. 003</dd></div>
+<div><dt>Entry</dt><dd>No. 002</dd></div>
 <div><dt>Part</dt><dd>Workflow, step 2 of 4</dd></div>
-<div><dt>Status</dt><dd class="status" data-status="To come">To come</dd></div>
 </dl>
-<p class="status-note">Materials for this step will be entered here as the workshop approaches.</p>
 </header>
 <figure class="plate figure">
 <img src="../images/plates/preprocessing-1600.webp" srcset="../images/plates/preprocessing-960.webp 960w, ../images/plates/preprocessing-1600.webp 1600w" sizes="(min-width: 80rem) 66rem, (min-width: 45rem) calc(100vw - 12rem), calc(100vw - 4rem)" width="1600" height="995" alt="Women dressed in white ironing and folding linen at long tables in a bright workroom; in the foreground an older woman talks with a young newcomer." decoding="async" fetchpriority="high" class="figure-img">
@@ -220,35 +214,91 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
 
 
-<!-- Page template: delete the comment markers when you are ready to add content
+<section id="python" class="level2">
+<h2 data-anchor-id="python">Python</h2>
+<section id="agenda" class="level3">
+<h3 data-anchor-id="agenda">Agenda</h3>
+<div class="ledger-list">
+<p>What is Python?</p>
+<p>Understanding Python as a Language</p>
+<p>Why Generative AI is Helpful for Coding Purposes</p>
+<p>Writing Good Prompts</p>
+<p>How Large Language Models Work</p>
+</div>
+</section>
+<section id="slides" class="level3">
+<h3 data-anchor-id="slides">Slides</h3>
+<figure class="slides-frame figure"><div class="slides-viewport"><iframe src="https://docs.google.com/presentation/d/1Iz1n67-ilSYHfM4YD6yWB-7uOr5N9KkDXz4sqPWUU4o/embed?start=false&amp;loop=false" title="Python slides" loading="lazy" allowfullscreen=""></iframe></div><figcaption><a href="https://docs.google.com/presentation/d/1Iz1n67-ilSYHfM4YD6yWB-7uOr5N9KkDXz4sqPWUU4o/edit?usp=sharing" target="_blank" rel="noopener">Open the slides in Google Slides</a></figcaption></figure>
+</section>
+<section id="other-coding-environments" class="level3">
+<h3 data-anchor-id="other-coding-environments">Other coding environments</h3>
+<div class="link-list">
+<ul>
+<li><a href="https://code.visualstudio.com/docs/python/python-tutorial">Visual Studio Code Tutorial</a></li>
+</ul>
+</div>
+</section>
+<section id="resources" class="level3">
+<h3 data-anchor-id="resources">Resources</h3>
+<div class="link-list">
+<ul>
+<li><a href="https://colab.research.google.com/">Google Colab</a></li>
+<li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+<li><a href="https://programminghistorian.org/">Programming Historian</a></li>
+<li><a href="https://docs.python.org/3/">Python Documentation</a></li>
+<li><a href="https://www.python.org/">Python Official Website</a></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="from-raw-text-to-structured-data" class="level2">
+<h2 data-anchor-id="from-raw-text-to-structured-data">From raw text to structured data</h2>
+<section id="agenda-1" class="level3">
+<h3 data-anchor-id="agenda-1">Agenda</h3>
+<div class="ledger-list">
+<p>Data Structure</p>
+<p>Natural Language Processing</p>
+</div>
+</section>
+<section id="slides-1" class="level3">
+<h3 data-anchor-id="slides-1">Slides</h3>
+<figure class="slides-frame figure"><div class="slides-viewport"><iframe src="https://docs.google.com/presentation/d/10yLVg9GxIMRxMdG3ea64M2LmDnePX2DET9Ul-X4fq-s/embed?start=false&amp;loop=false" title="From raw text to structured data slides" loading="lazy" allowfullscreen=""></iframe></div><figcaption><a href="https://docs.google.com/presentation/d/10yLVg9GxIMRxMdG3ea64M2LmDnePX2DET9Ul-X4fq-s/edit?usp=sharing" target="_blank" rel="noopener">Open the slides in Google Slides</a></figcaption></figure>
+</section>
+</section>
+<section id="data-preprocessing" class="level2">
+<h2 data-anchor-id="data-preprocessing">Data preprocessing</h2>
+<section id="agenda-2" class="level3">
+<h3 data-anchor-id="agenda-2">Agenda</h3>
+<div class="ledger-list">
+<p>Clean</p>
+<p>Normalize</p>
+<p>Harmonize</p>
+<p>Reconcile</p>
+</div>
+</section>
+<section id="slides-2" class="level3">
+<h3 data-anchor-id="slides-2">Slides</h3>
+<figure class="slides-frame figure"><div class="slides-viewport"><iframe src="https://docs.google.com/presentation/d/1joG-8zGG7bv5-TjtUdpNX2QtP79pt7_kxb5QIN3BIUs/embed?start=false&amp;loop=false" title="Data preprocessing slides" loading="lazy" allowfullscreen=""></iframe></div><figcaption><a href="https://docs.google.com/presentation/d/1joG-8zGG7bv5-TjtUdpNX2QtP79pt7_kxb5QIN3BIUs/edit?usp=sharing" target="_blank" rel="noopener">Open the slides in Google Slides</a></figcaption></figure>
+</section>
+<section id="sources" class="level3">
+<h3 data-anchor-id="sources">Sources</h3>
+<div class="link-list">
+<ul>
+<li><a href="https://openrefine.org/">OpenRefine</a></li>
+<li><a href="https://www.gida-global.org/">CARE Principles for Indigenous Data Governance</a> — Global Indigenous Data Alliance</li>
+<li><a href="https://cidoc-crm.org/Version/version-7.3">CIDOC-CRM, Version 7.3</a> — CIDOC CRM Special Interest Group</li>
+<li><a href="https://www.getty.edu/research/tools/vocabularies/">Getty Vocabularies (AAT, ULAN, TGN)</a> — Getty Research Institute</li>
+<li><a href="https://linked.art/">Linked Art</a> — Linked Art Community</li>
+<li><a href="https://doi.org/10.1038/sdata.2016.18">The FAIR Guiding Principles for Scientific Data Management and Stewardship</a> — Wilkinson et al.</li>
+<li><a href="https://viaf.org/">The Virtual International Authority File (VIAF)</a></li>
+<li><a href="https://www.wikidata.org/">Wikidata</a> — A Free and Open Knowledge Base</li>
+</ul>
+</div>
 
-## Introduction
 
-*Explain the purpose of this step in the workflow.*
-
-## Key concepts
-
-- Concept 1
-- Concept 2
-
-## Example
-
-```r
-# Add example code here
-```
-
-## Exercises
-
-1. *Exercise description*
-
-## Further reading
-
-*See also [Bibliography & Resources](resources.qmd).*
-
--->
-
-
-<nav class="carry-forward" aria-label="Neighbouring entries"><div class="carry carry-prev"><a href="structuring-data.html"><span class="carry-label">Brought forward</span><span class="carry-entry"><span class="carry-no">002</span> Structuring Data</span></a></div><div class="carry carry-next"><a href="analysing-data.html"><span class="carry-label">Carried forward</span><span class="carry-entry"><span class="carry-no">004</span> Analysing Data</span></a></div></nav>
+<nav class="carry-forward" aria-label="Neighbouring entries"><div class="carry carry-prev"><a href="structuring-data.html"><span class="carry-label">Brought forward</span><span class="carry-entry"><span class="carry-no">001</span> Knowledge Design</span></a></div><div class="carry carry-next"><a href="analysing-data.html"><span class="carry-label">Carried forward</span><span class="carry-entry"><span class="carry-no">003</span> Analysing Data</span></a></div></nav>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script>
