@@ -144,7 +144,7 @@
     "href": "participants/preprocessing-data.html#from-raw-text-to-structured-data",
     "title": "Preprocessing Data",
     "section": "From raw text to structured data",
-    "text": "From raw text to structured data\n\nAgenda\n\nData Structure\nNatural Language Processing\n\n\n\nSlides\nOpen the slides in Google Slides"
+    "text": "From raw text to structured data\n\nAgenda\n\nData Structure\nNatural Language Processing\n\n\n\nSlides\nOpen the slides in Google Slides\nOpen the datasets in Google Drive"
   },
   {
     "objectID": "participants/preprocessing-data.html#data-preprocessing",
@@ -173,6 +173,13 @@
     "title": "Knowledge Design",
     "section": "Slides",
     "text": "Slides\nOpen the slides in Google Slides"
+  },
+  {
+    "objectID": "participants/structuring-data.html#data-formats",
+    "href": "participants/structuring-data.html#data-formats",
+    "title": "Knowledge Design",
+    "section": "Data formats",
+    "text": "Data formats\nThe same records in three formats. Switch between them to compare how each one holds the data.\n\nExcelCSVJSON\n\n\n\n\n\n\n\n\n\n\n\n\nOpen the folder with all the files in Google Drive"
   },
   {
     "objectID": "participants/structuring-data.html#selected-bibliography",
