@@ -26,15 +26,33 @@ body-classes: public
 
   <section class="pub-page-section" id="cohort-2026" aria-labelledby="cohort-2026-title">
     <h2 class="pub-label" id="cohort-2026-title">Second cohort (2026)</h2>
-    <ul class="pub-people">
+    <ul class="pub-name-list pub-cohort-list">
       <li>Names to come</li>
     </ul>
   </section>
 
   <section class="pub-page-section" id="cohort-2025" aria-labelledby="cohort-2025-title">
     <h2 class="pub-label" id="cohort-2025-title">First cohort (2025)</h2>
-    <ul class="pub-people">
-      <li>Names to come</li>
+    <ul class="pub-name-list pub-cohort-list">
+      <li>Martin Berger<span>, Leiden University</span></li>
+      <li>Insa Brinkmann<span>, Museum für Kunst und Gewerbe Hamburg</span></li>
+      <li>Ellis Dullaart<span>, RKD – Netherlands Institute for Art History</span></li>
+      <li>Margaux Dumas<span>, Institut d’Histoire du Temps Présent (CNRS)</span></li>
+      <li>Anabelle Gambert-Jouan<span>, Dallas Museum of Art</span></li>
+      <li>Katja Häckel<span>, Kunsthaus Zurich &amp; Stiftung Murikultur</span></li>
+      <li>Julia Krikke<span>, Van Gogh Museum</span></li>
+      <li>Soizic Le Cornec<span>, Musée du Quai Branly-Jacques Chirac</span></li>
+      <li>Sabrina Lind<span>, Department of Culture, Youth &amp; Media, Flemish government</span></li>
+      <li>Katja Lindenau<span>, Staatliche Kunstsammlungen Dresden</span></li>
+      <li>Isobel MacDonald<span>, British Museum</span></li>
+      <li>Vera Mariz<span>, Calouste Gulbenkian Museum</span></li>
+      <li>Renato Moser<span>, History Museum Basel</span></li>
+      <li>Dominika Plata<span>, National Museum in Poznań</span></li>
+      <li>Clarissa Ricci<span>, University of Bologna</span></li>
+      <li>Delia Scheffer<span>, Tiroler Landesmuseen Betriebs-GmbH</span></li>
+      <li>Elisabeth Schönthal<span>, Provenienzforschung in NRW (KPF.NRW)</span></li>
+      <li>Jakob Wigand<span>, Museum am Rothenbaum</span></li>
+      <li>Fulvia Zaninelli<span>, National Gallery of Art</span></li>
     </ul>
   </section>
 </main>

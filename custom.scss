@@ -1722,3 +1722,8 @@ body.public {
   &::after { content: "↗"; }
   &:hover { background: var(--blue-deep); border-color: var(--blue-deep); }
 }
+.pub-cohort-list {
+  font-size: 0.9375rem;
+  color: var(--pl-ink);
+  span { color: var(--pl-ink-2); }
+}
