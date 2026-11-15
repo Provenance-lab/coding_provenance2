@@ -10,11 +10,13 @@ part: "Reference"
 
 ::: {.ledger-list .required}
 
-**Rother, Lynn, Max Koss, and Fabio Mariani.** “Taking Care of History: Toward a Politics of Provenance Linked Open Data in Museums.” In *Perspectives on Data*, edited by Emily Lew Fry and Erin Canning. Art Institute of Chicago, 2022.\
+**Mariani, Fabio.** “PROV-A, a Web-Based Tool for Structuring Provenance as Linked Open Data.” *Zeitschrift für digitale Geisteswissenschaften* 10 (2025).\
+<https://doi.org/10.17175/2025_012>
+
+**Rother, Lynn, Max Koss, and Fabio Mariani.** “Taking Care of History: Toward a Politics of Provenance Linked Open Data in Museums.” In *Perspectives on Data*, edited by Emily Lew Fry and Erin Canning. Chicago: Art Institute of Chicago, 2022.\
 <https://www.artic.edu/digital-publications/37/perspectives-on-data/25/taking-care-of-history>
 
-**Schich, Maximilian, Christian Huemer, Patryk Adamczyk, Lev Manovich, and Yang-Yu Liu.** “Network Dimensions in the Getty Provenance Index.” *arXiv* (2017).\
-<https://arxiv.org/abs/1706.02804>
+**Rother, Lynn, Bárbara Romero Ferrón, and Max Koss.** “The Politics of Custody and Ownership: Provenance Events as a Modeling Stress Test.” In *Digital Humanism*. Forthcoming 2026.
 
 :::
 
@@ -96,6 +98,9 @@ part: "Reference"
 
 **Rother, Lynn, Max Koss, and Fabio Mariani.** “Interpreting Strings, Weaving Threads: Structuring Provenance Data with AI.” In *Sammlungsforschung im Digitalen Zeitalter*, edited by Stefan Alschner and Katharina Günther. Wallstein Verlag, 2024.\
 <https://doi.org/10.15499/kds-005-008>
+
+**Schich, Maximilian, Christian Huemer, Patryk Adamczyk, Lev Manovich, and Yang-Yu Liu.** “Network Dimensions in the Getty Provenance Index.” *arXiv* (2017).\
+<https://arxiv.org/abs/1706.02804>
 
 **Shekhtman, Louis Michael, and Albert-László Barabási.** “Philanthropy in Art: Locality, Donor Retention, and Prestige.” *Scientific Reports* 13, no. 1 (2023): 12157.\
 <https://doi.org/10.1038/s41598-023-38815-1>

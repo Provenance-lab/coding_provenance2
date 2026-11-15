@@ -58,6 +58,8 @@ What Do We Want to Communicate?
 ::: {.slides href="https://docs.google.com/presentation/d/1xdiVPNS8jrGYBgVBZ0yJ8ztSbLzthPyQuYOaJNMjdEc/edit?usp=sharing" title="Visualising data slides"}
 :::
 
+[Open Datasets](https://drive.google.com/drive/folders/1V7ugyB6jcKvRnCTsz5gJp1oaYblAbJFB?usp=sharing){.datasets-button target="_blank" rel="noopener"}
+
 ## Visualization examples
 
 ::: {.link-list}

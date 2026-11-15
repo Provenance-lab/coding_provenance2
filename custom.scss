@@ -1708,3 +1708,17 @@ body.public {
   &::after { content: "↗"; color: var(--blue); }
   &:hover { border-color: var(--ink); }
 }
+.datasets-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.65rem 1.15rem;
+  background: var(--blue);
+  border: 1px solid var(--blue);
+  color: var(--paper) !important;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: background-color 160ms ease-out;
+  &::after { content: "↗"; }
+  &:hover { background: var(--blue-deep); border-color: var(--blue-deep); }
+}

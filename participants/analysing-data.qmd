@@ -58,6 +58,8 @@ What Questions Can Be Asked
 ::: {.slides href="https://docs.google.com/presentation/d/1lLeTob0HOnJonJxxRUN3qCIPvAWg_r_TlWTOfyhztWI/edit?usp=sharing" title="Data analysis slides"}
 :::
 
+[Open Datasets](https://drive.google.com/drive/folders/1V7ugyB6jcKvRnCTsz5gJp1oaYblAbJFB?usp=sharing){.datasets-button target="_blank" rel="noopener"}
+
 ### Tools
 
 ::: {.link-list}
@@ -107,6 +109,8 @@ Intro to Gephi
 
 ::: {.slides href="https://docs.google.com/presentation/d/1BW5n-8cpocyfdLSf-jT5BKN8rB-F3XgMh5HV-0Xaqe8/edit?usp=sharing" title="Network analysis slides"}
 :::
+
+[Open Datasets](https://drive.google.com/drive/folders/1V7ugyB6jcKvRnCTsz5gJp1oaYblAbJFB?usp=sharing){.datasets-button target="_blank" rel="noopener"}
 
 ### Tools
 
