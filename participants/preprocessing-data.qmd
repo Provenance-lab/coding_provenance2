@@ -99,6 +99,8 @@ Natural Language Processing
 ::: {.slides href="https://docs.google.com/presentation/d/10yLVg9GxIMRxMdG3ea64M2LmDnePX2DET9Ul-X4fq-s/edit?usp=sharing" title="From raw text to structured data slides"}
 :::
 
+[Open the datasets in Google Drive](https://drive.google.com/drive/folders/1V7ugyB6jcKvRnCTsz5gJp1oaYblAbJFB?usp=sharing){.folder-link target="_blank" rel="noopener"}
+
 ## Data preprocessing
 
 ### Agenda

@@ -58,6 +58,31 @@ Share It!
 ::: {.slides href="https://docs.google.com/presentation/d/17kt7lfVd7RGu3SlAqMTJtPxOnyOHYAFmZ2OdVDC2GZ4/edit?usp=sharing" title="Knowledge Design slides"}
 :::
 
+## Data formats
+
+The same records in three formats. Switch between them to compare how each one holds the data.
+
+::: {.panel-tabset}
+
+### Excel
+
+::: {.data-file href="https://docs.google.com/spreadsheets/d/1QiIXh54sBiNFWJWOwuhBqL2wq2EdQXsj_dHi0_LuzzI/edit?usp=sharing" format="xlsx" title="Example data as a spreadsheet"}
+:::
+
+### CSV
+
+::: {.data-file href="https://drive.google.com/file/d/1hz_LF-vTD1iZr2rcx2VdSrwZhG9m0NJq/view?usp=sharing" format="csv" title="Example data as CSV"}
+:::
+
+### JSON
+
+::: {.data-file href="https://drive.google.com/file/d/1H0AgwubNj3kbqOCjlnqkBKVs7AVG1dbI/view?usp=sharing" format="json" title="Example data as JSON"}
+:::
+
+:::
+
+[Open the folder with all the files in Google Drive](https://drive.google.com/drive/folders/1V7ugyB6jcKvRnCTsz5gJp1oaYblAbJFB?usp=sharing){.folder-link target="_blank" rel="noopener"}
+
 ## Selected bibliography
 
 ::: {.ledger-list}
