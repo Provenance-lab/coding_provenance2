@@ -1,10 +1,8 @@
 ---
 title: "Preprocessing Data"
-description: "Cleaning, standardising and preparing data for analysis."
-entry: "003"
+description: "Python, from raw text to structured data, and preparing data for analysis."
+entry: "002"
 part: "Workflow, step 2 of 4"
-status: "To come"
-status-note: "Materials for this step will be entered here as the workshop approaches."
 plate:
   image: preprocessing
   width: 1600
@@ -45,29 +43,92 @@ plate:
       place: "Vitoria-Gasteiz"
 ---
 
-<!-- Page template: delete the comment markers when you are ready to add content
+## Python
 
-## Introduction
+### Agenda
 
-*Explain the purpose of this step in the workflow.*
+::: {.ledger-list}
 
-## Key concepts
+What is Python?
 
-- Concept 1
-- Concept 2
+Understanding Python as a Language
 
-## Example
+Why Generative AI is Helpful for Coding Purposes
 
-```r
-# Add example code here
-```
+Writing Good Prompts
 
-## Exercises
+How Large Language Models Work
 
-1. *Exercise description*
+:::
 
-## Further reading
+### Slides
 
-*See also [Bibliography & Resources](resources.qmd).*
+::: {.slides href="https://docs.google.com/presentation/d/1Iz1n67-ilSYHfM4YD6yWB-7uOr5N9KkDXz4sqPWUU4o/edit?usp=sharing" title="Python slides"}
+:::
 
--->
+### Other coding environments
+
+::: {.link-list}
+- [Visual Studio Code Tutorial](https://code.visualstudio.com/docs/python/python-tutorial)
+:::
+
+### Resources
+
+::: {.link-list}
+- [Google Colab](https://colab.research.google.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Programming Historian](https://programminghistorian.org/)
+- [Python Documentation](https://docs.python.org/3/)
+- [Python Official Website](https://www.python.org/)
+:::
+
+## From raw text to structured data
+
+### Agenda
+
+::: {.ledger-list}
+
+Data Structure
+
+Natural Language Processing
+
+:::
+
+### Slides
+
+::: {.slides href="https://docs.google.com/presentation/d/10yLVg9GxIMRxMdG3ea64M2LmDnePX2DET9Ul-X4fq-s/edit?usp=sharing" title="From raw text to structured data slides"}
+:::
+
+## Data preprocessing
+
+### Agenda
+
+::: {.ledger-list}
+
+Clean
+
+Normalize
+
+Harmonize
+
+Reconcile
+
+:::
+
+### Slides
+
+::: {.slides href="https://docs.google.com/presentation/d/1joG-8zGG7bv5-TjtUdpNX2QtP79pt7_kxb5QIN3BIUs/edit?usp=sharing" title="Data preprocessing slides"}
+:::
+
+### Sources
+
+::: {.link-list}
+- [OpenRefine](https://openrefine.org/)
+- [CARE Principles for Indigenous Data Governance](https://www.gida-global.org/) — Global Indigenous Data Alliance
+- [CIDOC-CRM, Version 7.3](https://cidoc-crm.org/Version/version-7.3) — CIDOC CRM Special Interest Group
+- [Getty Vocabularies (AAT, ULAN, TGN)](https://www.getty.edu/research/tools/vocabularies/) — Getty Research Institute
+- [Linked Art](https://linked.art/) — Linked Art Community
+- [The FAIR Guiding Principles for Scientific Data Management and Stewardship](https://doi.org/10.1038/sdata.2016.18) — Wilkinson et al.
+- [The Virtual International Authority File (VIAF)](https://viaf.org/)
+- [Wikidata](https://www.wikidata.org/) — A Free and Open Knowledge Base
+:::

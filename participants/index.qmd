@@ -24,75 +24,83 @@ body-classes: landing
   </dl>
 </section>
 
+<section class="schedule" aria-labelledby="schedule">
+  <h2 id="schedule">Schedule</h2>
+  <div class="schedule-days">
+    <section class="schedule-day" aria-labelledby="day-1">
+      <h3 id="day-1"><span class="day-no">Day 1</span> Tuesday, <time datetime="2026-12-01">1 December</time></h3>
+      <dl>
+        <div><dt>09:00–10:00</dt><dd>Reception &amp; Coffee</dd></div>
+        <div><dt>10:00–12:00</dt><dd>Welcome Session</dd></div>
+        <div><dt>12:00–13:00</dt><dd>Lunch</dd></div>
+        <div><dt>13:00–18:00</dt><dd>Workshop Part I – Knowledge Design</dd></div>
+        <div><dt>18:30–20:00</dt><dd>Welcoming Snacks &amp; Drinks</dd></div>
+      </dl>
+    </section>
+    <section class="schedule-day" aria-labelledby="day-2">
+      <h3 id="day-2"><span class="day-no">Day 2</span> Wednesday, <time datetime="2026-12-02">2 December</time></h3>
+      <dl>
+        <div><dt>09:00–12:00</dt><dd>Workshop Part II &amp; III – Learning How to Code</dd></div>
+        <div><dt>12:00–13:30</dt><dd>Lunch Break &amp; Knoedler Archives Session</dd></div>
+        <div><dt>13:30–15:00</dt><dd>Workshop Part IV – Data Analysis</dd></div>
+        <div><dt>16:00–19:30</dt><dd>Book Launch &amp; Reception at the Getty Villa</dd></div>
+      </dl>
+    </section>
+    <section class="schedule-day" aria-labelledby="day-3">
+      <h3 id="day-3"><span class="day-no">Day 3</span> Thursday, <time datetime="2026-12-03">3 December</time></h3>
+      <dl>
+        <div><dt>09:00–12:00</dt><dd>Workshop Part V – Network Analysis</dd></div>
+        <div><dt>12:00–13:00</dt><dd>Lunch Break</dd></div>
+        <div><dt>13:00–14:30</dt><dd>Presentation of Getty Digital</dd></div>
+        <div><dt>15:00–18:00</dt><dd>Workshop Part VI – Information Visualization</dd></div>
+        <div><dt>19:00</dt><dd>Pizza at the Getty Scholar Housing</dd></div>
+      </dl>
+    </section>
+    <section class="schedule-day" aria-labelledby="day-4">
+      <h3 id="day-4"><span class="day-no">Day 4</span> Friday, <time datetime="2026-12-04">4 December</time></h3>
+      <dl>
+        <div><dt>09:00–13:00</dt><dd>Work on Projects</dd></div>
+        <div><dt>15:00</dt><dd>Group Presentations</dd></div>
+        <div><dt>18:00</dt><dd>Dinner</dd></div>
+      </dl>
+    </section>
+  </div>
+</section>
+
 <section class="ledger" aria-labelledby="materials">
   <h2 id="materials">Materials</h2>
   <table class="ledger-table">
     <thead>
-      <tr><th scope="col" class="no">No.</th><th scope="col">Entry</th><th scope="col">Part</th><th scope="col">Status</th></tr>
+      <tr><th scope="col" class="no">No.</th><th scope="col">Entry</th><th scope="col">Part</th></tr>
     </thead>
     <tbody>
       <tr>
         <td class="no">001</td>
-        <td class="entry"><a href="second-session.html">Second Online Session</a><span class="desc">Agenda, recordings and slides.</span></td>
-        <td class="part">Online session</td>
-        <td class="status-cell"><span class="status" data-status="to come">To come</span></td>
+        <td class="entry"><a href="structuring-data.html">Knowledge Design</a><span class="desc">Organising provenance data into consistent structures.</span></td>
+        <td class="part">Workflow, step 1 of 4</td>
       </tr>
       <tr>
         <td class="no">002</td>
-        <td class="entry"><a href="structuring-data.html">Structuring Data</a><span class="desc">Organising provenance data into consistent structures.</span></td>
-        <td class="part">Workflow, step 1 of 4</td>
-        <td class="status-cell"><span class="status" data-status="to come">To come</span></td>
+        <td class="entry"><a href="preprocessing-data.html">Preprocessing Data</a><span class="desc">Python, from raw text to structured data, and cleaning, normalising, harmonising and reconciling data.</span></td>
+        <td class="part">Workflow, step 2 of 4</td>
       </tr>
       <tr>
         <td class="no">003</td>
-        <td class="entry"><a href="preprocessing-data.html">Preprocessing Data</a><span class="desc">Cleaning, standardising and preparing data.</span></td>
-        <td class="part">Workflow, step 2 of 4</td>
-        <td class="status-cell"><span class="status" data-status="to come">To come</span></td>
+        <td class="entry"><a href="analysing-data.html">Analysing Data</a><span class="desc">Basic statistics, data visualisation and network analysis.</span></td>
+        <td class="part">Workflow, step 3 of 4</td>
       </tr>
       <tr>
         <td class="no">004</td>
-        <td class="entry"><a href="analysing-data.html">Analysing Data</a><span class="desc">Methods and approaches for analysis.</span></td>
-        <td class="part">Workflow, step 3 of 4</td>
-        <td class="status-cell"><span class="status" data-status="to come">To come</span></td>
+        <td class="entry"><a href="visualising-data.html">Visualising Data</a><span class="desc">Charts, maps and networks.</span></td>
+        <td class="part">Workflow, step 4 of 4</td>
       </tr>
       <tr>
         <td class="no">005</td>
-        <td class="entry"><a href="visualising-data.html">Visualising Data</a><span class="desc">Charts, maps and networks.</span></td>
-        <td class="part">Workflow, step 4 of 4</td>
-        <td class="status-cell"><span class="status" data-status="to come">To come</span></td>
-      </tr>
-      <tr>
-        <td class="no">006</td>
         <td class="entry"><a href="resources.html">Bibliography &amp; Resources</a><span class="desc">Readings, tutorials, tools and datasets.</span></td>
         <td class="part">Reference</td>
-        <td class="status-cell"><span class="status" data-status="entered">Entered</span></td>
       </tr>
     </tbody>
   </table>
-</section>
-
-<section class="about" aria-labelledby="about">
-  <h2 id="about">About the workshop</h2>
-  <div class="about-text">
-    <p>After decades working as provenance and art history researchers, we have watched the field change in many ways. Computational techniques and a more data-driven approach can reveal patterns, structures and dynamics that are hard to uncover through close reading, and lead to research questions that were previously impossible to answer or even to ask. We call it computational provenance: provenance research using statistics, network analysis, optical character recognition, large language models and natural language processing.</p>
-    <p>This workshop gives researchers and practitioners a first encounter with these theories, methods and tools, so they can bring new policies, methods and techniques into their institutions and their own research. Interdisciplinary work with computer scientists and digital humanities specialists is extremely valuable, and fair and equal collaboration starts with a good understanding of what can be done and how.</p>
-  </div>
-  <dl class="about-record">
-    <div>
-      <dt>Organisers and instructors</dt>
-      <dd>Bárbara Romero Ferrón<span class="affil">Provenance Lab, Leuphana University of Lüneburg</span></dd>
-      <dd>Lynn Rother<span class="affil">Provenance Lab, Leuphana University of Lüneburg</span></dd>
-      <dd>Sandra van Ginhoven<span class="affil">Getty Provenance Index, Getty Research Institute</span></dd>
-    </div>
-    <div>
-      <dt>Schedule</dt>
-      <dd><span class="status" data-status="to come">To be announced</span></dd>
-    </div>
-    <div>
-      <dt>Workshop home</dt>
-      <dd><a href="../index.html">Coding Provenance Workshop</a></dd>
-    </div>
-  </dl>
 </section>
 
 <section class="plates" aria-labelledby="plates">
@@ -102,25 +110,25 @@ body-classes: landing
     <figure>
       <a href="structuring-data.html">
         <img src="../images/plates/structuring-960.webp" srcset="../images/plates/structuring-960.webp 960w, ../images/plates/structuring-1600.webp 1600w" sizes="(min-width: 80rem) 36rem, (min-width: 45rem) 50vw, 100vw" width="960" height="567" alt="Women in shawls and flowered skirts sorting bunches of grapes in a whitewashed room, among baskets and barrels." loading="lazy" decoding="async">
-        <figcaption><span class="pl-no">No. 002</span><span><span class="pl-step">Structuring Data</span>Eduardo Chicharro Agüera, <em>Las uveras</em>, 1898<span class="pl-rights">© Herederos de Eduardo Chicharro Agüera</span></span></figcaption>
+        <figcaption><span class="pl-no">No. 001</span><span><span class="pl-step">Knowledge Design</span>Eduardo Chicharro Agüera, <em>Las uveras</em>, 1898<span class="pl-rights">© Herederos de Eduardo Chicharro Agüera</span></span></figcaption>
       </a>
     </figure>
     <figure>
       <a href="preprocessing-data.html">
         <img src="../images/plates/preprocessing-960.webp" srcset="../images/plates/preprocessing-960.webp 960w, ../images/plates/preprocessing-1600.webp 1600w" sizes="(min-width: 80rem) 34rem, (min-width: 45rem) 50vw, 100vw" width="960" height="597" alt="Women dressed in white ironing and folding linen at long tables in a bright workroom." loading="lazy" decoding="async">
-        <figcaption><span class="pl-no">No. 003</span><span><span class="pl-step">Preprocessing Data</span>Ignacio Díaz Olano, <em>Las planchadoras</em>, 1895</span></figcaption>
+        <figcaption><span class="pl-no">No. 002</span><span><span class="pl-step">Preprocessing Data</span>Ignacio Díaz Olano, <em>Las planchadoras</em>, 1895</span></figcaption>
       </a>
     </figure>
     <figure>
       <a href="analysing-data.html">
         <img src="../images/plates/analysing-960.webp" srcset="../images/plates/analysing-960.webp 960w, ../images/plates/analysing-1600.webp 1600w" sizes="(min-width: 80rem) 30rem, (min-width: 45rem) 45vw, 100vw" width="960" height="816" alt="Two women in aprons bent double, weeding a field with hoes, a wide green plain behind them." loading="lazy" decoding="async">
-        <figcaption><span class="pl-no">No. 004</span><span><span class="pl-step">Analysing Data</span>Laureano Barrau Buñol, <em>Escardadoras</em>, 1891<span class="pl-rights">© rights holder to be confirmed</span></span></figcaption>
+        <figcaption><span class="pl-no">No. 003</span><span><span class="pl-step">Analysing Data</span>Laureano Barrau Buñol, <em>Escardadoras</em>, 1891<span class="pl-rights">© rights holder to be confirmed</span></span></figcaption>
       </a>
     </figure>
     <figure>
       <a href="visualising-data.html">
         <img src="../images/plates/visualising-960.webp" srcset="../images/plates/visualising-960.webp 960w, ../images/plates/visualising-1600.webp 1600w" sizes="(min-width: 80rem) 36rem, (min-width: 45rem) 55vw, 100vw" width="960" height="687" alt="Young girls in white dresses sewing on small chairs while a woman by the window sews and watches over them." loading="lazy" decoding="async">
-        <figcaption><span class="pl-no">No. 005</span><span><span class="pl-step">Visualising Data</span>Domingo Muñoz y Cuesta, <em>La amiga (En Córdoba)</em>, 1901</span></figcaption>
+        <figcaption><span class="pl-no">No. 004</span><span><span class="pl-step">Visualising Data</span>Domingo Muñoz y Cuesta, <em>La amiga (En Córdoba)</em>, 1901</span></figcaption>
       </a>
     </figure>
   </div>

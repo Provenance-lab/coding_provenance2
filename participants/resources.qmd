@@ -1,9 +1,8 @@
 ---
 title: "Bibliography & other Resources"
 description: "Readings, tutorials, tools and datasets for the workshop."
-entry: "006"
+entry: "005"
 part: "Reference"
-status: "Entered"
 ---
 
 

@@ -23,10 +23,8 @@ website:
     logo-href: /participants/index.qmd
     # The brand links home; the six entries of this edition; other editions in one menu.
     left:
-      - href: participants/second-session.qmd
-        text: Session 2
       - href: participants/structuring-data.qmd
-        text: Structuring
+        text: Knowledge Design
       - href: participants/preprocessing-data.qmd
         text: Preprocessing
       - href: participants/analysing-data.qmd
@@ -51,18 +49,18 @@ website:
 # The order of the book: each entry's "brought forward / carried forward"
 # links come from this list (see _filters/carry-forward.lua).
 ledger-order:
-  - { page: second-session, entry: "001", title: "Second Online Session" }
-  - { page: structuring-data, entry: "002", title: "Structuring Data" }
-  - { page: preprocessing-data, entry: "003", title: "Preprocessing Data" }
-  - { page: analysing-data, entry: "004", title: "Analysing Data" }
-  - { page: visualising-data, entry: "005", title: "Visualising Data" }
-  - { page: resources, entry: "006", title: "Bibliography & other Resources" }
+  - { page: structuring-data, entry: "001", title: "Knowledge Design" }
+  - { page: preprocessing-data, entry: "002", title: "Preprocessing Data" }
+  - { page: analysing-data, entry: "003", title: "Analysing Data" }
+  - { page: visualising-data, entry: "004", title: "Visualising Data" }
+  - { page: resources, entry: "005", title: "Bibliography & other Resources" }
 
 format:
   html:
     filters:
       - _filters/site-root.lua
       - _filters/carry-forward.lua
+      - _filters/slides.lua
     theme: [default, custom.scss]
     lang: en
     page-layout: full

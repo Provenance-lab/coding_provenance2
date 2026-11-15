@@ -1,10 +1,8 @@
 ---
 title: "Analysing Data"
-description: "Methods and approaches for analysing provenance data."
-entry: "004"
+description: "Basic statistics, visualisation and network analysis for provenance data."
+entry: "003"
 part: "Workflow, step 3 of 4"
-status: "To come"
-status-note: "Materials for this step will be entered here as the workshop approaches."
 plate:
   image: analysing
   width: 1600
@@ -41,29 +39,109 @@ plate:
       place: "Madrid"
 ---
 
-<!-- Page template: delete the comment markers when you are ready to add content
+## Data analysis
 
-## Introduction
+### Agenda
 
-*Explain the purpose of this step in the workflow.*
+::: {.ledger-list}
 
-## Key concepts
+Basic Statistics
 
-- Concept 1
-- Concept 2
+Data Visualization
 
-## Example
+What Questions Can Be Asked
 
-```r
-# Add example code here
-```
+:::
 
-## Exercises
+### Slides
 
-1. *Exercise description*
+::: {.slides href="https://docs.google.com/presentation/d/1lLeTob0HOnJonJxxRUN3qCIPvAWg_r_TlWTOfyhztWI/edit?usp=sharing" title="Data analysis slides"}
+:::
 
-## Further reading
+### Tools
 
-*See also [Bibliography & Resources](resources.qmd).*
+::: {.link-list}
+- [Dataviz Project](https://datavizproject.com/)
+- [Textcavator](https://textcavator.hum.uu.nl/) (formerly I-Analyzer)
+- [OpenRefine](https://openrefine.org/)
+- [Programming Historian](https://programminghistorian.org/)
+- [Python Graph Gallery](https://python-graph-gallery.com/)
+- [RAWGraphs](https://www.rawgraphs.io/)
+- [Voyant Tools](https://voyant-tools.org/)
+:::
 
--->
+### Selected bibliography
+
+::: {.ledger-list}
+
+**Karsdorp, Folgert.** *Python Programming for the Humanities.*\
+<https://www.karsdorp.io/python-course/>
+
+**Karsdorp, Folgert, Mike Kestemont, and Allen Riddell.** *Humanities Data Analysis: Case Studies with Python.* Princeton University Press, 2021.\
+<https://www.humanitiesdataanalysis.org/>
+
+**Mariani, Fabio, Max Koss, and Lynn Rother.** “People Information in Provenance Data: Biographical Entity Linking with Wikidata and ULAN.” *Život Umjetnosti* 114, no. 1 (2024): 148–161.\
+<https://doi.org/10.31664/zu.2024.114.07>
+
+:::
+
+## Network analysis
+
+### Agenda
+
+::: {.ledger-list}
+
+A Networked World
+
+What is a Network
+
+Network Syntax and Ontology
+
+Visualizing is not enough: Centrality Measures & Community Detection
+
+Intro to Gephi
+
+:::
+
+### Slides
+
+::: {.slides href="https://docs.google.com/presentation/d/1BW5n-8cpocyfdLSf-jT5BKN8rB-F3XgMh5HV-0Xaqe8/edit?usp=sharing" title="Network analysis slides"}
+:::
+
+### Tools
+
+::: {.link-list}
+- [Cosmograph](https://cosmograph.app/)
+- [Gephi](https://gephi.org/)
+:::
+
+### Selected bibliography
+
+::: {.ledger-list}
+
+**Ahnert, Ruth, and Sebastian E. Ahnert.** *Tudor Networks of Power.* Oxford University Press, 2023.\
+<https://doi.org/10.1093/oso/9780198858973.001.0001>
+
+**Ahnert, Ruth, et al.** *The Network Turn.* Cambridge University Press, 2020.\
+<https://doi.org/10.1017/9781108866804>
+
+**Barabási, Albert-László, et al.** *Network Science.*\
+<http://networksciencebook.com/>
+
+**Fraiberger, Samuel P., Roberta Sinatra, Markus Resch, Christoph Riedl, and Albert-László Barabási.** “Quantifying Reputation and Success in Art.” *Science* 362, no. 6416 (2018): 825–829.\
+<https://doi.org/10.1126/science.aau7224>
+
+**Huemer, Christian.** “The Provenance of Provenances.” In *Collecting & Provenance: A Multidisciplinary Approach*, edited by Jane C. Milosch and Nick Pearce. Rowman & Littlefield, 2019.
+
+**Lincoln, Matthew D.** “Tangled Metaphors: Network Thinking and Network Analysis in the History of Art.” In *The Routledge Companion to Digital Humanities and Art History*. Routledge, 2020.\
+<https://doi.org/10.4324/9780429505188>
+
+**McNeill, J. R., and William H. McNeill.** *The Human Web: A Bird’s-Eye View of World History.* W. W. Norton, 2003.
+
+**Porras, Stephanie.** “Keeping Our Eyes Open: Visualizing Networks and Art History.” *Artl@s Bulletin* 6, no. 3 (2017).\
+<https://docs.lib.purdue.edu/artlas/vol6/iss3/3>
+
+**Schich, Maximilian, Christian Huemer, Patryk Adamczyk, Lev Manovich, and Yang-Yu Liu.** “Network Dimensions in the Getty Provenance Index.” *arXiv* (2017).\
+<https://arxiv.org/abs/1706.02804>
+
+:::

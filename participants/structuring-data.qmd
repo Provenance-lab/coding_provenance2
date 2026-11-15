@@ -1,10 +1,8 @@
 ---
-title: "Structuring Data"
+title: "Knowledge Design"
 description: "How to organise provenance data into consistent, reusable structures."
-entry: "002"
+entry: "001"
 part: "Workflow, step 1 of 4"
-status: "To come"
-status-note: "Materials for this step will be entered here as the workshop approaches."
 plate:
   image: structuring
   width: 1600
@@ -37,29 +35,56 @@ plate:
       place: "Madrid"
 ---
 
-<!-- Page template: delete the comment markers when you are ready to add content
+## Agenda
 
-## Introduction
+::: {.ledger-list}
 
-*Explain the purpose of this step in the workflow.*
+What is a Dataset?
 
-## Key concepts
+Recipient of Knowledge: Relational Databases / Graph Databases
 
-- Concept 1
-- Concept 2
+Epistemological Questions: Data Model & Ontologies
 
-## Example
+VISU: Vagueness, Incompleteness, Subjectivity & Uncertainty
 
-```r
-# Add example code here
-```
+Data Formats: CSV, JSON, Linked Open Data
 
-## Exercises
+Share It!
 
-1. *Exercise description*
+:::
 
-## Further reading
+## Slides
 
-*See also [Bibliography & Resources](resources.qmd).*
+::: {.slides href="https://docs.google.com/presentation/d/17kt7lfVd7RGu3SlAqMTJtPxOnyOHYAFmZ2OdVDC2GZ4/edit?usp=sharing" title="Knowledge Design slides"}
+:::
 
--->
+## Selected bibliography
+
+::: {.ledger-list}
+
+**Bishop, Claire.** “Against Digital Art History.” *International Journal for Digital Art History* 3 (2018).\
+<https://doi.org/10.11588/dah.2018.3.49915>
+
+**D’Ignazio, Catherine, and Lauren F. Klein.** *Data Feminism.* MIT Press, 2023.\
+<https://data-feminism.mitpress.mit.edu/>
+
+**Drucker, Johanna.** “Is There a ‘Digital’ Art History?” *Visual Resources* 29, no. 1–2 (2013): 5–13.\
+<https://doi.org/10.1080/01973762.2013.761106>
+
+**Love, Heather.** “Close but Not Deep: Literary Ethics and the Descriptive Turn.” *New Literary History* 41, no. 2 (2010): 371–391.\
+<http://www.jstor.org/stable/40983827>
+
+**Poirier, Lindsay.** “Ethnographies of Datasets: Teaching Critical Data Analysis Through R Notebooks.” 2020.\
+<https://lindsaypoirier.github.io/publication/2020-12-01-Ethnographies-of-Datasets-Teaching-Critical-Data-Analysis-through-R-Notebooks>
+
+**Ricaurte, Paola.** “Data Epistemologies, the Coloniality of Power, and Resistance.” *Television & New Media* 20, no. 4 (2019): 350–365.\
+<https://doi.org/10.1177/1527476419831640>
+
+**Rother, Lynn.** “Uncanny Provenance: Art History and Its Double / Unheimliche Provenienz: Kunstgeschichte und ihr Doppelgänger.” *Texte zur Kunst* 32, no. 128 (2022): 84–97.
+
+**Rother, Lynn.** “Institutionalisierte Institutionskritik: Lynn Rother über ‘Wege der Kunst’ im Museum Rietberg, Zürich, sowie ‘Zerrissene Moderne’ und ‘Der Sammler Curt Glaser’ im Kunstmuseum Basel.” *Texte zur Kunst* 33, no. 131 (2023): 214–219.
+
+**Rother, Lynn, Max Koss, and Fabio Mariani.** “Taking Care of History: Toward a Politics of Provenance Linked Open Data in Museums.” In *Perspectives on Data*, edited by Emily Lew Fry and Erin Canning. Art Institute of Chicago, 2022.\
+<https://www.artic.edu/digital-publications/37/perspectives-on-data/25/taking-care-of-history>
+
+:::

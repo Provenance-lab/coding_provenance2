@@ -55,6 +55,6 @@ To take a publish back, fix the source and publish again. If the live site has t
 | Colours, type, spacing | `custom.scss`, within the decisions in `DESIGN.md` |
 
 - **Page fields, paintings, bibliography:** read README.md, "How the pages are kept", before changing an entry's front matter, adding a painting or editing the Resources lists.
-- **A materials page gets its content:** set `status: "Entered"` in its front matter and delete `status-note`; in `participants/index.qmd`, set that page's row to `data-status="entered"` and `Entered`.
+- **Slides on a page:** a Google Slides share link goes in `::: {.slides href="…"}` + `:::` (see `_filters/slides.lua`); the deck must be shared as "Anyone with the link can view".
 - **Code in the materials:** plain fences (```` ```python ````) show code. Executable cells (```` ```{python} ````) need Python and Jupyter on this machine and store their results in `_freeze/`, which is committed with the page.
 - **Participant password:** the site stores only its hash, in `_includes/head.html`. The plaintext stays out of every file, commit and message. To change it, the user follows README.md, "The participant password".

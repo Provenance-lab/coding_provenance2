@@ -52,12 +52,10 @@ title: "Structuring Data"
 description: "How to organise provenance data into consistent, reusable structures."
 entry: "002"                      # the number shown in the margin
 part: "Workflow, step 1 of 4"
-status: "To come"                 # "To come" draws an open square; "Entered" a filled one
-status-note: "Materials for this step will be entered here as the workshop approaches."
 ---
 ```
 
-When a page gets its content, change `status` to `"Entered"`, delete `status-note`, and write the page below the front matter as usual. Update the matching row in the Materials table on the participants' home page (`participants/index.qmd`) too.
+Write the page below the front matter as usual. If the title or description changes, update the matching row in the Materials table on the participants' home page (`participants/index.qmd`) too.
 
 ### Paintings
 
