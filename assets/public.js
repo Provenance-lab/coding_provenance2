@@ -223,3 +223,13 @@
     if (onScreen) play(); else hold();
   }, { threshold: 0.25 }).observe(figure);
 })();
+
+// ---------- Public menu ----------
+// Close the menu after a choice, or on a click outside it.
+(() => {
+  const menu = document.querySelector('.pub-menu');
+  if (!menu) return;
+  menu.addEventListener('click', (e) => { if (e.target.closest('a')) menu.open = false; });
+  document.addEventListener('click', (e) => { if (!menu.contains(e.target)) menu.open = false; });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') menu.open = false; });
+})();
