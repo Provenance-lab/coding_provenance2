@@ -1,7 +1,7 @@
 ---
 title: "About us"
 pagetitle: "About us — Coding Provenance Workshop"
-description: "The organisers, instructors and previous contributors of the Coding Provenance Workshop."
+description: "The organizers, instructors and previous contributors of the Coding Provenance Workshop."
 hide-title-block: true
 body-classes: public
 ---
@@ -25,7 +25,7 @@ body-classes: public
   <h1 class="pub-page-title">About us</h1>
 
   <section class="pub-page-section" aria-labelledby="organisers">
-    <h2 class="pub-label" id="organisers">Organisers and instructors</h2>
+    <h2 class="pub-label" id="organisers">Organizers and instructors</h2>
     <div class="pub-bios">
     <article class="pub-bio">
       <div class="pub-portrait" aria-hidden="true">BR</div>
@@ -70,15 +70,15 @@ body-classes: public
   <div class="rule-hatched" aria-hidden="true"></div>
   <div class="pub-foot-grid">
     <div>
-      <h2 class="pub-label">Organised by</h2>
+      <h2 class="pub-label">Organized by</h2>
       <ul class="pub-foot-list">
         <li><a href="https://provenancelab.org/">The Provenance Lab</a> Leuphana University of Lüneburg</li>
         <li><a href="https://www.getty.edu/research/tools/provenance/">Getty Provenance Index</a> Getty Research Institute</li>
       </ul>
     </div>
     <div>
-      <h2 class="pub-label">Licence</h2>
-      <p>© 2026 Coding Provenance Workshop. Texts licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Reuse is encouraged — we happily promote changes of custody. Just be sure to write a good provenance record and cite this workshop. Painting reproductions are not covered by this licence.</p>
+      <h2 class="pub-label">License</h2>
+      <p>© 2026 Coding Provenance Workshop. Texts licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Reuse is encouraged — we happily promote changes of custody. Just be sure to write a good provenance record and cite this workshop. Painting reproductions are not covered by this license.</p>
     </div>
   </div>
 </footer>

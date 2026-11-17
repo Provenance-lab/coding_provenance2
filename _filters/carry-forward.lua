@@ -40,7 +40,7 @@ function Pandoc(doc)
     return doc
   end
 
-  local html = '<nav class="carry-forward" aria-label="Neighbouring entries">'
+  local html = '<nav class="carry-forward" aria-label="Neighboring entries">'
     .. cell(order[index - 1], "carry-prev", "Brought forward")
     .. cell(order[index + 1], "carry-next", "Carried forward")
     .. "</nav>"

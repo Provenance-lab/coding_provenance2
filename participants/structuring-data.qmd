@@ -1,6 +1,6 @@
 ---
 title: "Knowledge Design"
-description: "How to organise provenance data into consistent, reusable structures."
+description: "How to organize provenance data into consistent, reusable structures."
 entry: "001"
 part: "Workflow, step 1 of 4"
 plate:
@@ -15,11 +15,11 @@ plate:
   medium: "Oil on canvas, 240 × 400 cm"
   collection: "Museo Nacional Centro de Arte Reina Sofía, Madrid"
   number: "AS05614"
-  rights: "© Herederos de Eduardo Chicharro Agüera. In copyright; not covered by this site's licence."
+  rights: "© Herederos de Eduardo Chicharro Agüera. In copyright; not covered by this site's license."
   image-source: "Museo Nacional Centro de Arte Reina Sofía"
   source: "https://www.museoreinasofia.es/en/collections/artwork/las-uveras-grape-sellers"
   source-name: "Museo Reina Sofía, Las uveras"
-  provenance-text: "…; Museo Español de Arte Contemporáneo (MEAC), Madrid; Museo Nacional Centro de Arte Reina Sofía, Madrid, from 1988, on the reorganisation of the MEAC holdings"
+  provenance-text: "…; Museo Español de Arte Contemporáneo (MEAC), Madrid; Museo Nacional Centro de Arte Reina Sofía, Madrid, from 1988, on the reorganization of the MEAC holdings"
   provenance:
     - date: "—"
       event: "Earlier history not given in the record"
@@ -30,7 +30,7 @@ plate:
       holder: "Museo Español de Arte Contemporáneo (MEAC)"
       place: "Madrid"
     - date: "1988"
-      event: "Transferred on the reorganisation of the MEAC holdings"
+      event: "Transferred on the reorganization of the MEAC holdings"
       holder: "Museo Nacional Centro de Arte Reina Sofía"
       place: "Madrid"
 ---

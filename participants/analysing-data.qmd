@@ -1,6 +1,6 @@
 ---
-title: "Analysing Data"
-description: "Basic statistics, visualisation and network analysis for provenance data."
+title: "Analyzing Data"
+description: "Basic statistics, visualization and network analysis for provenance data."
 entry: "003"
 part: "Workflow, step 3 of 4"
 plate:
@@ -15,7 +15,7 @@ plate:
   medium: "Oil on canvas, 160.5 × 188 cm"
   collection: "Museo Nacional del Prado, Madrid"
   number: "P007667"
-  rights: "© rights holder to be confirmed (the artist died in 1957). In copyright; not covered by this site's licence."
+  rights: "© rights holder to be confirmed (the artist died in 1957). In copyright; not covered by this site's license."
   image-source: "Museo Nacional del Prado"
   source: "https://www.museodelprado.es/coleccion/obra-de-arte/escardadoras/cca54178-b69d-443c-abb2-e1b53d3e7ccd"
   source-name: "Museo del Prado, Escardadoras"

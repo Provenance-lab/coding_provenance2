@@ -1,5 +1,5 @@
 ---
-title: "Visualising Data"
+title: "Visualizing Data"
 description: "Communicating findings through charts, maps and networks."
 entry: "004"
 part: "Workflow, step 4 of 4"
@@ -55,7 +55,7 @@ What Do We Want to Communicate?
 
 ## Slides
 
-::: {.slides href="https://docs.google.com/presentation/d/1xdiVPNS8jrGYBgVBZ0yJ8ztSbLzthPyQuYOaJNMjdEc/edit?usp=sharing" title="Visualising data slides"}
+::: {.slides href="https://docs.google.com/presentation/d/1xdiVPNS8jrGYBgVBZ0yJ8ztSbLzthPyQuYOaJNMjdEc/edit?usp=sharing" title="Visualizing data slides"}
 :::
 
 [Open Datasets](https://drive.google.com/drive/folders/1V7ugyB6jcKvRnCTsz5gJp1oaYblAbJFB?usp=sharing){.datasets-button target="_blank" rel="noopener"}

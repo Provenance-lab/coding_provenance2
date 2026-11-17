@@ -1485,15 +1485,45 @@ body.public {
   ::view-transition-group(*) { animation: none !important; }
 }
 
-// Front page: the about text, in two columns below the hero.
-.pub-about {
-  padding: 0 var(--pl-gutter) 5rem;
-  column-count: 2;
-  column-gap: 5rem;
-
-  .pub-summary { max-width: none; margin: 0 0 1rem; break-inside: avoid; }
+// Front page: the about text below the hero, one question per ruled row.
+// On wide screens the question sits beside its answer, and the answers line up
+// with the animation's left edge (same columns as .pub-hero). On phones and
+// tablets the question stacks above its answer.
+.pub-about { padding: 0 var(--pl-gutter) 5rem; }
+.pub-qa {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  gap: 0.9rem 5rem;
+  padding: 2.25rem 0 2.5rem;
+  border-top: 1px solid var(--pl-rule-strong);
 }
-@media (max-width: 899px) { .pub-about { column-count: 1; } }
+.pub-q {
+  font-family: var(--pl-text);
+  font-size: clamp(1.5rem, 2.2vw, 1.875rem) !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.02em;
+  line-height: 1.15 !important;
+  text-wrap: balance;
+}
+.pub-a {
+  max-width: 36rem;
+
+  .pub-summary { max-width: none; margin: 0 0 1em; text-wrap: pretty; }
+  > :last-child { margin-bottom: 0; }
+  strong { font-weight: 600; }
+}
+.pub-a .pub-definition {
+  margin-top: 1.75rem;
+  padding-left: 1.25rem;
+  border-left: 2px solid var(--pl-ink);
+  font-size: clamp(1.3rem, 1.8vw, 1.55rem);
+  line-height: 1.4;
+}
+@media (max-width: 899px) {
+  .pub-qa { grid-template-columns: minmax(0, 1fr); padding: 1.75rem 0 2rem; }
+  .pub-q { font-size: clamp(1.375rem, 5.5vw, 1.625rem) !important; }
+  .pub-a .pub-definition { padding-left: 1rem; }
+}
 
 
 // Front page: the brand stays in place but out of sight; the menu at top right.
@@ -1548,6 +1578,22 @@ body.public {
 }
 .pub-menu-label { margin: 1.25rem 0 0.25rem !important; }
 .pub-button-light { background: var(--pl-ink-2); }
+
+// The menu always sits at the right of the header. On phones the header keeps
+// the brand and the menu on one line (the front page drops its hidden brand),
+// and the open panel stays inside the screen.
+.pub-menu { margin-left: auto; flex: none; }
+@media (max-width: 720px) {
+  .pub-head { flex-wrap: nowrap; align-items: flex-start; gap: 1rem; padding-top: 1rem; }
+  .pub-brand { min-width: 0; padding-top: 0.45rem; font-size: 1.125rem; line-height: 1.25; }
+  .pub-brand-hidden { display: none; }
+  .pub-menu-panel {
+    min-width: 0;
+    width: min(16rem, calc(100vw - 2 * var(--pl-gutter)));
+    padding: 0.25rem 1rem 1rem;
+  }
+  .pub-menu-label { margin-top: 1rem !important; }
+}
 #about, #cohorts { scroll-margin-top: 2rem; }
 
 // ---------- Public inner pages: About us, Cohorts ----------

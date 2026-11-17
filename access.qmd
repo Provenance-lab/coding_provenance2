@@ -17,7 +17,7 @@ body-classes: public
 <section class="gate" aria-labelledby="gate-title">
   <div class="gate-panel">
     <h1 class="gate-title" id="gate-title">Participant area</h1>
-    <p class="gate-lede">Session links, readings and materials for the second edition, 1–4 December 2026. Enter the participant password to continue.</p>
+    <p class="gate-lede">Session links, readings and materials for the second edition, December 1–4, 2026. Enter the participant password to continue.</p>
 
     <form class="gate-form" novalidate>
       <label class="pub-label" for="gate-password">Password</label>
@@ -31,7 +31,7 @@ body-classes: public
     </form>
 
     <div class="rule-hatched" aria-hidden="true"></div>
-    <p class="gate-help">No password? Ask the <a href="index.html#organisers">workshop organisers</a>.</p>
+    <p class="gate-help">No password? Ask the <a href="index.html#organisers">workshop organizers</a>.</p>
   </div>
 </section>
 

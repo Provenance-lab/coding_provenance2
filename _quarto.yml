@@ -28,9 +28,9 @@ website:
       - href: participants/preprocessing-data.qmd
         text: Preprocessing
       - href: participants/analysing-data.qmd
-        text: Analysing
+        text: Analyzing
       - href: participants/visualising-data.qmd
-        text: Visualising
+        text: Visualizing
       - href: participants/resources.qmd
         text: Resources
     right:
@@ -44,15 +44,15 @@ website:
     center: |
       © 2026 Coding Provenance Workshop — Licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).<br>
       Reuse is encouraged — we happily promote changes of custody. Just be sure to write a good provenance record and cite this workshop.<br>
-      <span class="footer-note">The painting reproductions are not covered by this licence; see the credit with each one.</span>
+      <span class="footer-note">The painting reproductions are not covered by this license; see the credit with each one.</span>
 
 # The order of the book: each entry's "brought forward / carried forward"
 # links come from this list (see _filters/carry-forward.lua).
 ledger-order:
   - { page: structuring-data, entry: "001", title: "Knowledge Design" }
   - { page: preprocessing-data, entry: "002", title: "Preprocessing Data" }
-  - { page: analysing-data, entry: "003", title: "Analysing Data" }
-  - { page: visualising-data, entry: "004", title: "Visualising Data" }
+  - { page: analysing-data, entry: "003", title: "Analyzing Data" }
+  - { page: visualising-data, entry: "004", title: "Visualizing Data" }
   - { page: resources, entry: "005", title: "Bibliography & other Resources" }
 
 format:

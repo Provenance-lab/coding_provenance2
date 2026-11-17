@@ -33,19 +33,49 @@ body-classes: public
       <ol class="anim-steps">
         <li data-step="0"><b>01</b> Structuring</li>
         <li data-step="1"><b>02</b> Preprocessing</li>
-        <li data-step="2"><b>03</b> Analysing</li>
-        <li data-step="3"><b>04</b> Visualising</li>
+        <li data-step="2"><b>03</b> Analyzing</li>
+        <li data-step="3"><b>04</b> Visualizing</li>
       </ol>
     </div>
     <figcaption class="anim-caption" id="anim-caption">A provenance record, from sentence to timeline: the workshop's four steps.</figcaption>
   </figure>
 </section>
 
-<section class="pub-about" id="about" aria-label="About us">
-  <p class="pub-summary">After decades as provenance and art history researchers, we have watched our field change in many ways. Computational techniques and data-driven approaches can reveal patterns, structures and dynamics that are hard to see through close reading alone. They open up research questions that were previously impossible to answer, or even to ask. We call this computational provenance: provenance research using large language models, statistics and network analysis.</p>
-  <p class="pub-summary">This workshop gives researchers and practitioners a first encounter with these theories, methods and tools, so they can bring new policies, methods and techniques into their institutions and their own research. Interdisciplinary work with computer scientists and digital humanities specialists is extremely valuable, and fair, equal collaboration starts with a clear understanding of what can be done, and how.</p>
-  <p class="pub-summary">Over four days, the workshop mixes teaching with a social program, all centred on provenance. Participants work on and develop their own projects and take part in conversations about the field. Alongside the sessions, we put together a social program that includes guided visits to museums and archives, where curators and provenance experts introduce their collections, and visits to provenance-related events taking place that week.</p>
-  <p class="pub-summary">The workshop travels, and each edition takes place in a different part of the world: the first edition was held at Leuphana University Lüneburg, Germany, and the second at the Getty Research Institute, Los Angeles, USA. These two editions have been very successful, drawing hundreds of applications from researchers and practitioners worldwide. Each edition offers 16 places, fully funded by us.</p>
+<section class="pub-about" id="about" aria-label="About the workshop">
+  <div class="pub-qa">
+    <h2 class="pub-q">What is computational provenance?</h2>
+    <div class="pub-a">
+      <p class="pub-summary">Provenances have long been compiled, but only in recent decades have they become a subject of research in their own right. Prompted by restitution claims and public debate, many museums have begun to systematically investigate their collections and publish what they find.</p>
+      <p class="pub-summary">Provenance information is more rigorous and more transparent than it was, though unevenly so. It is also still written and read one object at a time.</p>
+      <p class="pub-summary">Computational approaches read across these records. They reveal patterns, structures and dynamics that no single provenance shows, open up research questions that could not be asked before, and expose the gaps, inconsistencies and biases in what has been recorded.</p>
+      <p class="pub-summary pub-definition">We call this <strong>computational provenance</strong>: thinking in provenance data, and treating the histories of objects as evidence that can be studied at scale.</p>
+    </div>
+  </div>
+  <div class="pub-qa">
+    <h2 class="pub-q">Who is it for?</h2>
+    <div class="pub-a">
+      <p class="pub-summary">The workshop is designed for provenance researchers, art historians, curators, and other scholars and practitioners who know the objects and the sources in depth. <strong>No coding experience is required.</strong></p>
+    </div>
+  </div>
+  <div class="pub-qa">
+    <h2 class="pub-q">What do we do?</h2>
+    <div class="pub-a">
+      <p class="pub-summary">Over four days, participants take provenance datasets through the workshop’s four steps, from raw record to visualization. They learn about, for example, ontologies, controlled vocabularies and natural language processing techniques, and apply them to their own projects.</p>
+    </div>
+  </div>
+  <div class="pub-qa">
+    <h2 class="pub-q">Why does it matter?</h2>
+    <div class="pub-a">
+      <p class="pub-summary">Provenance research moves forward when those who know the material best also shape how its data is modeled, questioned and shared. Fair collaboration with computer scientists and digital humanities specialists begins with a clear understanding of what can be done, and how.</p>
+    </div>
+  </div>
+  <div class="pub-qa">
+    <h2 class="pub-q">When and where?</h2>
+    <div class="pub-a">
+      <p class="pub-summary">The workshop travels. The first edition was held at Leuphana University of Lüneburg, the second at the Getty Research Institute in Los Angeles. Each drew more than 200 applications from around the world.</p>
+      <p class="pub-summary">Every edition offers <strong>15 to 20 fully funded places</strong>. The third will take place in late 2027, at a location to be announced.</p>
+    </div>
+  </div>
 </section>
 
 <section class="pub-more" aria-labelledby="cohorts">
@@ -57,7 +87,7 @@ body-classes: public
 </section>
 
 <section class="pub-more" aria-labelledby="organisers">
-  <h2 class="pub-label" id="organisers">Organisers and instructors</h2>
+  <h2 class="pub-label" id="organisers">Organizers and instructors</h2>
   <ul class="pub-people">
     <li>Bárbara Romero Ferrón, PhD<span>Provenance Lab, Leuphana University of Lüneburg</span></li>
     <li>Prof. Dr. Lynn Rother<span>Provenance Lab, Leuphana University of Lüneburg</span></li>
@@ -82,15 +112,15 @@ body-classes: public
   <div class="rule-hatched" aria-hidden="true"></div>
   <div class="pub-foot-grid">
     <div>
-      <h2 class="pub-label">Organised by</h2>
+      <h2 class="pub-label">Organized by</h2>
       <ul class="pub-foot-list">
         <li><a href="https://provenancelab.org/">The Provenance Lab</a> Leuphana University of Lüneburg</li>
         <li><a href="https://www.getty.edu/research/tools/provenance/">Getty Provenance Index</a> Getty Research Institute</li>
       </ul>
     </div>
     <div>
-      <h2 class="pub-label">Licence</h2>
-      <p>© 2026 Coding Provenance Workshop. Texts licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Reuse is encouraged — we happily promote changes of custody. Just be sure to write a good provenance record and cite this workshop. Painting reproductions are not covered by this licence.</p>
+      <h2 class="pub-label">License</h2>
+      <p>© 2026 Coding Provenance Workshop. Texts licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Reuse is encouraged — we happily promote changes of custody. Just be sure to write a good provenance record and cite this workshop. Painting reproductions are not covered by this license.</p>
     </div>
   </div>
 </footer>
