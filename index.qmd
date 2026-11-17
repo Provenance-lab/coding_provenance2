@@ -24,7 +24,7 @@ body-classes: public
 <section class="pub-hero" aria-labelledby="pub-title">
   <div class="pub-intro">
     <h1 class="pub-title" id="pub-title">Coding Provenance Workshop</h1>
-    <p class="pub-edition-line">Machine Learning Algorithms, Ontologies, Provenance, &amp; Art History</p>
+    <p class="pub-edition-line">Learning to Think in Data</p>
   </div>
 
   <figure class="anim" aria-labelledby="anim-caption">
