@@ -23,29 +23,29 @@ body-classes: public
 
 <main class="pub-page">
   <h1 class="pub-page-title">Second Cohort (2026)</h1>
-  <p class="pub-cohort-note">Coding Provenance Workshop, Second Edition · Getty Research Institute, Los Angeles, United States · December 1–4, 2026<br>Positions and institutions at the time of the workshop.</p>
+  <p class="pub-cohort-note">Coding Provenance Workshop, Second Edition · Getty Research Institute, Los Angeles, United States · December 1–4, 2026<br>Degrees, positions and institutions at the time of the workshop.</p>
 
   <section class="pub-page-section" aria-label="Participants of the second cohort">
     <ul class="pub-people pub-cohort">
-      <li>Claudia Andratschke<span>Head of Collections and Research, Provenance Researcher</span><span>Niedersächsisches Landesmuseum Hannover</span><span class="pub-place">Hanover, Germany</span></li>
-      <li>Felipe Armstrong Bruzzone<span>Chief Curator</span><span>Museo Chileno de Arte Precolombino</span><span class="pub-place">Santiago, Chile</span></li>
-      <li>Barbora Bartunkova<span>Provenance Specialist, Department of Painting and Sculpture</span><span>The Museum of Modern Art</span><span class="pub-place">New York, United States</span></li>
-      <li>Sarah Csernay<span>Provenance Researcher</span><span>Nordamerika Native Museum (NONAM) and Naturmuseum Winterthur</span><span class="pub-place">Zurich and Winterthur, Switzerland</span></li>
-      <li>Margaret Doyle<span>Head of Curatorial Files</span><span>National Gallery of Art</span><span class="pub-place">Washington, DC, United States</span></li>
-      <li>Joanna Gohmann<span>Associate Curator of Provenance Research and Object Histories</span><span>National Museum of Asian Art, Smithsonian Institution</span><span class="pub-place">Washington, DC, United States</span></li>
-      <li>Lea Grüter<span>Provenance Specialist, History Department</span><span>Rijksmuseum</span><span class="pub-place">Amsterdam, Netherlands</span></li>
-      <li>Jasmin Hartmann<span>Head</span><span>Koordinationsstelle für Provenienzforschung in Nordrhein-Westfalen (KPF.NRW)</span><span class="pub-place">Bonn, Germany</span></li>
-      <li>Sharon Hecker<span>Adjunct Professor</span><span>University of Milan</span><span class="pub-place">Milan, Italy</span></li>
-      <li>Katherine Hinman<span>Registrar Assistant and Contracts Administrator</span><span>Norton Simon Museum</span><span class="pub-place">Pasadena, United States</span></li>
-      <li>Caroline Maguire<span>Contract Provenance Researcher</span><span>National Museum of African Art, Smithsonian Institution</span><span class="pub-place">Washington, DC, United States</span></li>
-      <li>Lynley McAlpine<span>Associate Curator of Provenance Research</span><span>San Antonio Museum of Art</span><span class="pub-place">San Antonio, United States</span></li>
-      <li>Casey Monahan<span>Cunningham Senior Curatorial Assistant for the Collection, European and American Art</span><span>Harvard Art Museums</span><span class="pub-place">Cambridge, MA, United States</span></li>
-      <li>Veronica Munoz-Najar Luque<span>Associate Curator, Art of the Spanish Americas</span><span>Carl &amp; Marilynn Thoma Foundation</span><span class="pub-place">Dallas, United States</span></li>
-      <li>Fabriccio Miguel Novelli Duro<span>Independent Scholar</span><span>Getty Postdoctoral Fellow 2026–2027, Getty Research Institute</span><span class="pub-place">São Paulo, Brazil</span></li>
+      <li>Claudia Andratschke, PhD<span>Head of Collections and Research, Provenance Researcher</span><span>Niedersächsisches Landesmuseum Hannover</span><span class="pub-place">Hanover, Germany</span></li>
+      <li>Felipe Armstrong Bruzzone, PhD<span>Chief Curator</span><span>Museo Chileno de Arte Precolombino</span><span class="pub-place">Santiago, Chile</span></li>
+      <li>Barbora Bartunkova, PhD<span>Provenance Specialist, Department of Painting and Sculpture</span><span>The Museum of Modern Art</span><span class="pub-place">New York, United States</span></li>
+      <li>Sarah Csernay, MA<span>Provenance Researcher</span><span>Nordamerika Native Museum (NONAM) and Naturmuseum Winterthur</span><span class="pub-place">Zurich and Winterthur, Switzerland</span></li>
+      <li>Margaret Doyle, PhD<span>Head of Curatorial Files</span><span>National Gallery of Art</span><span class="pub-place">Washington, DC, United States</span></li>
+      <li>Joanna Gohmann, PhD<span>Associate Curator of Provenance Research and Object Histories</span><span>National Museum of Asian Art, Smithsonian Institution</span><span class="pub-place">Washington, DC, United States</span></li>
+      <li>Lea Grüter, MA<span>Provenance Specialist, History Department</span><span>Rijksmuseum</span><span class="pub-place">Amsterdam, Netherlands</span></li>
+      <li>Jasmin Hartmann, MA<span>Head</span><span>Koordinationsstelle für Provenienzforschung in Nordrhein-Westfalen (KPF.NRW)</span><span class="pub-place">Bonn, Germany</span></li>
+      <li>Sharon Hecker, PhD<span>Adjunct Professor</span><span>University of Milan</span><span class="pub-place">Milan, Italy</span></li>
+      <li>Katherine Hinman, MA<span>Registrar Assistant and Contracts Administrator</span><span>Norton Simon Museum</span><span class="pub-place">Pasadena, United States</span></li>
+      <li>Caroline Maguire, PhD<span>Contract Provenance Researcher</span><span>National Museum of African Art, Smithsonian Institution</span><span class="pub-place">Washington, DC, United States</span></li>
+      <li>Lynley McAlpine, PhD<span>Associate Curator of Provenance Research</span><span>San Antonio Museum of Art</span><span class="pub-place">San Antonio, United States</span></li>
+      <li>Casey Monahan, MA<span>Cunningham Senior Curatorial Assistant for the Collection, European and American Art</span><span>Harvard Art Museums</span><span class="pub-place">Cambridge, MA, United States</span></li>
+      <li>Veronica Munoz-Najar Luque, PhD<span>Associate Curator, Art of the Spanish Americas</span><span>Carl &amp; Marilynn Thoma Foundation</span><span class="pub-place">Dallas, United States</span></li>
+      <li>Fabriccio Miguel Novelli Duro, PhD<span>Independent Scholar</span><span>Getty Postdoctoral Fellow 2026–2027, Getty Research Institute</span><span class="pub-place">São Paulo, Brazil</span></li>
       <li>Angélica Ortega<span>Head Researcher, Prints and Drawings Collection</span><span>Academia de San Carlos, Facultad de Artes y Diseño, UNAM</span><span class="pub-place">Mexico City, Mexico</span></li>
-      <li>Alexandra Watson Jones<span>Provenance Research Curator</span><span>Victoria and Albert Museum</span><span>Getty Scholar 2026–2027, Getty Research Institute</span><span class="pub-place">London, United Kingdom</span></li>
-      <li>Jodi Zhang<span>Manager of Provenance Studies</span><span>Royal Ontario Museum</span><span class="pub-place">Toronto, Canada</span></li>
-      <li>Diana Zlatanovski<span>Associate Curator</span><span>Peabody Museum of Archaeology &amp; Ethnology at Harvard University</span><span class="pub-place">Cambridge, MA, United States</span></li>
+      <li>Alexandra Watson Jones, PhD<span>Provenance Research Curator</span><span>Victoria and Albert Museum</span><span>Getty Scholar 2026–2027, Getty Research Institute</span><span class="pub-place">London, United Kingdom</span></li>
+      <li>Jodi Zhang, MSt<span>Manager of Provenance Studies</span><span>Royal Ontario Museum</span><span class="pub-place">Toronto, Canada</span></li>
+      <li>Diana Zlatanovski, MA<span>Associate Curator</span><span>Peabody Museum of Archaeology &amp; Ethnology at Harvard University</span><span class="pub-place">Cambridge, MA, United States</span></li>
     </ul>
   </section>
 
