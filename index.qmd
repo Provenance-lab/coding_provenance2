@@ -60,8 +60,7 @@ body-classes: public
   </div>
   <div class="pub-qa">
     <h2 class="pub-q">When and where?</h2>
-    <p>The workshop travels. The first edition was held at Leuphana University of Lüneburg, the second at the Getty Research Institute in Los Angeles. Each drew more than 200 applications from around the world.</p>
-    <p>Every edition offers 15 to 20 fully funded places. The third will take place in late 2027, at a location to be announced.</p>
+    <p>The workshop travels. The first edition was held at Leuphana University of Lüneburg, the second at the Getty Research Institute in Los Angeles. Each drew more than 200 applications from around the world. Every edition offers 15 to 20 fully funded places. The third will take place in late 2027, at a location to be announced.</p>
   </div>
 </section>
 
