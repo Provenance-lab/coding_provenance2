@@ -1763,3 +1763,18 @@ body.public {
   color: var(--pl-ink);
   span { color: var(--pl-ink-2); }
 }
+
+// Cohorts page: one ruled entry per person, as in the organizers' row on the
+// front page: name, institution, then city and country in a lighter ink.
+// Three to a row on wide screens, two on tablets, one on phones.
+.pub-people.pub-cohort {
+  row-gap: 1.75rem;
+
+  li { padding-bottom: 0; }
+  .pub-place { margin-top: 0.1rem; color: var(--pl-ink-3); font-size: 0.875rem; }
+}
+@media (max-width: 1099px) { .pub-people.pub-cohort { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) {
+  .pub-people.pub-cohort { grid-template-columns: minmax(0, 1fr); row-gap: 0; }
+  .pub-people.pub-cohort li { padding-bottom: 0.9rem; }
+}
