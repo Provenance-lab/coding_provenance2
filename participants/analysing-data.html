@@ -2,18 +2,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.31">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Basic statistics, visualisation and network analysis for provenance data.">
+<meta name="description" content="Basic statistics, visualization and network analysis for provenance data.">
 
-<title>Analysing Data – Coding Provenance</title>
+<title>Analyzing Data – Coding Provenance</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -33,10 +39,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-f7f0e6284feda4359699cf4cb8f17637.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-e3c7ada00d29ebe98d081478ff37e1c0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -74,13 +80,13 @@ window.CP_ACCESS = '062700d22bef93b41f571f6d42141770156273d443aee65560a75a34b747
 <meta name="robots" content="noindex, nofollow">
 
 
-<meta property="og:title" content="Analysing Data – Coding Provenance">
-<meta property="og:description" content="Basic statistics, visualisation and network analysis for provenance data.">
+<meta property="og:title" content="Analyzing Data – Coding Provenance">
+<meta property="og:description" content="Basic statistics, visualization and network analysis for provenance data.">
 <meta property="og:image" content="https://codingprovenance.org/images/plates/analysing-1600.webp">
 <meta property="og:site_name" content="Coding Provenance">
 <meta property="og:image:alt" content="Two women in aprons bent double, weeding a field with hoes; more workers and a wide green plain stretch out behind them.">
-<meta name="twitter:title" content="Analysing Data – Coding Provenance">
-<meta name="twitter:description" content="Basic statistics, visualisation and network analysis for provenance data.">
+<meta name="twitter:title" content="Analyzing Data – Coding Provenance">
+<meta name="twitter:description" content="Basic statistics, visualization and network analysis for provenance data.">
 <meta name="twitter:image" content="https://codingprovenance.org/images/plates/analysing-1600.webp">
 <meta name="twitter:image:alt" content="Two women in aprons bent double, weeding a field with hoes; more workers and a wide green plain stretch out behind them.">
 <meta name="twitter:card" content="summary_large_image">
@@ -112,11 +118,11 @@ window.CP_ACCESS = '062700d22bef93b41f571f6d42141770156273d443aee65560a75a34b747
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="../participants/analysing-data.html" aria-current="page"> 
-<span class="menu-text">Analysing</span></a>
+<span class="menu-text">Analyzing</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../participants/visualising-data.html"> 
-<span class="menu-text">Visualising</span></a>
+<span class="menu-text">Visualizing</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../participants/resources.html"> 
@@ -165,8 +171,8 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
 <header id="title-block-header" class="quarto-title-block ledger-head">
 <p class="ledger-gutter" aria-hidden="true">003</p>
-<h1 class="title display-7">Analysing Data</h1>
-<p class="description">Basic statistics, visualisation and network analysis for provenance data.</p>
+<h1 class="title display-7">Analyzing Data</h1>
+<p class="description">Basic statistics, visualization and network analysis for provenance data.</p>
 <dl class="ledger-record">
 <div><dt>Entry</dt><dd>No. 003</dd></div>
 <div><dt>Part</dt><dd>Workflow, step 3 of 4</dd></div>
@@ -185,7 +191,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <div><dt>Medium</dt><dd>Oil on canvas, 160.5 × 188 cm</dd></div>
 <div><dt>Collection</dt><dd>Museo Nacional del Prado, Madrid</dd></div>
 <div><dt>Number</dt><dd>P007667</dd></div>
-<div><dt>Rights</dt><dd>© rights holder to be confirmed (the artist died in 1957). In copyright; not covered by this site’s licence.</dd></div>
+<div><dt>Rights</dt><dd>© rights holder to be confirmed (the artist died in 1957). In copyright; not covered by this site’s license.</dd></div>
 <div><dt>Image</dt><dd>Museo Nacional del Prado</dd></div>
 </dl>
 <div class="prov" data-view="text">
@@ -302,7 +308,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 </div>
 
 
-<nav class="carry-forward" aria-label="Neighbouring entries"><div class="carry carry-prev"><a href="preprocessing-data.html"><span class="carry-label">Brought forward</span><span class="carry-entry"><span class="carry-no">002</span> Preprocessing Data</span></a></div><div class="carry carry-next"><a href="visualising-data.html"><span class="carry-label">Carried forward</span><span class="carry-entry"><span class="carry-no">004</span> Visualising Data</span></a></div></nav>
+<nav class="carry-forward" aria-label="Neighboring entries"><div class="carry carry-prev"><a href="preprocessing-data.html"><span class="carry-label">Brought forward</span><span class="carry-entry"><span class="carry-no">002</span> Preprocessing Data</span></a></div><div class="carry carry-next"><a href="visualising-data.html"><span class="carry-label">Carried forward</span><span class="carry-entry"><span class="carry-no">004</span> Visualizing Data</span></a></div></nav>
 </section>
 </section>
 
@@ -402,13 +408,14 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -586,7 +593,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>© 2026 Coding Provenance Workshop — Licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br> Reuse is encouraged — we happily promote changes of custody. Just be sure to write a good provenance record and cite this workshop.<br> <span class="footer-note">The painting reproductions are not covered by this licence; see the credit with each one.</span></p>
+<p>© 2026 Coding Provenance Workshop — Licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br> Reuse is encouraged — we happily promote changes of custody. Just be sure to write a good provenance record and cite this workshop.<br> <span class="footer-note">The painting reproductions are not covered by this license; see the credit with each one.</span></p>
 </div>
     <div class="nav-footer-right">
       &nbsp;
