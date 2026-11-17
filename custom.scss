@@ -1767,6 +1767,7 @@ body.public {
 // Cohorts page: one ruled entry per person, as in the organizers' row on the
 // front page: name, institution, then city and country in a lighter ink.
 // Three to a row on wide screens, two on tablets, one on phones.
+.pub-cohort-note { margin: -1.75rem 0 3rem; color: var(--pl-ink-2); font-size: 0.9375rem; }
 .pub-people.pub-cohort {
   row-gap: 1.75rem;
 
