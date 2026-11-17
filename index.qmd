@@ -44,37 +44,27 @@ body-classes: public
 <section class="pub-about" id="about" aria-label="About the workshop">
   <div class="pub-qa">
     <h2 class="pub-q">What is computational provenance?</h2>
-    <div class="pub-a">
-      <p class="pub-summary">Provenances have long been compiled, but only in recent decades have they become a subject of research in their own right. Prompted by restitution claims and public debate, many museums have begun to systematically investigate their collections and publish what they find.</p>
-      <p class="pub-summary">Provenance information is more rigorous and more transparent than it was, though unevenly so. It is also still written and read one object at a time.</p>
-      <p class="pub-summary">Computational approaches read across these records. They reveal patterns, structures and dynamics that no single provenance shows, open up research questions that could not be asked before, and expose the gaps, inconsistencies and biases in what has been recorded.</p>
-      <p class="pub-summary pub-definition">We call this <strong>computational provenance</strong>: thinking in provenance data, and treating the histories of objects as evidence that can be studied at scale.</p>
-    </div>
+    <p>Provenances have long been compiled, but only in recent decades have they become a subject of research in their own right. Prompted by restitution claims and public debate, many museums have begun to systematically investigate their collections and publish what they find.</p>
+    <p>Provenance information is more rigorous and more transparent than it was, though unevenly so. It is also still written and read one object at a time.</p>
+    <p>Computational approaches read across these records. They reveal patterns, structures and dynamics that no single provenance shows, open up research questions that could not be asked before, and expose the gaps, inconsistencies and biases in what has been recorded.</p>
+    <p>We call this computational provenance: thinking in provenance data, and treating the histories of objects as evidence that can be studied at scale.</p>
   </div>
   <div class="pub-qa">
     <h2 class="pub-q">Who is it for?</h2>
-    <div class="pub-a">
-      <p class="pub-summary">The workshop is designed for provenance researchers, art historians, curators, and other scholars and practitioners who know the objects and the sources in depth. <strong>No coding experience is required.</strong></p>
-    </div>
+    <p>The workshop is designed for provenance researchers, art historians, curators, and other scholars and practitioners who know the objects and the sources in depth. No coding experience is required.</p>
   </div>
   <div class="pub-qa">
     <h2 class="pub-q">What do we do?</h2>
-    <div class="pub-a">
-      <p class="pub-summary">Over four days, participants take provenance datasets through the workshop’s four steps, from raw record to visualization. They learn about, for example, ontologies, controlled vocabularies and natural language processing techniques, and apply them to their own projects.</p>
-    </div>
+    <p>Over four days, participants take provenance datasets through the workshop’s four steps, from raw record to visualization. They learn about, for example, ontologies, controlled vocabularies and natural language processing techniques, and apply them to their own projects.</p>
   </div>
   <div class="pub-qa">
     <h2 class="pub-q">Why does it matter?</h2>
-    <div class="pub-a">
-      <p class="pub-summary">Provenance research moves forward when those who know the material best also shape how its data is modeled, questioned and shared. Fair collaboration with computer scientists and digital humanities specialists begins with a clear understanding of what can be done, and how.</p>
-    </div>
+    <p>Provenance research moves forward when those who know the material best also shape how its data is modeled, questioned and shared. Fair collaboration with computer scientists and digital humanities specialists begins with a clear understanding of what can be done, and how.</p>
   </div>
   <div class="pub-qa">
     <h2 class="pub-q">When and where?</h2>
-    <div class="pub-a">
-      <p class="pub-summary">The workshop travels. The first edition was held at Leuphana University of Lüneburg, the second at the Getty Research Institute in Los Angeles. Each drew more than 200 applications from around the world.</p>
-      <p class="pub-summary">Every edition offers <strong>15 to 20 fully funded places</strong>. The third will take place in late 2027, at a location to be announced.</p>
-    </div>
+    <p>The workshop travels. The first edition was held at Leuphana University of Lüneburg, the second at the Getty Research Institute in Los Angeles. Each drew more than 200 applications from around the world.</p>
+    <p>Every edition offers 15 to 20 fully funded places. The third will take place in late 2027, at a location to be announced.</p>
   </div>
 </section>
 
