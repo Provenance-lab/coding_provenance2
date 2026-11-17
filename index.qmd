@@ -55,7 +55,7 @@ body-classes: public
   </div>
   <div class="pub-qa">
     <h2 class="pub-q">What do we do?</h2>
-    <p>Over four days, participants take provenance datasets through the workshop’s four steps, from raw record to visualization. They learn about, for example, ontologies, controlled vocabularies and natural language processing techniques, and apply them to their own projects.</p>
+    <p>Over four days, participants take provenance datasets through the workshop’s four steps, from raw record to visualization. We introduce, for example, ontologies, controlled vocabularies and natural language processing techniques, which participants then apply to their own projects.</p>
   </div>
   <div class="pub-qa">
     <h2 class="pub-q">Why does it matter?</h2>
