@@ -1772,7 +1772,23 @@ body.public {
   row-gap: 1.75rem;
 
   li { padding-bottom: 0; }
-  .pub-place { margin-top: 0.1rem; color: var(--pl-ink-3); font-size: 0.875rem; }
+}
+.pub-people .pub-place { margin-top: 0.1rem; color: var(--pl-ink-3); font-size: 0.875rem; }
+
+// Cohorts overview: one ruled entry per cohort, two to a row.
+.pub-people.pub-cohort-index { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 860px) { .pub-people.pub-cohort-index { grid-template-columns: minmax(0, 1fr); } }
+
+// Foot of each cohort page: back to all cohorts, on to the other cohort.
+.pub-cohort-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.75rem 2rem;
+  margin: 1rem 0 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--pl-rule-strong);
+  font-size: 0.9375rem;
 }
 @media (max-width: 1099px) { .pub-people.pub-cohort { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 640px) {

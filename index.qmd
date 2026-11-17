@@ -71,8 +71,8 @@ body-classes: public
 <section class="pub-more" aria-labelledby="cohorts">
   <h2 class="pub-label" id="cohorts">Coding Provenance Cohorts</h2>
   <ul class="pub-people">
-    <li><a href="cohorts.html#cohort-2026">Second cohort</a><span>2026</span></li>
-    <li><a href="cohorts.html#cohort-2025">First cohort</a><span>2025</span></li>
+    <li><a href="cohort-2025.html">First cohort</a><span>2025</span></li>
+    <li><a href="cohort-2026.html">Second cohort</a><span>2026</span></li>
   </ul>
 </section>
 
